@@ -1,0 +1,19 @@
+uuid: f87b31fa-7a98-4103-8bd4-4803a983bdc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: xAKaUWzbpluOMIPdY2QIzKEqVZffz4vaL3nWFtL884I
+name: Event
+type: event
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

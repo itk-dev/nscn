@@ -1,0 +1,25 @@
+uuid: 9649566a-d70e-41e4-9c03-475f058cb63e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_link_lu
+    - paragraphs.paragraphs_type.button
+  module:
+    - link
+_core:
+  default_config_hash: PkJW-gqMsWoxD50JEZld728lghBYqVFX82HiGn9EPHc
+id: paragraph.button.field_button_link_lu
+field_name: field_button_link_lu
+entity_type: paragraph
+bundle: button
+label: 'Link for Logged In User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

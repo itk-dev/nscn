@@ -1,0 +1,29 @@
+uuid: 38eb3aa6-bd3b-4584-a543-53993cc040e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.field_comment_body
+_core:
+  default_config_hash: x956z7YSUuUg0Zb0LMqxWu-22u-EfZJXUEn2HUKeNhQ
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  author:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comment_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: 'Add a comment'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  subject: true

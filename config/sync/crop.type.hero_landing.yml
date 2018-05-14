@@ -1,0 +1,14 @@
+uuid: b3898deb-68b1-4c8d-8cea-a06dfb06d04f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: L9jhSe6g314L11I_DBgtc-KdOP9GVd1H21966OBZGpM
+label: 'Hero Landing'
+id: hero_landing
+description: 'Header image for Landing Page Hero section.'
+aspect_ratio: '150:37'
+soft_limit_width: 1500
+soft_limit_height: 370
+hard_limit_width: null
+hard_limit_height: null

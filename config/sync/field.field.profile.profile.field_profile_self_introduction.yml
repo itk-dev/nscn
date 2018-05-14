@@ -1,0 +1,23 @@
+uuid: b78f2eaa-8ab1-4fe4-b921-6b5a042f13d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_self_introduction
+    - profile.type.profile
+  module:
+    - text
+_core:
+  default_config_hash: EtzFYMBWMlgHvlBDKsZJubuEqQtKgMFRdNdTOd9C7Gc
+id: profile.profile.field_profile_self_introduction
+field_name: field_profile_self_introduction
+entity_type: profile
+bundle: profile
+label: 'Self introduction'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

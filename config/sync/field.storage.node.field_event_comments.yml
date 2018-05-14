@@ -1,0 +1,22 @@
+uuid: f47da2d4-47dc-4eee-a18e-000f4450cd76
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+_core:
+  default_config_hash: q1MFwnpfOimodFTajUv32VLbO41BBTwymyLdROIjoq8
+id: node.field_event_comments
+field_name: field_event_comments
+entity_type: node
+type: comment
+settings:
+  comment_type: comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

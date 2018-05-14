@@ -1,0 +1,41 @@
+uuid: 88840e03-6ade-49ba-87bc-fa1cca339381
+langcode: en
+status: true
+dependencies:
+  module:
+    - activity_logger
+third_party_settings:
+  activity_logger:
+    activity_context: profile_activity_context
+    activity_destinations:
+      notifications: notifications
+      email: email
+    activity_create_direct: 1
+    activity_bundle_entities:
+      post-post: post-post
+    activity_action: create_entitiy_action
+    activity_aggregate: 0
+_core:
+  default_config_hash: aSvlkk6NBN2QpKCKfB-v3FWfRdmX5SS6fs8m0dbth8o
+template: create_post_profile
+label: 'Create post on profile'
+description: 'A person created a post on my profile'
+text:
+  -
+    format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
+  -
+    format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
+  -
+    format: full_html
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p>'
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge:
+    override: false
+    enabled: false
+    quota: null
+    days: null

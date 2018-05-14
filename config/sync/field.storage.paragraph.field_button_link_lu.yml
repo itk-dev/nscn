@@ -1,0 +1,21 @@
+uuid: cddb9e93-e5db-496f-b95b-13c2eb3bea15
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: KBM-wW9rfWfgaVu7_wAWFO1w4pI-D2BXWqXryjkQRiw
+id: paragraph.field_button_link_lu
+field_name: field_button_link_lu
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

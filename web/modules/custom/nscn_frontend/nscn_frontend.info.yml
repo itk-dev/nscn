@@ -1,0 +1,5 @@
+name: Nordic Social City Network frontend
+description: Provides configuration to seperate frontend and backend
+package: NSCN Custom
+type: module
+core: 8.x

@@ -1,0 +1,40 @@
+uuid: 5c447f2a-f238-48ed-be50-d39a03b0123d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_image
+    - paragraphs.paragraphs_type.hero
+  module:
+    - image
+_core:
+  default_config_hash: 2LX-Hyzkd14HT6ba13tIw0wkLIS1YnQDJ4GdLSOIXS8
+id: paragraph.hero.field_hero_image
+field_name: field_hero_image
+entity_type: paragraph
+bundle: hero
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 4096x4096
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

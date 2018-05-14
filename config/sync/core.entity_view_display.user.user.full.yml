@@ -1,0 +1,23 @@
+uuid: dc19fa65-4222-4dca-9205-b86f91009809
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+  module:
+    - user
+_core:
+  default_config_hash: mZKjV79TZE_tU-VDdpJZzsaM5Ab2QByRJvOTYom5HEA
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content: {  }
+hidden:
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  member_for: true
+  profile_main: true
+  profile_profile: true

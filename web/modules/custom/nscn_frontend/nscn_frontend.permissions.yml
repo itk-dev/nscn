@@ -1,0 +1,4 @@
+access nscn social backend:
+  title: 'Access nscn social backend'
+  description: 'Access nscn social backend, needed to access the social network'
+  restrict access: TRUE

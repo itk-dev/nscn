@@ -1,0 +1,23 @@
+uuid: 65afe30b-b005-4437-8e75-2a8ebf1a9a44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_event_community
+  module:
+    - options
+_core:
+  default_config_hash: 8acckeWT5uuFmnpEuzVmX5CfAJEHee1n9DiSZOOIXPY
+id: message.create_event_community.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_event_community
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

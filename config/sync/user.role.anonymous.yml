@@ -1,0 +1,15 @@
+uuid: 77a413c6-aab4-44c5-a3e1-61988f95d2b7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access content search'
+  - 'view node.landing_page.field_content_visibility:public content'
+  - 'view node.page.field_content_visibility:public content'

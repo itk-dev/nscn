@@ -1,0 +1,49 @@
+uuid: babada49-0217-4f11-9701-42eb1210397d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.font.font.field_fallback
+    - field.field.font.font.field_fonts
+  module:
+    - file
+    - options
+    - social_font
+    - user
+_core:
+  default_config_hash: 1NuPL26R5zoBZ-vVhP-fjP5_78rD48oGQ-F6URLmVMc
+id: font.font.default
+targetEntityType: font
+bundle: font
+mode: default
+content:
+  field_fallback:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_fonts:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

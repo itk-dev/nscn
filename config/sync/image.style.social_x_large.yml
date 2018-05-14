@@ -1,0 +1,33 @@
+uuid: 0dde45d4-e37e-4dcb-9822-38ac63158cb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.teaser
+  module:
+    - crop
+    - image_effects
+_core:
+  default_config_hash: Y22L0Lq2-UwFKkP8KHInX7cfe6hxw7Bj028pYvOVaqw
+name: social_x_large
+label: 'social extra large (220 x 220)'
+effects:
+  8caebde6-8403-4c7c-8a0b-75374fb31168:
+    uuid: 8caebde6-8403-4c7c-8a0b-75374fb31168
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: teaser
+  b4346485-59a7-4ed0-b3d9-57982b3ece26:
+    uuid: b4346485-59a7-4ed0-b3d9-57982b3ece26
+    id: image_resize
+    weight: 2
+    data:
+      width: 220
+      height: 220
+  06429c13-485a-4b8e-80a8-91ca034b566f:
+    uuid: 06429c13-485a-4b8e-80a8-91ca034b566f
+    id: image_effects_auto_orient
+    weight: 3
+    data:
+      scan_exif: true

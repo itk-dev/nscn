@@ -1,0 +1,19 @@
+uuid: d3f5b395-b292-44c2-abb3-f0d927d31536
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+  module:
+    - user
+_core:
+  default_config_hash: ANRuEQZLCnuSVkBzT8h_wvvOREIVnH_5-o2zAjoY6Gs
+id: open_group-group_membership
+label: 'Open group: Group membership'
+description: 'Adds users to groups as members.'
+group_type: open_group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

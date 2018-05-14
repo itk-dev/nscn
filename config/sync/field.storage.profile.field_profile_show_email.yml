@@ -1,0 +1,20 @@
+uuid: 3eb494da-bef5-456f-a2e1-f6731ab2a14f
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: vGXUm3bNcLqNfEpuFnaYAV80fyySQCRzAYGKjyuQGYo
+id: profile.field_profile_show_email
+field_name: field_profile_show_email
+entity_type: profile
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

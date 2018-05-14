@@ -1,0 +1,18 @@
+uuid: 770804e5-d97a-4de7-9613-2f2d87ecbfed
+langcode: en
+status: true
+dependencies:
+  theme:
+    - socialblue
+id: socialblue_local_actions
+theme: socialblue
+region: complementary_top
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

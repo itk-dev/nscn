@@ -1,0 +1,25 @@
+uuid: e1ca1502-de44-47ff-8e06-9a27034be57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_introduction_link_an
+    - paragraphs.paragraphs_type.introduction
+  module:
+    - link
+_core:
+  default_config_hash: 2GZ-78vfgSG2PlCJqS4ZyhrpVXjZzzoZ2NYLpZLosdw
+id: paragraph.introduction.field_introduction_link_an
+field_name: field_introduction_link_an
+entity_type: paragraph
+bundle: introduction
+label: 'Link for Anonymous User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

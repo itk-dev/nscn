@@ -1,0 +1,11 @@
+uuid: 9035e95c-8025-43a4-b9fa-36717fa5b7c1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QA1G2YoHEi-8XYN9y40lgNhfLPsWAeDbAn_rkyRbaqg
+id: featured
+label: Featured
+icon_uuid: 1bb5de6e-f2f3-4ef3-a547-62bb971fdf37
+description: 'Create featured items block, editor will be able to provide title, items to show and a link like see all.'
+behavior_plugins: {  }

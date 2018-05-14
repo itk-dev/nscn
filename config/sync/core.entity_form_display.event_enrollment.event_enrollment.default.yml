@@ -1,0 +1,57 @@
+uuid: 3cc2dfd1-07ad-40b9-b3d3-72fa8677f1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.event_enrollment.event_enrollment.field_account
+    - field.field.event_enrollment.event_enrollment.field_enrollment_status
+    - field.field.event_enrollment.event_enrollment.field_event
+  module:
+    - social_event
+_core:
+  default_config_hash: NMbvfZgCd0-cBojlZ5n_KDJOjX69vRHjnCw-i5a_hMc
+id: event_enrollment.event_enrollment.default
+targetEntityType: event_enrollment
+bundle: event_enrollment
+mode: default
+content:
+  field_enrollment_status:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  langcode:
+    type: language_select
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_account: true

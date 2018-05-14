@@ -1,0 +1,14 @@
+uuid: 651c1cb0-0ead-47d0-b8d5-5843e52496c0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dlzhxhc9R3WQnyWJ8TkCz2Ekote8VmPbaRRfj2wNtpM
+label: 'Profile small'
+id: profile_small
+description: 'Small sized profile image'
+aspect_ratio: '24:24'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

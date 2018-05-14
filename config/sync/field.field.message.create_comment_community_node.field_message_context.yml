@@ -1,0 +1,23 @@
+uuid: a66f4560-657d-497b-8ce3-f5816cb4b8b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_comment_community_node
+  module:
+    - options
+_core:
+  default_config_hash: 906sWgM0zYozX08boJlmQw_sKk8NM_ajqWndG_TdDsQ
+id: message.create_comment_community_node.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_comment_community_node
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

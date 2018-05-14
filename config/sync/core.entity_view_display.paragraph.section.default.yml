@@ -1,0 +1,26 @@
+uuid: 1f256df7-3862-4f6f-a16f-badd64ee4651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_section_paragraph
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: _ymKnBBP9eIhVlzTechezkKokL7c1OT-DqADANOujbY
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_section_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

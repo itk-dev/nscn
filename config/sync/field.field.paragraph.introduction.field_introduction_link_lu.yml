@@ -1,0 +1,25 @@
+uuid: 161f549d-2584-4ee1-9d83-54299a48e2f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_introduction_link_lu
+    - paragraphs.paragraphs_type.introduction
+  module:
+    - link
+_core:
+  default_config_hash: LFJ4WsF5N5KvW1jhZuTTW7TmvJUO8MpfR9X6v6aat9M
+id: paragraph.introduction.field_introduction_link_lu
+field_name: field_introduction_link_lu
+entity_type: paragraph
+bundle: introduction
+label: 'Link for Logged In User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,42 @@
+uuid: 18a5bccd-feca-486b-9b70-5d0d38f70305
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.post.activity_comment
+    - field.field.post.post.field_post
+    - field.field.post.post.field_post_comments
+    - field.field.post.post.field_recipient_group
+    - field.field.post.post.field_recipient_user
+    - field.field.post.post.field_visibility
+    - social_post.post_type.post
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 9gulmheZg0DioReaTCSx_BhT3fuYtbBa_3MgZ-VDk6g
+id: post.post.activity_comment
+targetEntityType: post
+bundle: post
+mode: activity_comment
+content:
+  field_post:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_post_comments: true
+  field_recipient_group: true
+  field_recipient_user: true
+  field_visibility: true
+  like_and_dislike: true
