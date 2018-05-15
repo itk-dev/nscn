@@ -1,0 +1,125 @@
+name: NSCN theme
+description: Demo theme for Open social installations.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core: 8.x
+
+libraries:
+  - nscn/brand
+  - nscn/site-footer
+
+libraries-extend:
+  socialbase/base:
+    - nscn/base
+  socialbase/alert:
+    - nscn/alert
+  socialbase/badge:
+    - nscn/badge
+  socialbase/button:
+    - nscn/button
+  socialbase/cards:
+    - nscn/cards
+  socialbase/form-controls:
+    - nscn/form-controls
+  socialbase/list:
+    - nscn/list
+  socialbase/spinner:
+    - nscn/spinner
+  # Extend molecules
+  socialbase/breadcrumb:
+    - nscn/breadcrumb
+  socialbase/dropdown:
+    - nscn/dropdown
+  socialbase/file:
+      - nscn/file
+  socialbase/form-elements:
+    - nscn/form-elements
+  socialbase/form--input-groups:
+    - nscn/form--input-groups
+  socialbase/like:
+    - nscn/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - nscn/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - nscn/form--timepicker
+  socialbase/form--password:
+    - nscn/form--password
+  socialbase/pagination:
+    - nscn/pagination
+  socialbase/popover:
+    - nscn/popover
+  socialbase/nav-book:
+    - nscn/nav-book
+  socialbase/nav-tabs:
+    - nscn/nav-tabs
+  socialbase/navbar:
+    - nscn/navbar
+  socialbase/select2:
+    - nscn/select2
+  socialbase/teaser:
+    - nscn/teaser
+  socialbase/tour:
+    - nscn/tour
+  # Extend Organisms
+  socialbase/comment:
+    - nscn/comment
+  socialbase/hero:
+    - nscn/hero
+  socialbase/message:
+    - nscn/message
+  socialbase/meta:
+    - nscn/meta
+  socialbase/modal:
+    - nscn/modal
+  socialbase/offcanvas:
+    - nscn/offcanvas
+  socialbase/stream:
+    - nscn/stream
+  socialbase/page-node:
+    - nscn/page-node
+
+ckeditor_stylesheets:
+  - assets/css/ckeditor.css
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+  pages:
+    paths:
+      - components/06-pages
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer

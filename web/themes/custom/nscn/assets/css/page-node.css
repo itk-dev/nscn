@@ -1,0 +1,8 @@
+.body-text a:not(.btn) {
+  text-decoration: underline;
+  color: #33b5e5;
+}
+
+.body-text a:not(.btn):hover {
+  color: #178ab4;
+}
