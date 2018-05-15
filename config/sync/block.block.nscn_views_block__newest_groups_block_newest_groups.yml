@@ -1,0 +1,30 @@
+uuid: 4ef2c9b4-77b2-4982-9263-e57d0555b0e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_groups
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_views_block__newest_groups_block_newest_groups
+theme: nscn
+region: complementary_bottom
+weight: 4
+provider: null
+plugin: 'views_block:newest_groups-block_newest_groups'
+settings:
+  id: 'views_block:newest_groups-block_newest_groups'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/explore"
+    negate: false
+    context_mapping: {  }

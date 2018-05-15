@@ -1,0 +1,30 @@
+uuid: 891bcc18-a3b3-43cf-b30e-8b7ce0a9f73b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_views_block__latest_topics_group_topics_block
+theme: nscn
+region: complementary_bottom
+weight: 3
+provider: null
+plugin: 'views_block:latest_topics-group_topics_block'
+settings:
+  id: 'views_block:latest_topics-group_topics_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/group/*/stream\r\n/group/*/about"
+    negate: false
+    context_mapping: {  }

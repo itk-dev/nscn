@@ -1,0 +1,20 @@
+uuid: bb51fbdb-2388-4556-98eb-32080a981cf7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nscn
+id: nscn_help
+theme: nscn
+region: content
+weight: -16
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

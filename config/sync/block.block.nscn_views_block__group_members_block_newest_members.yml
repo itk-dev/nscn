@@ -1,0 +1,30 @@
+uuid: 0aeb7391-e326-456b-8ddf-4ea988a0a72a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_members
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_views_block__group_members_block_newest_members
+theme: nscn
+region: complementary_bottom
+weight: 5
+provider: null
+plugin: 'views_block:group_members-block_newest_members'
+settings:
+  id: 'views_block:group_members-block_newest_members'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/group/*/stream\r\n/group/*/about"
+    negate: false
+    context_mapping: {  }
