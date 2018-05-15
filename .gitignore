@@ -8,4 +8,5 @@
 /*/sites/default/services.local.yml
 /*/libraries
 vendor/
+private-files
 .idea
