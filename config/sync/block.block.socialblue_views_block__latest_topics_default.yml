@@ -1,4 +1,4 @@
-uuid: 2b465ca0-396a-44d4-9de2-8b2868cdee54
+uuid: 3e72c50a-7667-4337-a858-1a40bf11b403
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: L0GbzYBp0tvEdRSIZ6uozmaIHK2-g1XxryF-kxttjTQ
 id: socialblue_views_block__latest_topics_default
 theme: socialblue
 region: complementary_bottom

@@ -1,4 +1,4 @@
-uuid: 76d4db77-5a7e-4d37-9ef3-4a7d7a18606f
+uuid: 3a38244e-7a16-4405-97d4-1deda2f40ad9
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: WQavb4yx5tp3JXnHNNH_B1-tp7ADTvyM3LDxGEuWbMw
 id: socialblue_content
 theme: socialblue
 region: content
