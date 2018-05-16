@@ -1,0 +1,16 @@
+@import "settings";
+
+// Used on a introduction section
+.introduction {
+  background: white;
+  position: relative;
+  padding: $spacer*2;
+  &::after {
+    content: "";
+    position: absolute;
+    height: $spacer*2;
+    width: 100%;
+    background: white;
+    display: block;
+  }
+}

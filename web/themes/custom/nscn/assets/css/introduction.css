@@ -1,0 +1,14 @@
+.introduction {
+  background: white;
+  position: relative;
+  padding: 2rem;
+}
+
+.introduction::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 100%;
+  background: white;
+  display: block;
+}

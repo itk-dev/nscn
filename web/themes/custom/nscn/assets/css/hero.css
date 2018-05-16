@@ -1,6 +1,6 @@
 .cover {
   color: white;
-  background-color: #29abe2;
+  background-color: #1A6BD4;
 }
 
 .page-title {
@@ -25,8 +25,8 @@
 .hero-form[role='search'] .form-control:focus, .hero-form[role='search'] .form-control:active,
 .hero-form[role='search'] .form-control:focus ~ .search-icon,
 .hero-form[role='search'] .form-control:active ~ .search-icon {
-  -webkit-box-shadow: 0 2px 0 0 #1f80aa;
-          box-shadow: 0 2px 0 0 #1f80aa;
+  -webkit-box-shadow: 0 2px 0 0 #2A32A3;
+          box-shadow: 0 2px 0 0 #2A32A3;
 }
 
 .hero-form[role='search'] .form-submit,
@@ -35,7 +35,7 @@
 }
 
 .hero-form[role='search'] .search-icon {
-  fill: #29abe2;
+  fill: #1A6BD4;
   background: white;
 }
 
