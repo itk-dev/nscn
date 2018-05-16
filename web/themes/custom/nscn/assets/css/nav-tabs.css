@@ -13,8 +13,8 @@
 }
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
-  background-color: #e6e6e6;
-  border-bottom-color: #e6e6e6;
+  background-color: #EFEFEF;
+  border-bottom-color: #EFEFEF;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {

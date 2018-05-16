@@ -21,8 +21,8 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #e6e6e6;
-  fill: #e6e6e6;
+  color: #EFEFEF;
+  fill: #EFEFEF;
   background-color: #1454a7;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .navbar-default .dropdown-menu > li > a.is-active {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #4d4d4d;
   font-weight: 500;
 }
@@ -146,7 +146,7 @@
     color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #e6e6e6;
+    color: #EFEFEF;
     background-color: #1454a7;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {

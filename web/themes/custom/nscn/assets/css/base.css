@@ -149,12 +149,12 @@ a.text-gray-lighter:focus {
 }
 
 .text-gray-lightest {
-  color: #e6e6e6;
+  color: #EFEFEF;
 }
 
 a.text-gray-lightest:hover,
 a.text-gray-lightest:focus {
-  color: #cdcdcd;
+  color: #d6d6d6;
 }
 
 .text-accent {
@@ -219,7 +219,7 @@ a.text-accent:focus {
 }
 
 .bg-gray-lighter {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
 }
 
 .bg-gray-lighter-1 {
@@ -287,15 +287,15 @@ a.brand-user:focus {
 }
 
 .default-light {
-  background-color: #e6e6e6;
-  border-color: #e6e6e6;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
   color: #4d4d4d;
 }
 
 a.default-light:hover,
 a.default-light:focus {
-  background-color: #cdcdcd;
-  border-color: #cdcdcd;
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
   color: #4d4d4d;
 }
 
@@ -416,16 +416,16 @@ body {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-dark,

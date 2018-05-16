@@ -1,0 +1,12 @@
+@import 'settings';
+
+// Cut off variants
+
+.cut-off {
+  &-white {
+    @include cut-off($cut-off-color-white);
+  }
+  &-gray {
+    @include cut-off($cut-off-color-gray);
+  }
+}
