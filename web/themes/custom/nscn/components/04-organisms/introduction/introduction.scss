@@ -5,12 +5,12 @@
   background: white;
   position: relative;
   padding: $spacer*2;
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     height: $spacer*2;
     width: 100%;
     background: white;
-
+    display: block;
   }
 }
