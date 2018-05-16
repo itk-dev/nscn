@@ -1,0 +1,23 @@
+uuid: 70bbe10f-836d-4266-9fce-7d14945978d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_position
+    - paragraphs.paragraphs_type.introduction
+  module:
+    - options
+id: paragraph.introduction.field_text_position
+field_name: field_text_position
+entity_type: paragraph
+bundle: introduction
+label: 'Text position'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
