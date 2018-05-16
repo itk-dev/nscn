@@ -1,46 +1,46 @@
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #c3e7f7;
+  background-color: #bfd6f3;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #addef4;
+  background-color: #aac8ef;
 }
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #addef4;
+  background-color: #aac8ef;
 }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #c0dbe7;
+  background-color: #c3c6e5;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #aed0e0;
+  background-color: #b1b5dd;
 }
 
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #aed0e0;
+  background-color: #b1b5dd;
 }
 
 .table-accent,
 .table-accent > th,
 .table-accent > td {
-  background-color: #ffeeca;
+  background-color: #efc0db;
 }
 
 .table-hover .table-accent:hover {
-  background-color: #ffe6b1;
+  background-color: #eaaccf;
 }
 
 .table-hover .table-accent:hover > td,
 .table-hover .table-accent:hover > th {
-  background-color: #ffe6b1;
+  background-color: #eaaccf;
 }
 
 .table-success,
@@ -153,13 +153,13 @@
 }
 
 .table th a {
-  color: #1d789e;
+  color: #124b94;
 }
 
 .table th.is-active > a {
-  color: #29abe2;
+  color: #1A6BD4;
 }
 
 .table .icon-tablesort {
-  fill: #29abe2;
+  fill: #1A6BD4;
 }

@@ -1,8 +1,8 @@
 .input-group .form-control:focus ~ .input-group-addon {
-  border-color: #29abe2;
-  border-bottom: 1px solid #29abe2;
-  -webkit-box-shadow: 0 2px 0 0 #29abe2;
-          box-shadow: 0 2px 0 0 #29abe2;
+  border-color: #1A6BD4;
+  border-bottom: 1px solid #1A6BD4;
+  -webkit-box-shadow: 0 2px 0 0 #1A6BD4;
+          box-shadow: 0 2px 0 0 #1A6BD4;
 }
 
 .input-group-addon {

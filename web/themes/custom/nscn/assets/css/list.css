@@ -21,8 +21,8 @@
 .list-item--active,
 .list-item--active:hover {
   color: white;
-  background-color: #1f80aa;
-  border-color: #1f80aa;
+  background-color: #2A32A3;
+  border-color: #2A32A3;
 }
 
 .list-item--active .icon-small,

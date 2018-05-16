@@ -6,10 +6,10 @@
 }
 
 .form-control:focus {
-  border-color: #29abe2;
+  border-color: #1A6BD4;
   outline: 0;
-  -webkit-box-shadow: 0 2px 0 0 #29abe2;
-          box-shadow: 0 2px 0 0 #29abe2;
+  -webkit-box-shadow: 0 2px 0 0 #1A6BD4;
+          box-shadow: 0 2px 0 0 #1A6BD4;
 }
 
 .form-control::-moz-placeholder {
@@ -31,46 +31,46 @@ fieldset[disabled] .form-control {
 }
 
 input[type='range']::-webkit-slider-thumb {
-  background: #1d789e;
-  border: 2px solid #1d789e;
+  background: #124b94;
+  border: 2px solid #124b94;
 }
 
 input[type='range']::-ms-thumb {
-  background: #1d789e;
-  border: 2px solid #1d789e;
+  background: #124b94;
+  border: 2px solid #124b94;
 }
 
 input[type='range']::-moz-range-thumb {
-  background: #1d789e;
-  border: 2px solid #1d789e;
+  background: #124b94;
+  border: 2px solid #124b94;
 }
 
 [type="radio"]:checked:not(:disabled) + label {
-  color: #1d789e;
+  color: #124b94;
 }
 
 [type="radio"]:checked + label:before {
-  border: 2px solid #1d789e;
+  border: 2px solid #124b94;
 }
 
 [type="radio"]:checked + label:after {
-  border: 2px solid #1d789e;
-  background-color: #1d789e;
+  border: 2px solid #124b94;
+  background-color: #124b94;
 }
 
 [type="radio"]:focus + label:before {
-  -webkit-box-shadow: 0 0 3px 2px #56bde8;
-          box-shadow: 0 0 3px 2px #56bde8;
+  -webkit-box-shadow: 0 0 3px 2px #3a85e7;
+          box-shadow: 0 0 3px 2px #3a85e7;
 }
 
 [type="checkbox"]:checked + label:after {
-  border: 2px solid #1d789e;
-  background-color: #1d789e;
+  border: 2px solid #124b94;
+  background-color: #124b94;
 }
 
 [type="checkbox"].tabbed:checked:focus + label:after {
-  background-color: #1d789e;
-  border-color: #1d789e;
+  background-color: #124b94;
+  border-color: #124b94;
 }
 
 .js--animate-enabled-form-control:checked + label {
@@ -109,16 +109,16 @@ input[type='range']::-moz-range-thumb {
 }
 
 .switch input[type=checkbox]:checked + .lever {
-  background-color: #72afc8;
+  background-color: #598ccc;
 }
 
 .switch input[type=checkbox]:checked + .lever:after {
-  background-color: #1d789e;
+  background-color: #124b94;
 }
 
 input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
-  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(29, 120, 158, 0.1);
-          box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(29, 120, 158, 0.1);
+  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(18, 75, 148, 0.1);
+          box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(18, 75, 148, 0.1);
 }
 
 .input-group .select-wrapper:first-child .form-control:first-child {

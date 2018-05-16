@@ -23,36 +23,36 @@
 }
 
 .badge-primary {
-  background-color: #29abe2;
+  background-color: #1A6BD4;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .badge-primary[href]:hover, .badge-primary[href]:focus {
-  background-color: #1a8dbe;
+  background-color: #1454a7;
 }
 
 .badge-secondary {
-  background-color: #1f80aa;
+  background-color: #2A32A3;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .badge-secondary[href]:hover, .badge-secondary[href]:focus {
-  background-color: #17607f;
+  background-color: #20267a;
 }
 
 .badge-accent {
-  background-color: #ffc142;
+  background-color: #C71D7D;
   color: #4d4d4d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .badge-accent[href]:hover, .badge-accent[href]:focus {
-  background-color: #ffb00f;
+  background-color: #9a1761;
 }
 
 .badge-success {
