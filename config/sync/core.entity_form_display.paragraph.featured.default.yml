@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.featured.field_featured_items
     - field.field.paragraph.featured.field_featured_link
     - field.field.paragraph.featured.field_featured_title
+    - field.field.paragraph.featured.field_text_position
     - paragraphs.paragraphs_type.featured
   module:
     - dynamic_entity_reference
@@ -28,7 +29,7 @@ content:
     type: text_textarea
     region: content
   field_featured_items:
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 40
@@ -37,7 +38,7 @@ content:
     type: dynamic_entity_reference_default
     region: content
   field_featured_link:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -51,6 +52,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_text_position:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

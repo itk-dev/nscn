@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.block
     - paragraphs.paragraphs_type.featured
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.introduction
     - paragraphs.paragraphs_type.section
   module:
@@ -28,18 +29,19 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      featured: featured
       block: block
+      featured: featured
       hero: hero
       introduction: introduction
+      image: image
     target_bundles_drag_drop:
       section:
         weight: 3
         enabled: false
-      featured:
+      block:
         enabled: true
         weight: 4
-      block:
+      featured:
         enabled: true
         weight: 4
       hero:
@@ -48,4 +50,10 @@ settings:
       introduction:
         enabled: true
         weight: 6
+      button:
+        weight: 9
+        enabled: false
+      image:
+        enabled: true
+        weight: 12
 field_type: entity_reference_revisions

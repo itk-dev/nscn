@@ -66,8 +66,6 @@
     width: 320px;
   }
   .toc-wrapper.affix {
-    position: fixed;
-    /* Undo the static from mobile first approach */
     top: 74px;
   }
   .toc-wrapper.affix-bottom {

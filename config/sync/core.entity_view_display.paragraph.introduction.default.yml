@@ -7,9 +7,11 @@ dependencies:
     - field.field.paragraph.introduction.field_introduction_link_lu
     - field.field.paragraph.introduction.field_introduction_text
     - field.field.paragraph.introduction.field_introduction_title
+    - field.field.paragraph.introduction.field_text_position
     - paragraphs.paragraphs_type.introduction
   module:
     - link
+    - options
     - text
 _core:
   default_config_hash: tEBYiw2czslTCvDYt8t39gZ8rmOEdB7Y87ebsvQbTKI
@@ -56,5 +58,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_text_position:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden: {  }
