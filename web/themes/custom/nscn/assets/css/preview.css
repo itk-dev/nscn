@@ -300,7 +300,7 @@ a.default-light:focus {
 }
 
 body {
-  font-family: "montserrat", sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
