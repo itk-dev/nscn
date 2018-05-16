@@ -1330,16 +1330,18 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 .introduction {
   background: white;
   position: relative;
-  padding: 2rem;
+  padding: 5rem 0;
 }
 
-.introduction::after {
+.introduction:after {
   content: "";
+  display: block;
   position: absolute;
+  bottom: 0;
+  left: 0;
   height: 2rem;
   width: 100%;
   background: white;
-  display: block;
 }
 
 .stream-icon-new {
