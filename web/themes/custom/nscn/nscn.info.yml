@@ -15,6 +15,7 @@ libraries:
   - nscn/image
   - nscn/introduction
   - nscn/cut-off
+  - nscn/grid
 
 libraries-extend:
   socialbase/base:

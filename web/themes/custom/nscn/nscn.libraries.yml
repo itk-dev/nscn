@@ -29,10 +29,16 @@ button:
       assets/css/waves.css: {}
   dependencies:
     - nscn/waves
+
 cut-off:
   css:
     theme:
       assets/css/cut-off.css: {}
+
+grid:
+  css:
+    theme:
+      assets/css/grid.css: {}
 
 cards:
   css:

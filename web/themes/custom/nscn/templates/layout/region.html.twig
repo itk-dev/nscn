@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    'region--' ~ region|clean_class,
+    region == 'content_top',
+    region == 'content_bottom',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+  </div>
+{% endif %}

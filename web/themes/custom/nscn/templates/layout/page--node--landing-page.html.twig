@@ -43,7 +43,8 @@
     {{ page.content_top }}
   {% endif %}
   {# Clear section class #}
-  <section{{ content_attributes.removeClass('with-title-region', 'layout--with-complementary') }}>
+  {# <section{{ content_attributes.removeClass('with-title-region', 'layout--with-complementary') }}> #}
+  <section class="container-fluid">
     {# Page title printed in a section #}
     {# No side blocks #}
     {% block content %}
