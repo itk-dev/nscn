@@ -3,3 +3,9 @@
   padding: 5rem 0;
   color: white;
 }
+
+.dashboard select {
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 0;
+}

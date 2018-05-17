@@ -5,4 +5,9 @@
   background: $brand-primary;
   padding: $spacer*5 0;
   color: white;
+  select {
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 0;
+  }
 }
