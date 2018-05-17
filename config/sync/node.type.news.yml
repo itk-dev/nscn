@@ -1,0 +1,17 @@
+uuid: 47fc754d-f745-428a-af89-88c4976767bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News (Frontend)'
+type: news
+description: 'Create news from NSCN'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

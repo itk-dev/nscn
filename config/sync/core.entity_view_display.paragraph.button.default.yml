@@ -5,11 +5,9 @@ dependencies:
   config:
     - field.field.paragraph.button.field_button_link_an
     - field.field.paragraph.button.field_button_link_lu
-    - field.field.paragraph.button.field_button_style
     - paragraphs.paragraphs_type.button
   module:
     - link
-    - options
 _core:
   default_config_hash: QpXpyns3shMS30Z0LiI35GBp8qHNnefe9lhGR_LUMNU
 id: paragraph.button.default
@@ -40,12 +38,5 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_button_style:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
     region: content
 hidden: {  }

@@ -1,26 +1,24 @@
-uuid: 19691681-b0b1-437b-8f7f-0a546b33fc82
+uuid: 948db067-667c-4e7e-87d0-577755a85b42
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.group.field_group_image
-    - group.type.public_group
+    - field.storage.paragraph.field_hero_image
+    - paragraphs.paragraphs_type.image
   module:
     - image
-_core:
-  default_config_hash: 8nYM-KRF7ztUhF8jlTySNZtcnN4sABUWGVfH_UlA0kc
-id: group.public_group.field_group_image
-field_name: field_group_image
-entity_type: group
-bundle: public_group
-label: 'Group Image'
-description: 'Crop your image to select which part of your image to show on display.'
+id: paragraph.image.field_hero_image
+field_name: field_hero_image
+entity_type: paragraph
+bundle: image
+label: Image
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/groups
+  file_directory: images/content
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096

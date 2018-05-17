@@ -1,26 +1,24 @@
-uuid: 19691681-b0b1-437b-8f7f-0a546b33fc82
+uuid: e236f392-4a7e-4957-9e95-1e043a320720
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.group.field_group_image
-    - group.type.public_group
+    - field.storage.node.field_page_image
+    - node.type.news
   module:
     - image
-_core:
-  default_config_hash: 8nYM-KRF7ztUhF8jlTySNZtcnN4sABUWGVfH_UlA0kc
-id: group.public_group.field_group_image
-field_name: field_group_image
-entity_type: group
-bundle: public_group
-label: 'Group Image'
-description: 'Crop your image to select which part of your image to show on display.'
+id: node.news.field_page_image
+field_name: field_page_image
+entity_type: node
+bundle: news
+label: Image
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/groups
+  file_directory: images/content
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096

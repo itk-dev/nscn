@@ -1,0 +1,23 @@
+uuid: 950aaaf9-36bb-4a72-a502-088e2828728c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_position
+    - paragraphs.paragraphs_type.featured
+  module:
+    - options
+id: paragraph.featured.field_text_position
+field_name: field_text_position
+entity_type: paragraph
+bundle: featured
+label: 'Text position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
