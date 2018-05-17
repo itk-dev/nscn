@@ -7,7 +7,20 @@
   color: white;
   select {
     border: 1px solid white;
-    background: transparent;
-    border-radius: 0;
+    background: none;
+    border-radius: 0px;
+    width: 100%;
+    padding: $spacer/2 $spacer;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	  line-height: normal;
+    position: relative;
+    &:after {
+      content: "";
+    }
+    &:active, &:focus {
+      border: 1px solid white;
+    }
   }
 }

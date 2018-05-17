@@ -50,3 +50,11 @@ strong {
 @include style-variant('.brand-user', $gray-darker, white);
 
 @include style-variant('.default-light', $gray-lighter, $default-color);
+
+// Heading font weights
+h1, h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 500;
+}

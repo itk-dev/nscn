@@ -7,10 +7,6 @@
   fill: #4d4d4d;
 }
 
-.badge--pill {
-  border-radius: 1em;
-}
-
 .badge-default {
   background-color: #EFEFEF;
   color: #4d4d4d;

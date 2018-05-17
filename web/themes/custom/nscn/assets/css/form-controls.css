@@ -121,16 +121,6 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
           box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(18, 75, 148, 0.1);
 }
 
-.input-group .select-wrapper:first-child .form-control:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.input-group .select-wrapper:last-child .form-control:first-child {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .has-error .select-wrapper:after {
   color: #a94442;
 }

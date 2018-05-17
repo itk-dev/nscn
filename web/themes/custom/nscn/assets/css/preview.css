@@ -64,7 +64,7 @@ blockquote {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .text-primary {
@@ -299,9 +299,17 @@ a.default-light:focus {
   color: #4d4d4d;
 }
 
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
 body {
   font-family: "muli", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4d4d4d;
@@ -480,6 +488,14 @@ body {
   border-radius: 50%;
 }
 
+a {
+  color: #1A6BD4;
+}
+
+a:hover {
+  color: #1454a7;
+}
+
 .badge {
   border-radius: 0.25em;
   color: #fff;
@@ -487,10 +503,6 @@ body {
 
 .badge__icon {
   fill: #4d4d4d;
-}
-
-.badge--pill {
-  border-radius: 1em;
 }
 
 .badge-default {
@@ -1025,16 +1037,6 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
           box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(18, 75, 148, 0.1);
 }
 
-.input-group .select-wrapper:first-child .form-control:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.input-group .select-wrapper:last-child .form-control:first-child {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .has-error .select-wrapper:after {
   color: #a94442;
 }
@@ -1331,6 +1333,8 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
   background: white;
   position: relative;
   padding: 5rem 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .stream-icon-new {

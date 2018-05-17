@@ -64,7 +64,7 @@ blockquote {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .text-primary {
@@ -299,9 +299,17 @@ a.default-light:focus {
   color: #4d4d4d;
 }
 
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
 body {
   font-family: "muli", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4d4d4d;
@@ -478,4 +486,12 @@ body {
 .avatar img,
 .avatar-icon {
   border-radius: 50%;
+}
+
+a {
+  color: #1A6BD4;
+}
+
+a:hover {
+  color: #1454a7;
 }
