@@ -52,9 +52,11 @@ strong {
 @include style-variant('.default-light', $gray-lighter, $default-color);
 
 // Heading font weights
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
-h3 {
-  font-weight: 500;
+
+// Set max line lenght
+h1, h2, h3, h4, h5, h6, p, a {
+  max-width: 790px;
 }

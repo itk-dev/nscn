@@ -299,12 +299,12 @@ a.default-light:focus {
   color: #4d4d4d;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-h3 {
-  font-weight: 500;
+h1, h2, h3, h4, h5, h6, p, a {
+  max-width: 790px;
 }
 
 body {
