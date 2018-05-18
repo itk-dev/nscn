@@ -1,0 +1,26 @@
+.dashboard {
+  background: #1A6BD4;
+  padding: 5rem 0;
+  color: white;
+}
+
+.dashboard select {
+  border: 1px solid white;
+  background: none;
+  border-radius: 0px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: normal;
+  position: relative;
+}
+
+.dashboard select:after {
+  content: "";
+}
+
+.dashboard select:active, .dashboard select:focus {
+  border: 1px solid white;
+}

@@ -30,6 +30,16 @@ button:
   dependencies:
     - nscn/waves
 
+cut-off:
+  css:
+    theme:
+      assets/css/cut-off.css: {}
+
+grid:
+  css:
+    theme:
+      assets/css/grid.css: {}
+
 cards:
   css:
     theme:
@@ -151,10 +161,30 @@ comment:
     theme:
       assets/css/comment.css: {}
 
+dashboard:
+  css:
+    theme:
+      assets/css/dashboard.css: {}
+
+featured:
+  css:
+    theme:
+      assets/css/featured.css: {}
+
 hero:
   css:
     theme:
       assets/css/hero.css: {}
+
+image:
+  css:
+    theme:
+      assets/css/image.css: {}
+
+introduction:
+  css:
+    theme:
+      assets/css/introduction.css: {}
 
 message:
   css:

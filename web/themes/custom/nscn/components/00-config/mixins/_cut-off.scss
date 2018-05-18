@@ -1,0 +1,30 @@
+// Cut off - After element to create tilted horisontal cut/mask on sections
+@mixin cut-off($color){
+  &:after {
+    @content;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    border-left: 0px solid transparent;
+    border-right: 102vw solid transparent;
+
+    bottom: -4.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+    height: 5vh;
+    border-top: 5vh solid $color;
+
+    @include for-tablet-portrait-up {
+      bottom: -6.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: 7vh;
+      border-top: 7vh solid $color;
+    }
+    @include for-tablet-landscape-up {
+      bottom: -7.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: 8vh;
+      border-top: 8vh solid $color;
+    }
+  }
+}

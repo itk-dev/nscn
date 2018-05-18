@@ -4,13 +4,7 @@
 .introduction {
   background: white;
   position: relative;
-  padding: $spacer*2;
-  &::after {
-    content: "";
-    position: absolute;
-    height: $spacer*2;
-    width: 100%;
-    background: white;
-    display: block;
-  }
+  padding: $spacer*5 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }

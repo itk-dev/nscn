@@ -43,7 +43,8 @@
     {{ page.content_top }}
   {% endif %}
   {# Clear section class #}
-  <section{{ content_attributes.removeClass('with-title-region', 'layout--with-complementary') }}>
+  {# <section{{ content_attributes.removeClass('with-title-region', 'layout--with-complementary') }}> #}
+  <section>
     {# Page title printed in a section #}
     {# No side blocks #}
     {% block content %}
@@ -56,25 +57,74 @@
   <!-- Mockup landingpage sections -->
   <section>
     <div class="dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>13 nordic cities united in one smart network</h2>
+            <p>Aarhus, København, Vejle, Aalborg, Odense, Bergen, Trondheim, Oslo, Stavanger, Reykjavik, Bærum, Tromsø og Kristiansand</p>
+            <form action="#">
+              <div class="form-group">
+                <div class="form-item">
+                  <select name="" id="nordic-cities" class="form-control">
+                    <option value="Aarhus">Aarhus</option>
+                    <option value="København">København</option>
+                    <option value="Vejle">Vejle</option>
+                    <option value="Aalborg">Aalborg</option>
+                    <option value="Odense">Odense</option>
+                    <option value="Bergen">Bergen</option>
+                    <option value="Trondheim">Trondheim</option>
+                    <option value="Oslo">Oslo</option>
+                    <option value="Stavanger">Stavanger</option>
+                    <option value="Reykjavik">Reykjavik</option>
+                    <option value="Bærum">Bærum</option>
+                    <option value="Tromsø">Tromsø</option>
+                    <option value="Kristiansand">Kristiansand</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Graph 1</h3>
+              </div>
+              <div class="col-md-6">
+                <h3>Graph 1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <img src="/themes/custom/nscn/mockup-assets/img/nordic-countries-map.svg" alt="Nordics">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section>
-    <div class="introduction">
-      <h2>Smart City Projects</h2>
-      <p>Learn more about the smart projects that the cities have developed.</p>
-      <ul>
-        <li><a href="#">Smart parking and traffic</a></li>
-        <li><a href="#">Intelligent trashcans</a></li>
-        <li><a href="#">Waterpipe mosture monitoring</a></li>
-      </ul>
+    <div class="introduction cut-off-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Smart City Projects</h2>
+            <p>Learn more about the smart projects that the cities have developed.</p>
+            <a href="#">Smart parking and traffic</a><br>
+            <a href="#">Intelligent trashcans</a><br>
+            <a href="#">Waterpipe mosture monitoring</a><br>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="image full-width">
-    <img src="/themes/custom/nscn/mockup-assets/img/tom-parkes-417833-unsplash.jpg" alt="Smartytunnel">
+    <div class="image full-width" style="background-image: url('/themes/custom/nscn/mockup-assets/img/tom-parkes-417833-unsplash.jpg');">
     </div>
-    <div class="featured">
-      <h3>Case: City data hub</h3>
-      <p>Aliquam vehicula ligula eros, rutrum laoreet turpis euismod sit amet.</p>
-      <p><a href="#">Read the case story here</a></p>
+    <div class="paragraph paragraph--featured cut-off-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h3>Case: City data hub</h3>
+            <p>Aliquam vehicula ligula eros, rutrum laoreet turpis euismod sit amet.</p>
+            <p><a href="#">Read the case story here</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>

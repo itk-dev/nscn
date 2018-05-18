@@ -7,19 +7,15 @@
   fill: #4d4d4d;
 }
 
-.badge--pill {
-  border-radius: 1em;
-}
-
 .badge-default {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #4d4d4d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .badge-default[href]:hover, .badge-default[href]:focus {
-  background-color: #cdcdcd;
+  background-color: #d6d6d6;
 }
 
 .badge-primary {

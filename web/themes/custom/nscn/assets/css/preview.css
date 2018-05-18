@@ -64,7 +64,7 @@ blockquote {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .text-primary {
@@ -149,12 +149,12 @@ a.text-gray-lighter:focus {
 }
 
 .text-gray-lightest {
-  color: #e6e6e6;
+  color: #EFEFEF;
 }
 
 a.text-gray-lightest:hover,
 a.text-gray-lightest:focus {
-  color: #cdcdcd;
+  color: #d6d6d6;
 }
 
 .text-accent {
@@ -219,7 +219,7 @@ a.text-accent:focus {
 }
 
 .bg-gray-lighter {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
 }
 
 .bg-gray-lighter-1 {
@@ -287,21 +287,29 @@ a.brand-user:focus {
 }
 
 .default-light {
-  background-color: #e6e6e6;
-  border-color: #e6e6e6;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
   color: #4d4d4d;
 }
 
 a.default-light:hover,
 a.default-light:focus {
-  background-color: #cdcdcd;
-  border-color: #cdcdcd;
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
   color: #4d4d4d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  max-width: 790px;
 }
 
 body {
   font-family: "muli", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4d4d4d;
@@ -416,16 +424,16 @@ body {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-dark,
@@ -480,6 +488,14 @@ body {
   border-radius: 50%;
 }
 
+a {
+  color: #1A6BD4;
+}
+
+a:hover {
+  color: #1454a7;
+}
+
 .badge {
   border-radius: 0.25em;
   color: #fff;
@@ -489,19 +505,15 @@ body {
   fill: #4d4d4d;
 }
 
-.badge--pill {
-  border-radius: 1em;
-}
-
 .badge-default {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #4d4d4d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .badge-default[href]:hover, .badge-default[href]:focus {
-  background-color: #cdcdcd;
+  background-color: #d6d6d6;
 }
 
 .badge-primary {
@@ -1025,16 +1037,6 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
           box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(18, 75, 148, 0.1);
 }
 
-.input-group .select-wrapper:first-child .form-control:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.input-group .select-wrapper:last-child .form-control:first-child {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .has-error .select-wrapper:after {
   color: #a94442;
 }
@@ -1112,8 +1114,8 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #e6e6e6;
-  fill: #e6e6e6;
+  color: #EFEFEF;
+  fill: #EFEFEF;
   background-color: #1454a7;
 }
 
@@ -1144,7 +1146,7 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 }
 
 .navbar-default .dropdown-menu > li > a.is-active {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #4d4d4d;
   font-weight: 500;
 }
@@ -1236,8 +1238,8 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 }
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
-  background-color: #e6e6e6;
-  border-bottom-color: #e6e6e6;
+  background-color: #EFEFEF;
+  border-bottom-color: #EFEFEF;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -1330,16 +1332,9 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 .introduction {
   background: white;
   position: relative;
-  padding: 2rem;
-}
-
-.introduction::after {
-  content: "";
-  position: absolute;
-  height: 2rem;
-  width: 100%;
-  background: white;
-  display: block;
+  padding: 5rem 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .stream-icon-new {
@@ -1654,7 +1649,7 @@ blockquote {
   .teaser__image {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
-    background: #e6e6e6;
+    background: #EFEFEF;
   }
   .teaser__teaser-type {
     background-color: rgba(0, 0, 0, 0.5);
@@ -1695,7 +1690,7 @@ blockquote {
     color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #e6e6e6;
+    color: #EFEFEF;
     background-color: #1454a7;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {

@@ -1,0 +1,14 @@
+//== Sizes
+//
+//## You can add more entries to the $sizes map, should you need more variation.
+
+// stylelint-disable
+$sizes: () !default;
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+), $sizes);
+// stylelint-enable

@@ -1,0 +1,6 @@
+a {
+  color: $brand-primary;
+  &:hover {
+    color: darken($brand-primary, 10)
+  }
+}

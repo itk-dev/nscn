@@ -1,6 +1,10 @@
 @import "settings";
 
 // Used on a introduction section
-.featured {
-  background: $gray;
+.paragraph {
+  &--featured {
+    position: relative;
+    padding: $spacer*5 0;
+    background: $gray-lighter;
+  }
 }
