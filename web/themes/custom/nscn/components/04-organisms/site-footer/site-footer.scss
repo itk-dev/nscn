@@ -1,8 +1,20 @@
 @import 'settings';
 
 .site-footer {
-  background-color: $brand-secondary;
+  padding-top: $spacer*1;
+  padding-bottom: $spacer*5;
+  background-color: $gray-dark;
   color: white;
+  position: relative;
+
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
 
   // Links within the dropdown menu
   .dropdown-menu > li > a {
@@ -12,7 +24,33 @@
     &:focus {
       background-color: $dropdown-link-hover-bg;
     }
-    
+
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    border-left: 100vw solid transparent;
+
+    top: -4.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+    height: 5vh;
+    border-bottom: 5vh solid $gray-dark;
+
+    @include for-tablet-portrait-up {
+      top: -6.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: 7vh;
+      border-bottom: 7vh solid $gray-dark;
+    }
+    @include for-tablet-landscape-up {
+      top: -7.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: 8vh;
+      border-bottom: 8vh solid $gray-dark;
+    }
   }
 
 }

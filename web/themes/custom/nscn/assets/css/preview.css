@@ -1355,8 +1355,20 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 }
 
 .site-footer {
-  background-color: #2A32A3;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: #333333;
   color: white;
+  position: relative;
+}
+
+.site-footer .center {
+  text-align: center;
+}
+
+.site-footer .logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .site-footer .dropdown-menu > li > a {
@@ -1365,6 +1377,19 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
 
 .site-footer .dropdown-menu > li > a:hover, .site-footer .dropdown-menu > li > a:focus {
   background-color: #f5f5f5;
+}
+
+.site-footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-left: 100vw solid transparent;
+  top: -4.9vh;
+  height: 5vh;
+  border-bottom: 5vh solid #333333;
 }
 
 .body-text a:not(.btn) {
@@ -1436,7 +1461,6 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
   border-color: #1A6BD4;
 }
 
-.site-footer,
 .badge-secondary,
 .ui-datepicker-calendar > tbody > tr > td .ui-state-active,
 .stream-icon-new {
@@ -1658,6 +1682,11 @@ blockquote {
   .hero-avatar {
     border-width: 3px;
   }
+  .site-footer:before {
+    top: -6.9vh;
+    height: 7vh;
+    border-bottom: 7vh solid #333333;
+  }
 }
 
 @media (min-width: 900px) {
@@ -1671,6 +1700,11 @@ blockquote {
   }
   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border-bottom: 2px solid #1A6BD4;
+  }
+  .site-footer:before {
+    top: -7.9vh;
+    height: 8vh;
+    border-bottom: 8vh solid #333333;
   }
   .search-take-over .form-text {
     color: #ffffff;
