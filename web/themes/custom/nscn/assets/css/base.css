@@ -263,14 +263,14 @@ a.brand-secondary:focus {
 .brand-accent {
   background-color: #C71D7D;
   border-color: #C71D7D;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 a.brand-accent:hover,
 a.brand-accent:focus {
   background-color: #9a1761;
   border-color: #9a1761;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 .brand-user {
@@ -289,14 +289,14 @@ a.brand-user:focus {
 .default-light {
   background-color: #EFEFEF;
   border-color: #EFEFEF;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 a.default-light:hover,
 a.default-light:focus {
   background-color: #d6d6d6;
   border-color: #d6d6d6;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -312,7 +312,7 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #4d4d4d;
+  color: #333333;
   background-color: #f3f3f3;
 }
 

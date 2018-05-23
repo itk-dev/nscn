@@ -215,6 +215,11 @@ site-footer:
     theme:
       assets/css/site-footer.css: {}
 
+news:
+  css:
+    theme:
+      assets/css/news.css: {}
+
 ### 2.4 Templates
 page-node:
   css:

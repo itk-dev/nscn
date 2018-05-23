@@ -4,12 +4,12 @@
 }
 
 .badge__icon {
-  fill: #4d4d4d;
+  fill: #333333;
 }
 
 .badge-default {
   background-color: #EFEFEF;
-  color: #4d4d4d;
+  color: #333333;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -42,7 +42,7 @@
 
 .badge-accent {
   background-color: #C71D7D;
-  color: #4d4d4d;
+  color: #333333;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -96,9 +96,9 @@
 }
 
 a .badge-default {
-  color: #4d4d4d;
+  color: #333333;
 }
 
 a .badge-default:hover {
-  color: #4d4d4d;
+  color: #333333;
 }

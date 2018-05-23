@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="149px" viewBox="0 0 174 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>graph_bars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website---desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Frontpage---desktop" transform="translate(-132.000000, -971.000000)">
+            <g id="graph_bars" transform="translate(132.000000, 971.000000)">
+                <rect id="Rectangle-7" fill="#2A32A3" x="0" y="94" width="15" height="15"></rect>
+                <rect id="Rectangle-7-Copy" fill="#3836A3" x="26.5" y="19" width="15" height="90"></rect>
+                <text id="42410" font-family="Muli-Black, Muli" font-size="30" font-weight="700" fill="#FFFFFF">
+                    <tspan x="41.985" y="148">42410</tspan>
+                </text>
+                <rect id="Rectangle-7-Copy-2" fill="#5136A3" x="53" y="67" width="15" height="42"></rect>
+                <rect id="Rectangle-7-Copy-3" fill="#7636A3" x="79.5" y="40" width="15" height="69"></rect>
+                <rect id="Rectangle-7-Copy-4" fill="#972AA3" x="106" y="0" width="15" height="109"></rect>
+                <rect id="Rectangle-7-Copy-5" fill="#B3228C" x="132.5" y="30" width="15" height="79"></rect>
+                <rect id="Rectangle-7-Copy-6" fill="#C71D7D" x="159" y="50" width="15" height="59"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
