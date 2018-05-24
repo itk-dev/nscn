@@ -68,92 +68,13 @@
 
 {{ attach_library('socialbase/teaser')}}
 
-{%
-  set classes = [
-    'teaser',
-    view_mode == 'teaser' ? 'card',
-    view_mode == 'activity' ? 'teaser--stream',
-    view_mode == 'activity_comment' ? 'teaser--stream',
-    node.isPromoted() ? 'promoted',
-    node.isSticky() ? 'sticky',
-    not node.isPublished() ? 'teaser--unpublished',
-  ]
-%}
-
-<div{{ attributes.addClass(classes) }}>
-
-
-
-  <div class='teaser__body'>
-    <div class="teaser__content">
-      {{ title_prefix }}
-      {% if not page %}
-        <h4{{ title_attributes }} class="teaser__title">
-            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h4>
-      {% endif %}
-      {{ title_suffix }}
-
-      {% block card_body %}
-
-        {% embed "node--teaser__field.html.twig" %}
-          {%- block field_icon -%} account_circle {%- endblock -%}
-          {%- block field_value %}
-            <div class="teaser__published">
-              <div class="teaser__published-date"> {{ date }} &bullet; </div>
-              <div class="teaser__published-author"> {{ author_name }} </div>
-            </div>
-          {%- endblock -%}
-        {% endembed %}
-
-        {% if content.group_name %}
-          {% embed "node--teaser__field.html.twig" %}
-            {%- block field_icon -%} group {%- endblock -%}
-            {%- block field_value -%} {{ content.group_name }} {%- endblock -%}
-          {% endembed %}
-        {% endif %}
-
-        {% embed "node--teaser__body.html.twig" %}
-          {% block field_body %} {{ content.body }} {% endblock %}
-        {% endembed %}
-
-      {% endblock %}
-    </div>
-
-    <div class="card__actionbar">
-
-        {% if comment_count > 0 %}
-          <a href="{{ url }}#section-comments" class="badge badge--pill badge-default teaser__badge">
-            <span class="badge__container">
-              <svg class="badge__icon">
-                <use xlink:href="#icon-comment"></use>
-              </svg>
-              <span class="badge__label">{{ comment_count }}</span>
-            </span>
-          </a>
-        {% endif %}
-
-        {% if visibility_icon and visibility_label %}
-          <div class="badge teaser__badge" title="{% trans %}The visibility of this content is set to {% endtrans %} {{ visibility_label }}">
-              <svg class="badge__icon">
-                <use xlink:href="#icon-{{ visibility_icon }}"></use>
-              </svg>
-          </div>
-        {% endif %}
-
-        {% if content.enrolled %}
-          <span class="badge badge-secondary teaser__badge">
-            {%- trans -%} Enrolled {%- endtrans -%}
-          </span>
-        {% endif %}
-
-      {{ content.links }}
-    </div>
-
-  </div>
-
+<div class='block--news-teaser'>
+  {{ title_prefix }}
+    <h2 class=block--news-teaser">
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {{ title_suffix }}
+  <span class="date">{{ date }} in News</span>
 </div>
+<p>{{ content }}</p>
 
-{% if view_mode == 'activity' and content.field_book_comments %}
-  {{ content.field_book_comments }}
-{% endif %}

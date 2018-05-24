@@ -1,5 +1,6 @@
 // Cut off - After element to create tilted horisontal cut/mask on sections
 @mixin cut-off($color){
+  padding-bottom: $spacer*2;
   &:after {
     @content;
     content: "";
@@ -8,23 +9,21 @@
     left: 0;
     width: 100%;
     z-index: 10;
-
-
     border-right: 102vw solid transparent;
 
-    bottom: -4.8vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-    height: 5vh;
-    border-top: 5vh solid $color;
+    bottom: calc(#{-$cut-off-size-mobile} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+    height: $cut-off-size-mobile;
+    border-top: $cut-off-size-mobile solid $color;
 
     @include for-tablet-portrait-up {
-      bottom: -6.8vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-      height: 7vh;
-      border-top: 7vh solid $color;
+      bottom: calc(#{-$cut-off-size-tablet} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-tablet;
+      border-top: $cut-off-size-tablet solid $color;
     }
     @include for-tablet-landscape-up {
-      bottom: -7.8vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-      height: 8vh;
-      border-top: 8vh solid $color;
+      bottom: calc(#{-$cut-off-size-desktop} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-desktop;
+      border-top: $cut-off-size-desktop solid $color;
     }
   }
 }

@@ -42,17 +42,10 @@
   {% if page.content_top %}
     {{ page.content_top }}
   {% endif %}
-  {# Clear section class #}
-  {# <section{{ content_attributes.removeClass('with-title-region', 'layout--with-complementary') }}> #}
-  <section>
-    {# Page title printed in a section #}
-    {# No side blocks #}
-    {% block content %}
-      <a id="main-content" tabindex="-1"></a>
-      {{ page.content }}
-    {% endblock %}
-
-  </section>
+  {% block content %}
+    <a id="main-content" tabindex="-1"></a>
+    {{ page.content }}
+  {% endblock %}
 
   <!-- Mockup landingpage sections -->
   <section>
@@ -164,8 +157,12 @@
         </div>
       </div>
     </div>
+  </section>
+  <section>
     <div class="image full-width" style="background-image: url('/themes/custom/nscn/mockup-assets/img/tom-parkes-417833-unsplash.jpg');">
     </div>
+  </section>
+  <section>
     <div class="paragraph paragraph--featured cut-off-gray">
       <div class="container">
         <div class="row">

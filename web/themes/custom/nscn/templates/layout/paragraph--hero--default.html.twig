@@ -51,7 +51,6 @@
     hero_styled_image_url ? 'cover-img cover-img-gradient',
   ]
 %}
-
 <div{{ attributes.addClass(cover_classes) }} {% if hero_styled_image_url %} style="background-image: url('{{ hero_styled_image_url }}');" {% endif %}>
   <div class="hero__bgimage-overlay"></div>
   {% if node_edit_url %}

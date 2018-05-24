@@ -5,4 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale; //smooth font in firefox
   color: $default-color;
   background-color: $body-bg;
+  &.path-frontpage, &.page-node-type-landing-page {
+    background-color: white;
+  }
 }

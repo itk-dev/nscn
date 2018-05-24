@@ -316,6 +316,10 @@ body {
   background-color: #f3f3f3;
 }
 
+body.path-frontpage, body.page-node-type-landing-page {
+  background-color: white;
+}
+
 .table-primary,
 .table-primary > th,
 .table-primary > td {
