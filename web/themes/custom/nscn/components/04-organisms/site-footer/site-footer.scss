@@ -37,20 +37,26 @@
 
     border-left: 100vw solid transparent;
 
-    top: -4.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-    height: 5vh;
-    border-bottom: 5vh solid $gray-dark;
+    top: calc(#{-$cut-off-size-mobile} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+    height: $cut-off-size-mobile;
+    border-bottom: $cut-off-size-mobile solid $gray-dark;
 
     @include for-tablet-portrait-up {
-      top: -6.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-      height: 7vh;
-      border-bottom: 7vh solid $gray-dark;
+      top: calc(#{-$cut-off-size-tablet} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-tablet;
+      border-bottom: $cut-off-size-tablet solid $gray-dark;
     }
     @include for-tablet-landscape-up {
-      top: -7.9vh; // needs to be a litte bit smaller to awoid darker backgrounds shining through
-      height: 8vh;
-      border-bottom: 8vh solid $gray-dark;
+      top: calc(#{-$cut-off-size-desktop} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-desktop;
+      border-bottom: $cut-off-size-desktop solid $gray-dark;
     }
   }
-
+  margin-top: $cut-off-size-mobile*2;
+  @include for-tablet-portrait-up {
+    margin-top: $cut-off-size-tablet*2;
+  }
+  @include for-tablet-landscape-up {
+    margin-top: $cut-off-size-desktop*2;
+  }
 }

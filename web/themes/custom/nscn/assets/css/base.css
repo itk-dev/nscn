@@ -320,6 +320,10 @@ body.path-frontpage, body.page-node-type-landing-page {
   background-color: white;
 }
 
+body.path-frontpage .main-container, body.page-node-type-landing-page .main-container {
+  padding-bottom: 0;
+}
+
 .table-primary,
 .table-primary > th,
 .table-primary > td {

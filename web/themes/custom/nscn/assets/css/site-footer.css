@@ -4,6 +4,7 @@
   background-color: #333333;
   color: white;
   position: relative;
+  margin-top: 10vh;
 }
 
 .site-footer .center {
@@ -31,23 +32,29 @@
   width: 100%;
   z-index: 10;
   border-left: 100vw solid transparent;
-  top: -4.9vh;
+  top: calc(-5vh + .1vh);
   height: 5vh;
   border-bottom: 5vh solid #333333;
 }
 
 @media (min-width: 600px) {
   .site-footer:before {
-    top: -6.9vh;
+    top: calc(-7vh + .1vh);
     height: 7vh;
     border-bottom: 7vh solid #333333;
+  }
+  .site-footer {
+    margin-top: 14vh;
   }
 }
 
 @media (min-width: 900px) {
   .site-footer:before {
-    top: -7.9vh;
+    top: calc(-8vh + .1vh);
     height: 8vh;
     border-bottom: 8vh solid #333333;
+  }
+  .site-footer {
+    margin-top: 16vh;
   }
 }
