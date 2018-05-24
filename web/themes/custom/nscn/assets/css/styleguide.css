@@ -16,8 +16,8 @@
   height: 30px;
   text-align: left;
   border-radius: 5px 5px 0 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#e6e6e6));
-  background: linear-gradient(#f3f3f3, #e6e6e6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#EFEFEF));
+  background: linear-gradient(#f3f3f3, #EFEFEF);
 }
 
 .browser-window .circles {
@@ -90,7 +90,7 @@
   margin: 7px 0;
   text-align: center;
   font-size: 28px;
-  background-color: #29abe2;
+  background-color: #1A6BD4;
   color: white;
   padding: 0;
   opacity: 0.5;
@@ -542,17 +542,17 @@
 }
 
 .toc-wrapper .nav li a:hover, .toc-wrapper .nav li a:focus {
-  color: #29abe2;
+  color: #1A6BD4;
   font-weight: 500;
 }
 
 .toc-wrapper .nav li.active a {
-  color: #29abe2;
+  color: #1A6BD4;
   font-weight: 500;
 }
 
 .toc-wrapper .nav li.active a:before {
-  background-color: #29abe2;
+  background-color: #1A6BD4;
 }
 
 .toc-wrapper .nav li a.back-to-top {

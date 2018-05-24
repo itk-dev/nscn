@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_hero_image
+    - image.style.social_landing_hero
     - paragraphs.paragraphs_type.image
   module:
     - image
@@ -16,9 +17,8 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: social_landing_hero
     third_party_settings: {  }
-    type: image
+    type: image_url
     region: content
 hidden: {  }

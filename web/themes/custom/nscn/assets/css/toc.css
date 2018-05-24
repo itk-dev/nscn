@@ -32,17 +32,17 @@
 }
 
 .toc-wrapper .nav li a:hover, .toc-wrapper .nav li a:focus {
-  color: #29abe2;
+  color: #1A6BD4;
   font-weight: 500;
 }
 
 .toc-wrapper .nav li.active a {
-  color: #29abe2;
+  color: #1A6BD4;
   font-weight: 500;
 }
 
 .toc-wrapper .nav li.active a:before {
-  background-color: #29abe2;
+  background-color: #1A6BD4;
 }
 
 .toc-wrapper .nav li a.back-to-top {
