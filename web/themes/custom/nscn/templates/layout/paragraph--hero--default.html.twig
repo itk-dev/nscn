@@ -39,7 +39,6 @@
  */
 #}
 {{ attach_library('socialbase/hero')}}
-{{ attach_library('social_landing_page/section.hero')}}
 
 {%
   set cover_classes = [
@@ -64,12 +63,14 @@
   {% endif %}
 
   <div class="cover-wrap container">
-    <div class="cover-small">
-      <h1 class="page-title">{{ content.field_hero_title }}</h1>
-      <h3 class="page-subtitle">{{ content.field_hero_subtitle }}</h3>
-      <footer class="hero-footer">
-        {{ content.field_hero_buttons }}
-      </footer>
+    <div class="row">
+      <div class="cover-small col-md-8">
+        <h1 class="page-title">{{ content.field_hero_title }}</h1>
+        <div class="page-subtitle">{{ content.field_hero_subtitle }}</div>
+        <footer class="hero-footer">
+          {{ content.field_hero_buttons }}
+        </footer>
+      </div>
     </div>
   </div> {# cover-wrap #}
 </div> {# cover #}

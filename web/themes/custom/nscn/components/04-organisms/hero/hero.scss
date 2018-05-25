@@ -51,3 +51,53 @@
   }
 
 }
+
+.paragraph--hero {
+  .cover-small {
+    background: rgba(0,0,0,.4);
+    margin: 0 15px;
+    box-sizing: border-box;
+    padding: 2em;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media(min-width: 600px) {
+      position: absolute;
+      left: 0;
+    }
+    .page-title {
+      width: 100%;
+      text-align: left;
+      padding: 30px 0 10px;
+    }
+    .page-subtitle {
+      margin: 0 0 5px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .hero-footer {
+      .field--name-field-hero-buttons {
+        margin: 0 -10px;
+      }
+      .field--item {
+        display: inline-block;
+        .paragraph--button {
+          padding: 0 10px;
+        }
+      }
+      .card__actionbar {
+        padding: 20px 0;
+        .btn {
+          background: $brand-primary;
+          border-radius: 0!important;
+          min-width: 130px;
+          
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

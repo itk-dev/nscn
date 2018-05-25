@@ -17,7 +17,7 @@
  * - field--node--article.html.twig
  * - field--field-foo.html.twig
  * - field--text-with-summary.html.twig
- * - field.html.twig
+ * - field.html.twigx$
  *
  * Available variables:
  * - attributes: HTML attributes for the containing element.
@@ -42,10 +42,10 @@
 
 {% if multiple %}
   {% for item in items %}
-   <div class="image full-width" style="background-image: url('{{ item.content }}')"></div>
+    {{ item.content }}
   {% endfor %}
 {% else %}
   {% for item in items %}
-    <div class="image full-width" style="background-image: url('{{ item.content }}')"></div>
+    {{ item.content }}
   {% endfor %}
 {% endif %}

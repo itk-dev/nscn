@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_hero_image
-    - image.style.thumbnail
+    - image.style.medium
     - paragraphs.paragraphs_type.image
   module:
-    - image
+    - image_widget_crop
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
@@ -16,10 +16,16 @@ content:
   field_hero_image:
     weight: 0
     settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: medium
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero_landing
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
 hidden:
   created: true

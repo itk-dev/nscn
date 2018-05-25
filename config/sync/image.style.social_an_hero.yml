@@ -23,7 +23,7 @@ effects:
     id: image_resize
     weight: 2
     data:
-      width: 1200
+      width: 1600
       height: 490
   fa621cfb-8201-4ac7-8dd1-a9a1f6031115:
     uuid: fa621cfb-8201-4ac7-8dd1-a9a1f6031115

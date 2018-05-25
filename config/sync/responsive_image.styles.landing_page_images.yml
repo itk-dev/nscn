@@ -1,0 +1,36 @@
+uuid: 86f2b997-33df-44ed-a9fa-41c7682d35f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.social_landing_hero
+    - image.style.social_landing_hero_mobile_
+    - image.style.social_landing_hero_narrow_
+    - image.style.social_landing_hero_wide_
+  theme:
+    - nscn
+id: landing_page_images
+label: 'Landing page images'
+image_style_mappings:
+  -
+    breakpoint_id: nscn.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: social_landing_hero_wide_
+  -
+    breakpoint_id: nscn.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: social_landing_hero
+  -
+    breakpoint_id: nscn.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: social_landing_hero_narrow_
+  -
+    breakpoint_id: nscn.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: social_landing_hero_mobile_
+breakpoint_group: nscn
+fallback_image_style: social_landing_hero_mobile_
