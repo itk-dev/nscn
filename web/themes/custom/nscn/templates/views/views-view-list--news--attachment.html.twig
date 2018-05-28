@@ -19,13 +19,12 @@
  */
 #}
 
-<div class="col-md-4 col-md-offset-1">
-  <div class="block--news--list">
-    <h4>{{ 'Latest news'|t }}</h4>
-    <{{ list.type }}{{ list.attributes }}>
-      {% for row in rows %}
-        <li{{ row.attributes }}>{{ row.content }}</li>
-      {% endfor %}
-    </{{ list.type }}>
-  </div>
+
+<div class="block--news--list">
+  <h4>{{ 'Latest news'|t }}</h4>
+  <{{ list.type }}{{ list.attributes }}>
+    {% for row in rows %}
+      <li{{ row.attributes }}>{{ row.content }}</li>
+    {% endfor %}
+  </{{ list.type }}>
 </div>

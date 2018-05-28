@@ -17,11 +17,10 @@
  * @ingroup themeable
  */
 #}
-<div class="col-md-7">
-  {% if title %}
-    <h3>{{ title }}</h3>
-  {% endif %}
-  {% for row in rows %}
-    {{ row.content }}
-  {% endfor %}
-</div>
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {{ row.content }}
+{% endfor %}
