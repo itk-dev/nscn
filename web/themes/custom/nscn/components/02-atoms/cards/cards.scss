@@ -1,11 +1,19 @@
 @import 'settings';
 
+$card-border-radius: 2px !important; //Force smaller border radius
+
 .card {
   border-top-left-radius: $card-border-radius;
   border-bottom-left-radius: $card-border-radius;
   border-top-right-radius: $card-border-radius;
   border-bottom-right-radius: $card-border-radius;
   background-color: $card-bg;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+
+  .btn, textarea {
+    border-radius: $card-border-radius;
+  }
+
 }
 
 .card__title {

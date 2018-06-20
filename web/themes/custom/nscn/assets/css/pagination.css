@@ -1,22 +1,22 @@
 .pagination {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .pagination > li > a,
 .pagination > li > span {
   color: #333333;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .pagination > li > a:hover, .pagination > li > a:focus,
@@ -48,6 +48,6 @@
 }
 
 .mini-pager {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f3f3f3));
-  background-image: linear-gradient(transparent, #f3f3f3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ffffff));
+  background-image: linear-gradient(transparent, #ffffff);
 }

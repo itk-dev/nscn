@@ -1,5 +1,7 @@
 @import "settings";
 
+$card-border-radius: 2px !important; //Force smaller border radius
+
 .stream-icon-new {
   background:$brand-secondary;
 }
@@ -18,5 +20,4 @@
       border-bottom-left-radius: $card-border-radius;
     }
   }
-
 }

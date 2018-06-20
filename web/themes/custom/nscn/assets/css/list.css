@@ -31,4 +31,6 @@
 
 .list-item__avatar img {
   border-radius: 50%;
+  white-space: nowrap;
+  font-size: .75em;
 }

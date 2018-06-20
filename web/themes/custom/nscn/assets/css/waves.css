@@ -15,14 +15,14 @@
 }
 
 .waves-input-wrapper {
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .waves-btn {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-mask-image: none;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 a.waves-effect .waves-ripple {
