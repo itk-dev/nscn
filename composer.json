@@ -68,6 +68,11 @@
                 "type:drupal-drush"
             ]
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patches": {
+            "goalgorilla/open_social": {
+                "Modify tostring command": "https://www.drupal.org/files/issues/2018-04-09/social-fix_fatal_tostring-2956971-10.patch"
+            }
+        }
     }
 }
