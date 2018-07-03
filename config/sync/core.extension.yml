@@ -53,6 +53,7 @@ module:
   override_node_options: 0
   path: 0
   profile: 0
+  quick_node_clone: 0
   r4032login: 0
   responsive_image: 0
   search_api: 0
@@ -94,7 +95,6 @@ module:
   menu_link_content: 1
   views: 10
   paragraphs: 11
-  improved_theme_settings: 50
   social: 1000
 theme:
   stable: 0

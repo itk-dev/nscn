@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: mNmadAa-t9k377nHUAkS1CfhhoxpoYQIXTv9G3naaBY
 name: 'Landing page'

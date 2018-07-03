@@ -18,7 +18,8 @@
         "doctrine/cache": "1.6.1",
         "doctrine/collections": "1.4.0",
         "doctrine/common": "2.7.2",
-        "doctrine/inflector": "1.1.0"
+        "doctrine/inflector": "1.1.0",
+        "drupal/quick_node_clone": "^1.10"
     },
     "repositories": [
         {
