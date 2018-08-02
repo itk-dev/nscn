@@ -1,0 +1,30 @@
+uuid: 94b9d272-bee0-4a16-bc11-cb31749f9f75
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_views_block__events_block_events_on_profile
+theme: nscn
+region: complementary_bottom
+weight: 1
+provider: null
+plugin: 'views_block:events-block_events_on_profile'
+settings:
+  id: 'views_block:events-block_events_on_profile'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

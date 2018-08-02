@@ -1,15 +1,14 @@
-uuid: 9230ebaf-15c3-449f-90ef-2bef136e191a
+uuid: 5262f8b1-759b-4752-968e-34b193329673
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:hero_call_to_action_block:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
   module:
-    - block_content
     - system
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: _2nk0nU1RIaVO43S8JTkEA9lALoySulaYH_bbsS4j7o
 id: socialblue_anhomepageheroblock
 theme: socialblue
 region: hero

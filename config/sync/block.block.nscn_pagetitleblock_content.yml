@@ -1,0 +1,26 @@
+uuid: e043d656-d321-4962-98b0-e4c0d0928fa6
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - nscn
+id: nscn_pagetitleblock_content
+theme: nscn
+region: title
+weight: 0
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title block'
+  provider: social_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search/*'
+    negate: true
+    context_mapping: {  }

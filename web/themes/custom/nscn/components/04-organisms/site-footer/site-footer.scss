@@ -1,8 +1,20 @@
 @import 'settings';
 
 .site-footer {
-  background-color: $brand-secondary;
+  padding-top: $spacer*1;
+  padding-bottom: $spacer*5;
+  background-color: $gray-dark;
   color: white;
+  position: relative;
+
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
 
   // Links within the dropdown menu
   .dropdown-menu > li > a {
@@ -12,7 +24,39 @@
     &:focus {
       background-color: $dropdown-link-hover-bg;
     }
-    
+
   }
 
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    border-left: 100vw solid transparent;
+
+    top: calc(#{-$cut-off-size-mobile} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+    height: $cut-off-size-mobile;
+    border-bottom: $cut-off-size-mobile solid $gray-dark;
+
+    @include for-tablet-portrait-up {
+      top: calc(#{-$cut-off-size-tablet} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-tablet;
+      border-bottom: $cut-off-size-tablet solid $gray-dark;
+    }
+    @include for-tablet-landscape-up {
+      top: calc(#{-$cut-off-size-desktop} + .1vh ); // needs to be a litte bit smaller to awoid darker backgrounds shining through
+      height: $cut-off-size-desktop;
+      border-bottom: $cut-off-size-desktop solid $gray-dark;
+    }
+  }
+  margin-top: $cut-off-size-mobile*2;
+  @include for-tablet-portrait-up {
+    margin-top: $cut-off-size-tablet*2;
+  }
+  @include for-tablet-landscape-up {
+    margin-top: $cut-off-size-desktop*2;
+  }
 }

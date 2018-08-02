@@ -7,10 +7,10 @@
 
 .ui-datepicker-calendar > tbody > tr > td .ui-state-active {
   color: white;
-  background-color: #1f80aa;
+  background-color: #2A32A3;
 }
 
 .ui-datepicker-calendar > tbody > tr > td .ui-state-active:hover {
   color: white;
-  background-color: #134f69;
+  background-color: #1a1f66;
 }

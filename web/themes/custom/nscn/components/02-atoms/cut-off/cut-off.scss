@@ -1,0 +1,19 @@
+@import 'settings';
+
+// Cut off variants
+
+.cut-off {
+  &-white {
+    @include cut-off($cut-off-color-white);
+  }
+  &-gray {
+    @include cut-off($cut-off-color-gray);
+    margin-bottom: $cut-off-size-mobile;
+    @include for-tablet-portrait-up {
+      margin-bottom: $cut-off-size-tablet;
+    }
+    @include for-tablet-landscape-up {
+      margin-bottom: $cut-off-size-desktop;
+    }
+  }
+}

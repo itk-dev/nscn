@@ -1,0 +1,18 @@
+@import "settings";
+
+// Used to style landingpage news section
+.block.block--news {
+  .date {
+    display: block;
+    color: $gray-light;
+    padding-top: $spacer/2;
+    padding-bottom: $spacer/2;
+  }
+  ul.news-list {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      margin-bottom: $spacer;
+    }
+  }
+}

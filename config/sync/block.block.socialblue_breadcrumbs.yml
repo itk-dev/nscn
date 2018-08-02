@@ -1,4 +1,4 @@
-uuid: e910fded-029c-405f-b33c-8ff7108330cc
+uuid: da99079e-1bd5-4e40-94e3-3234bf4b7a64
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: e_3HKxADJMCzhWIGUnpTkNSn4mQD7KdKKD5eogz3vs4
 id: socialblue_breadcrumbs
 theme: socialblue
 region: breadcrumb

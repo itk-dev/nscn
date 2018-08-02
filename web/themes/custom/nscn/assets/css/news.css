@@ -1,0 +1,15 @@
+.block.block--news .date {
+  display: block;
+  color: #777;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.block.block--news ul.news-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.block.block--news ul.news-list li {
+  margin-bottom: 1rem;
+}

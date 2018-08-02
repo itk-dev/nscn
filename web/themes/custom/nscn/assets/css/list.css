@@ -1,12 +1,5 @@
-.card__block > .list-item:first-child {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
 .card__block > .list-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .list-item--visibility {
@@ -14,15 +7,15 @@
 }
 
 .list-item.disabled, .list-item.disabled:hover, .list-item.disabled:focus {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #777;
 }
 
 .list-item--active,
 .list-item--active:hover {
   color: white;
-  background-color: #1f80aa;
-  border-color: #1f80aa;
+  background-color: #2A32A3;
+  border-color: #2A32A3;
 }
 
 .list-item--active .icon-small,

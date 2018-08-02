@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'montserrat';
-  src: url("../font/montserrat/montserrat-light.eot") format('embedded-opentype'),
-       url("../font/montserrat/montserrat-light.woff2") format('woff2'),
-       url("../font/montserrat/montserrat-light.woff") format('woff'),
-       url("../font/montserrat/montserrat-light.ttf") format('truetype'),
-       url("../font/montserrat/montserrat-light.svg") format('svg');
+  font-family: 'muli';
+  src: url("../font/muli-v11-latin/muli-v11-latin-200.eot") format('embedded-opentype'),
+       url("../font/muli-v11-latin/muli-v11-latin-200.woff2") format('woff2'),
+       url("../font/muli-v11-latin/muli-v11-latin-200.woff") format('woff'),
+       url("../font/muli-v11-latin/muli-v11-latin-200.ttf") format('truetype'),
+       url("../font/muli-v11-latin/muli-v11-latin-200.svg") format('svg');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: url("../font/montserrat/montserrat-normal.eot") format('embedded-opentype'),
-       url("../font/montserrat/montserrat-normal.woff2") format('woff2'),
-       url("../font/montserrat/montserrat-normal.woff") format('woff'),
-       url("../font/montserrat/montserrat-normal.ttf") format('truetype'),
-       url("../font/montserrat/montserrat-normal.svg") format('svg');
+  font-family: 'muli';
+  src: url("../font/muli-v11-latin/muli-v11-latin-regular.eot") format('embedded-opentype'),
+       url("../font/muli-v11-latin/muli-v11-latin-regular.woff2") format('woff2'),
+       url("../font/muli-v11-latin/muli-v11-latin-regular.woff") format('woff'),
+       url("../font/muli-v11-latin/muli-v11-latin-regular.ttf") format('truetype'),
+       url("../font/muli-v11-latin/muli-v11-latin-regular.svg") format('svg');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: url("../font/montserrat/montserrat-bold.eot") format('embedded-opentype'),
-       url("../font/montserrat/montserrat-bold.woff2") format('woff2'),
-       url("../font/montserrat/montserrat-bold.woff") format('woff'),
-       url("../font/montserrat/montserrat-bold.ttf") format('truetype'),
-       url("../font/montserrat/montserrat-bold.svg") format('svg');
+  font-family: 'muli';
+  src: url("../font/muli-v11-latin/muli-v11-latin-700.eot") format('embedded-opentype'),
+       url("../font/muli-v11-latin/muli-v11-latin-700.woff2") format('woff2'),
+       url("../font/muli-v11-latin/muli-v11-latin-700.woff") format('woff'),
+       url("../font/muli-v11-latin/muli-v11-latin-700.ttf") format('truetype'),
+       url("../font/muli-v11-latin/muli-v11-latin-700.svg") format('svg');
   font-weight: 700;
   font-style: normal;
 }
@@ -60,20 +60,20 @@ pre {
 }
 
 blockquote {
-  border-left: 3px solid #29abe2;
+  border-left: 3px solid #1A6BD4;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .text-primary {
-  color: #29abe2;
+  color: #1A6BD4;
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #1a8dbe;
+  color: #1454a7;
 }
 
 .text-success {
@@ -149,33 +149,33 @@ a.text-gray-lighter:focus {
 }
 
 .text-gray-lightest {
-  color: #e6e6e6;
+  color: #EFEFEF;
 }
 
 a.text-gray-lightest:hover,
 a.text-gray-lightest:focus {
-  color: #cdcdcd;
+  color: #d6d6d6;
 }
 
 .text-accent {
-  color: #ffc142;
+  color: #C71D7D;
 }
 
 a.text-accent:hover,
 a.text-accent:focus {
-  color: #ffb00f;
+  color: #9a1761;
 }
 
 .bg-primary {
-  background-color: #29abe2;
+  background-color: #1A6BD4;
 }
 
 .bg-secondary {
-  background-color: #1f80aa;
+  background-color: #2A32A3;
 }
 
 .bg-accent {
-  background-color: #ffc142;
+  background-color: #C71D7D;
 }
 
 .bg-success {
@@ -219,7 +219,7 @@ a.text-accent:focus {
 }
 
 .bg-gray-lighter {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
 }
 
 .bg-gray-lighter-1 {
@@ -235,42 +235,42 @@ a.text-accent:focus {
 }
 
 .brand-primary {
-  background-color: #29abe2;
-  border-color: #29abe2;
+  background-color: #1A6BD4;
+  border-color: #1A6BD4;
   color: white;
 }
 
 a.brand-primary:hover,
 a.brand-primary:focus {
-  background-color: #1a8dbe;
-  border-color: #1a8dbe;
+  background-color: #1454a7;
+  border-color: #1454a7;
   color: white;
 }
 
 .brand-secondary {
-  background-color: #1f80aa;
-  border-color: #1f80aa;
+  background-color: #2A32A3;
+  border-color: #2A32A3;
   color: white;
 }
 
 a.brand-secondary:hover,
 a.brand-secondary:focus {
-  background-color: #17607f;
-  border-color: #17607f;
+  background-color: #20267a;
+  border-color: #20267a;
   color: white;
 }
 
 .brand-accent {
-  background-color: #ffc142;
-  border-color: #ffc142;
-  color: #4d4d4d;
+  background-color: #C71D7D;
+  border-color: #C71D7D;
+  color: #333333;
 }
 
 a.brand-accent:hover,
 a.brand-accent:focus {
-  background-color: #ffb00f;
-  border-color: #ffb00f;
-  color: #4d4d4d;
+  background-color: #9a1761;
+  border-color: #9a1761;
+  color: #333333;
 }
 
 .brand-user {
@@ -287,70 +287,86 @@ a.brand-user:focus {
 }
 
 .default-light {
-  background-color: #e6e6e6;
-  border-color: #e6e6e6;
-  color: #4d4d4d;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+  color: #333333;
 }
 
 a.default-light:hover,
 a.default-light:focus {
-  background-color: #cdcdcd;
-  border-color: #cdcdcd;
-  color: #4d4d4d;
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  max-width: 790px;
 }
 
 body {
-  font-family: "montserrat", sans-serif;
-  font-weight: 300;
+  font-family: "muli", sans-serif;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #4d4d4d;
+  color: #333333;
   background-color: #f3f3f3;
+}
+
+body.path-frontpage, body.page-node-type-landing-page {
+  background-color: white;
+}
+
+body.path-frontpage .main-container, body.page-node-type-landing-page .main-container {
+  padding-bottom: 0;
 }
 
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #c3e7f7;
+  background-color: #bfd6f3;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #addef4;
+  background-color: #aac8ef;
 }
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #addef4;
+  background-color: #aac8ef;
 }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #c0dbe7;
+  background-color: #c3c6e5;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #aed0e0;
+  background-color: #b1b5dd;
 }
 
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #aed0e0;
+  background-color: #b1b5dd;
 }
 
 .table-accent,
 .table-accent > th,
 .table-accent > td {
-  background-color: #ffeeca;
+  background-color: #efc0db;
 }
 
 .table-hover .table-accent:hover {
-  background-color: #ffe6b1;
+  background-color: #eaaccf;
 }
 
 .table-hover .table-accent:hover > td,
 .table-hover .table-accent:hover > th {
-  background-color: #ffe6b1;
+  background-color: #eaaccf;
 }
 
 .table-success,
@@ -416,16 +432,16 @@ body {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ebebeb;
+  background-color: #eeeeee;
 }
 
 .table-dark,
@@ -463,19 +479,27 @@ body {
 }
 
 .table th a {
-  color: #1d789e;
+  color: #124b94;
 }
 
 .table th.is-active > a {
-  color: #29abe2;
+  color: #1A6BD4;
 }
 
 .table .icon-tablesort {
-  fill: #29abe2;
+  fill: #1A6BD4;
 }
 
 .img-avatar,
 .avatar img,
 .avatar-icon {
   border-radius: 50%;
+}
+
+a {
+  color: #1A6BD4;
+}
+
+a:hover {
+  color: #1454a7;
 }

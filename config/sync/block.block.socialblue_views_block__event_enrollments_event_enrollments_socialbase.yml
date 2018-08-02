@@ -1,4 +1,4 @@
-uuid: eacec7af-a7a4-431d-8577-a063f5c4660b
+uuid: 30ae5dde-b8c7-452c-9b82-e862d9e44c3e
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: WoH7kJIJuRWNxIKfVBMMzetSmnHFu2n5YQfpZHZl8zU
 id: socialblue_views_block__event_enrollments_event_enrollments_socialbase
 theme: socialblue
 region: complementary_top

@@ -1,4 +1,4 @@
-uuid: dd1bf57f-c80d-42e4-80cd-0886471b1cd7
+uuid: 8df5c6bc-3c88-4aa7-8187-94edf2a24902
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: NYfgZobU2seVo1qPqOzGjLK-vS3C_QIe-wRzb60OeJk
 id: socialblue_postongroupblock
 theme: socialblue
 region: hidden

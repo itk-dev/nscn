@@ -1,0 +1,29 @@
+uuid: 93562103-59e5-4198-a6e1-0d47d0e4b1bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_events
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_exposedformgroup_eventspage_group_events
+theme: nscn
+region: complementary_top
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:group_events-page_group_events'
+settings:
+  id: 'views_exposed_filter_block:group_events-page_group_events'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/events'
+    negate: false
+    context_mapping: {  }

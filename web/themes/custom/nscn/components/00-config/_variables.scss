@@ -1,4 +1,4 @@
-$enable-rounded:            true;
+$enable-rounded:            false;
 
 // Sass
 //
@@ -45,6 +45,7 @@ $enable-rounded:            true;
 
 @import 'variables/colors';
 @import 'variables/components';
+@import 'variables/breakpoints';
 @import 'variables/type';
 @import 'variables/alert';
 @import 'variables/badge';
@@ -59,3 +60,7 @@ $enable-rounded:            true;
 @import 'variables/table';
 @import 'variables/tour';
 @import 'variables/tooltip';
+@import 'variables/cut-off';
+@import 'variables/grid';
+@import 'variables/spacer';
+@import 'variables/sizes';

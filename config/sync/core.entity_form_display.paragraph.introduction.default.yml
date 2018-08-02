@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.introduction.field_introduction_link_lu
     - field.field.paragraph.introduction.field_introduction_text
     - field.field.paragraph.introduction.field_introduction_title
+    - field.field.paragraph.introduction.field_text_position
     - paragraphs.paragraphs_type.introduction
   module:
     - link
@@ -19,7 +20,7 @@ bundle: introduction
 mode: default
 content:
   field_introduction_link_an:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -27,7 +28,7 @@ content:
     type: link_default
     region: content
   field_introduction_link_lu:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -49,6 +50,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_text_position:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

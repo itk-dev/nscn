@@ -1,0 +1,30 @@
+uuid: a4a7c3b8-8e73-4448-a567-6c5656a4b942
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream_profile
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_views_block__activity_stream_profile_block_1
+theme: nscn
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:activity_stream_profile-block_1'
+settings:
+  id: 'views_block:activity_stream_profile-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

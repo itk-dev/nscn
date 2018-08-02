@@ -1,0 +1,29 @@
+uuid: 8b5c51f1-c013-4d09-a798-7dba83ab5a1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - nscn
+id: nscn_breadcrumbs
+theme: nscn
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

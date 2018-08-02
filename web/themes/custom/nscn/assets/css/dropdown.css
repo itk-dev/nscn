@@ -12,6 +12,6 @@
 
 @media (max-width: 599px) {
   .dropdown.has-alert > a:before {
-    background-color: #ffc142;
+    background-color: #C71D7D;
   }
 }

@@ -6,11 +6,9 @@ dependencies:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.button.field_button_link_an
     - field.field.paragraph.button.field_button_link_lu
-    - field.field.paragraph.button.field_button_style
     - paragraphs.paragraphs_type.button
   module:
     - link
-    - options
 _core:
   default_config_hash: 6lP9Zae2r37cgm6TU3spHXXhve3tjRCAiYhf7caiz8A
 id: paragraph.button.preview
@@ -41,12 +39,5 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_button_style:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
 hidden: {  }

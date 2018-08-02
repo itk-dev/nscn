@@ -7,11 +7,11 @@ dependencies:
     - field.field.paragraph.hero.field_hero_image
     - field.field.paragraph.hero.field_hero_subtitle
     - field.field.paragraph.hero.field_hero_title
-    - image.style.social_landing_hero
     - paragraphs.paragraphs_type.hero
+    - responsive_image.styles.landing_page_images
   module:
     - entity_reference_revisions
-    - image
+    - responsive_image
 _core:
   default_config_hash: J1qdlmzi70dONNRYyaMUHkomJFgFH9l98Pm2ea9OJOQ
 id: paragraph.hero.default
@@ -32,10 +32,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: social_landing_hero
+      responsive_image_style: landing_page_images
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_hero_subtitle:
     weight: 2

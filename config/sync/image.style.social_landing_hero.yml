@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: YNyUaHfrUHUsdrxZbG4-Q6jNeq8gMGtBuP1SKCDLqNc
 name: social_landing_hero
-label: 'social landing hero (1500×370)'
+label: 'social landing hero (1600×400)'
 effects:
   d9ddbeef-d61b-466e-b856-f549dd551390:
     uuid: d9ddbeef-d61b-466e-b856-f549dd551390
@@ -29,5 +29,5 @@ effects:
     id: image_scale_and_crop
     weight: -8
     data:
-      width: 1500
-      height: 370
+      width: 1600
+      height: 400

@@ -3,7 +3,7 @@
 }
 
 .unread-thread .card {
-  background-color: #e6e6e6;
+  background-color: #EFEFEF;
   color: #000;
 }
 
@@ -12,5 +12,5 @@
 }
 
 .unread-thread .read-indicator {
-  background-color: #29abe2;
+  background-color: #1A6BD4;
 }

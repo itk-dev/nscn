@@ -7,10 +7,12 @@ dependencies:
     - field.field.paragraph.featured.field_featured_items
     - field.field.paragraph.featured.field_featured_link
     - field.field.paragraph.featured.field_featured_title
+    - field.field.paragraph.featured.field_text_position
     - paragraphs.paragraphs_type.featured
   module:
     - dynamic_entity_reference
     - link
+    - options
     - text
 _core:
   default_config_hash: Axry9YF_w0R_CaZFed-HUy_jF_UZeGMQ2VMesXMR0pc
@@ -115,5 +117,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_text_position:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden: {  }

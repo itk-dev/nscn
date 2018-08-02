@@ -10,6 +10,13 @@ core: 8.x
 libraries:
   - nscn/brand
   - nscn/site-footer
+  - nscn/dashboard
+  - nscn/featured
+  - nscn/image
+  - nscn/introduction
+  - nscn/cut-off
+  - nscn/grid
+  - nscn/news
 
 libraries-extend:
   socialbase/base:

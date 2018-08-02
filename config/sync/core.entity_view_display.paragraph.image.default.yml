@@ -1,0 +1,25 @@
+uuid: 2a89ee45-f5f5-4e31-bdbf-1c00490f97de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_hero_image
+    - paragraphs.paragraphs_type.image
+    - responsive_image.styles.landing_page_images
+  module:
+    - responsive_image
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: landing_page_images
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden: {  }

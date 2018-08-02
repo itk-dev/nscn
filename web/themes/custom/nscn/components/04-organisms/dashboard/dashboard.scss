@@ -1,0 +1,28 @@
+@import "settings";
+
+// Used on a introduction section
+.dashboard {
+  background: $brand-primary;
+  padding: $spacer*5 0;
+  color: white;
+  select {
+    margin-top: $spacer*2;
+    margin-bottom: $spacer*2;
+    border: 1px solid white;
+    background: none;
+    border-radius: 0px;
+    width: 100%;
+    padding: $spacer/2 $spacer;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	  line-height: normal;
+    position: relative;
+    &:after {
+      content: "";
+    }
+    &:active, &:focus {
+      border: 1px solid white;
+    }
+  }
+}

@@ -21,7 +21,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   plugin_ids:
-    'views_block:activity_stream-block_stream_homepage': 'views_block:activity_stream-block_stream_homepage'
-    'views_block:community_activities-block_stream_landing': 'views_block:community_activities-block_stream_landing'
-    activity_overview_block: activity_overview_block
+    'views_block:news-block_1': 'views_block:news-block_1'
+    nscn_stats: nscn_stats
 field_type: block_field

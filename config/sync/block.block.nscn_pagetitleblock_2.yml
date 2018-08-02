@@ -1,0 +1,26 @@
+uuid: c6266888-7ec6-42c2-b1b8-4dadca37c182
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - nscn
+id: nscn_pagetitleblock_2
+theme: nscn
+region: hero
+weight: -20
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title for enrollments'
+  provider: social_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "*/enrollments\r\n*/managers"
+    negate: false
+    context_mapping: {  }

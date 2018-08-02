@@ -1,0 +1,18 @@
+uuid: c3cc1c5d-721c-4fc6-8c25-45d671dcf57d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nscn
+id: nscn_local_actions
+theme: nscn
+region: complementary_top
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,4 +1,4 @@
-uuid: 813bfb2c-8246-495f-ad32-25b8e81477d0
+uuid: b86a1dd0-d5ab-4f34-996a-0b99ba550afd
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: tSS53SEnohp-c3wENp3brzC_nwNRH4DavQ72DYABDQ4
 id: socialblue_search_block_hero
 theme: socialblue
 region: hero

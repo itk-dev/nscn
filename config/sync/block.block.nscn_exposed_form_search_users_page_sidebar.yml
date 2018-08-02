@@ -1,0 +1,29 @@
+uuid: 6400c044-0431-4bc9-b7d6-006d0d3f2f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_users
+  module:
+    - system
+    - views
+  theme:
+    - nscn
+id: nscn_exposed_form_search_users_page_sidebar
+theme: nscn
+region: complementary_top
+weight: 4
+provider: null
+plugin: 'views_exposed_filter_block:search_users-page'
+settings:
+  id: 'views_exposed_filter_block:search_users-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/users\r\n/search/users/*"
+    negate: false
+    context_mapping: {  }
