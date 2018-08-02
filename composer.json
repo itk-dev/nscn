@@ -11,6 +11,7 @@
         }
     },
     "require": {
+        "php": "^5.6",
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
@@ -71,13 +72,9 @@
         },
         "enable-patching": true,
         "patches": {
-            "goalgorilla/open_social": {
-                "Modify tostring command": "https://www.drupal.org/files/issues/2018-04-09/social-fix_fatal_tostring-2956971-10.patch"
-            },
             "drupal/quick_node_clone": {
                 "Fix typehinting for old php version": "https://www.drupal.org/files/issues/2018-05-10/quick_node_clone-clone_permission_parameter-2969141-2_0.patch"
             }
-
         }
     }
 }
