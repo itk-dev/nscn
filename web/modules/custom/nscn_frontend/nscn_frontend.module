@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Remove inline styling added by Improved theme settings
+ * (cf. modules/custom/improved_theme_settings/improved_theme_settings.module)
+ *
+ * @implements hook_page_attachments().
+ */
+function nscn_frontend_page_attachments(array &$page) {
+  if (is_array($page['#attached']['html_head'])) {
+    $page['#attached']['html_head'] = array_filter($page['#attached']['html_head'], function ($item) {
+      return !isset($item[1]) || $item[1] !== 'social_theme_preprocess';
+    });
+  }
+}
