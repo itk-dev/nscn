@@ -20,6 +20,9 @@ $card-border-radius: 2px !important; //Force smaller border radius
   color: $gray-light;
   font-weight: 500;
   text-transform: uppercase;
+  &--underline {
+    max-width: 100%;
+  }
 }
 
 .region--complementary {

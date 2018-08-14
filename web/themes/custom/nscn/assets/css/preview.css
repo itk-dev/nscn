@@ -900,6 +900,10 @@ fieldset[disabled] .btn--twitter.focus {
   text-transform: uppercase;
 }
 
+.card__title--underline {
+  max-width: 100%;
+}
+
 .region--complementary .card__title,
 .region--complementary .card__actionbar {
   text-align: center;
