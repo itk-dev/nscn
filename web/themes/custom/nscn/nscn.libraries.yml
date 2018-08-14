@@ -220,6 +220,11 @@ news:
     theme:
       assets/css/news.css: {}
 
+aside:
+  css:
+    theme:
+      assets/css/aside.css: {}
+
 ### 2.4 Templates
 page-node:
   css:

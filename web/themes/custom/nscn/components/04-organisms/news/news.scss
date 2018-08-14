@@ -1,18 +1,36 @@
 @import "settings";
 
-// Used to style landingpage news section
-.block.block--news {
+// Used to style landingpage news section and news list
+
+.block--news {
+  .more-link {
+    float: left;
+    clear: both;
+    border-color: $btn-primary-border;
+    border-width: 1px;
+  }
+}
+
+.block--news-teaser {
+  h2 {
+    margin-top: 0;
+  }
   .date {
     display: block;
     color: $gray-light;
     padding-top: $spacer/2;
     padding-bottom: $spacer/2;
   }
+}
+.block--news--list{
   ul.news-list {
     list-style-type: none;
     padding-left: 0;
     li {
       margin-bottom: $spacer;
+      a {
+        display: block;
+      }
     }
   }
 }

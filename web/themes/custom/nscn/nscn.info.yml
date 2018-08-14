@@ -17,6 +17,7 @@ libraries:
   - nscn/cut-off
   - nscn/grid
   - nscn/news
+  - nscn/aside
 
 libraries-extend:
   socialbase/base:
