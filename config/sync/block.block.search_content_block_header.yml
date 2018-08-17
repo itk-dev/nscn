@@ -6,6 +6,8 @@ dependencies:
     - social_search
   theme:
     - socialbase
+_core:
+  default_config_hash: pvQzsgFwdFmzMj7xaHs1NOaYjpX5_jTzGls-p69abU0
 id: search_content_block_header
 theme: socialbase
 region: content_top

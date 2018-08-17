@@ -61,13 +61,14 @@
     {{ attachment_before }}
   </div>
 {% endif %}
-<div class="col-md-7">
+
+<div>
   {{ rows }}
 </div>
 
 {% if empty %}
 
-  <div{{ content_attributes.addClass(error_classes) }}" role="alert">
+  <div{{ content_attributes.addClass(error_classes) }} role="alert">
     <h4 class="sr-only">{{ 'Informative message'|t }}</h4>
     {{ empty }}
   </div>

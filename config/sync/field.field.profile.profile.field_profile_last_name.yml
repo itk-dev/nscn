@@ -13,7 +13,7 @@ entity_type: profile
 bundle: profile
 label: 'Last name'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

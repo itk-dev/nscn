@@ -1,0 +1,8 @@
+@import "settings";
+.path-news {
+  aside {
+    &.region--complementary {
+      background-color: $gray-lightest;
+    }
+  }
+}

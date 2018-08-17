@@ -1,7 +1,7 @@
 // 2. Scaffolding
 // ==========================================================================
 //** Background color for `<body>`.
-$body-bg:                     $gray-lightest;
+$body-bg:                     $white;
 //** Global text color on `<body>`.
 $text-color:                  $default-color;
 
@@ -13,10 +13,10 @@ $link-hover-color:            darken($link-color, 15%);
 $link-hover-decoration:       none;
 
 
-$border-radius-base:          10px;
-$border-radius-large:         12px;
-$border-radius-small:         8px;
-$border-radius-extrasmall:    5px;
+$border-radius-base:          2px;
+$border-radius-large:         $border-radius-base;
+$border-radius-small:         $border-radius-base;
+$border-radius-extrasmall:    $border-radius-base;
 
 $padding-base-vertical:       6px;
 $padding-base-horizontal:     12px;

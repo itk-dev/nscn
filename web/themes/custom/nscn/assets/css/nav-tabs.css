@@ -32,11 +32,11 @@
 }
 
 .tabs-left > .nav-tabs {
-  border-radius: 10px 0 0 10px;
+  border-radius: 2px 0 0 2px;
 }
 
 .tabs-right > .nav-tabs {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 2px 2px 0;
 }
 
 @media (min-width: 900px) {

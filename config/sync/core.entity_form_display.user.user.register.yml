@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.field_why_do_you_want_to_join_
   module:
+    - text
     - user
 _core:
   default_config_hash: DumuFlmZ-VVW13ViC_zDIFb-Oh0XmRPeDkFerAGVfdM
@@ -15,9 +17,17 @@ mode: register
 content:
   account:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_why_do_you_want_to_join_:
+    type: text_textarea
+    weight: 1
     region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   contact: true
   groups: true

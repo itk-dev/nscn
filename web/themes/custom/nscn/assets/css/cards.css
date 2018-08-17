@@ -1,9 +1,15 @@
 .card {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 -1px 0 #e0e0e0, 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 -1px 0 #e0e0e0, 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+
+.card .btn, .card textarea {
+  border-radius: 2px !important;
 }
 
 .card__title {
@@ -12,24 +18,28 @@
   text-transform: uppercase;
 }
 
+.card__title--underline {
+  max-width: 100%;
+}
+
 .region--complementary .card__title,
 .region--complementary .card__actionbar {
   text-align: center;
 }
 
 .card__block:first-child {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 2px !important;
+  border-top-right-radius: 2px !important;
 }
 
 .card__block:last-child {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
 }
 
 .card__nested-section:last-child {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
 }
 
 .card__link {

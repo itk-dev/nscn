@@ -1,7 +1,7 @@
 .joyride-close-tip {
   color: white;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .joyride-close-tip:hover {
@@ -31,5 +31,5 @@
 .joyride-content-wrapper {
   background: #333;
   color: white;
-  border-radius: 10px;
+  border-radius: 2px;
 }

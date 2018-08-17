@@ -1,15 +1,30 @@
-.block.block--news .date {
+.block--news .more-link {
+  float: left;
+  clear: both;
+  border-color: #1A6BD4;
+  border-width: 1px;
+}
+
+.block--news-teaser h2 {
+  margin-top: 0;
+}
+
+.block--news-teaser .date {
   display: block;
   color: #777;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.block.block--news ul.news-list {
+.block--news--list ul.news-list {
   list-style-type: none;
   padding-left: 0;
 }
 
-.block.block--news ul.news-list li {
+.block--news--list ul.news-list li {
   margin-bottom: 1rem;
+}
+
+.block--news--list ul.news-list li a {
+  display: block;
 }

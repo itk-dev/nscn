@@ -3,7 +3,7 @@
 }
 
 .node--unpublished__label {
-  border-radius: 0 10px 0 10px;
+  border-radius: 0 2px 0 2px;
   background-color: #1A6BD4;
   color: white;
 }

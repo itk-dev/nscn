@@ -1,0 +1,21 @@
+uuid: 4b84dbec-97cc-43e4-87a2-b7323a309943
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_why_do_you_want_to_join_
+  module:
+    - text
+    - user
+id: user.user.field_why_do_you_want_to_join_
+field_name: field_why_do_you_want_to_join_
+entity_type: user
+bundle: user
+label: 'Why do you want to join?'
+description: 'Describe in short why you should be a member of this network.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

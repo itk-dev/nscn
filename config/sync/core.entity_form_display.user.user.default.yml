@@ -2,6 +2,8 @@ uuid: fee02829-efa2-4fa6-b55f-5c5dd90fcf67
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_why_do_you_want_to_join_
   module:
     - field_group
     - user
@@ -10,8 +12,9 @@ third_party_settings:
     group_information:
       children:
         - account
+        - field_why_do_you_want_to_join_
       parent_name: ''
-      weight: 0
+      weight: 2
       label: 'Account information'
       format_type: fieldset
       format_settings:
@@ -19,11 +22,12 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
+      region: hidden
     group_locale_settings:
       children:
         - timezone
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: fieldset
       format_settings:
         id: ''
@@ -31,6 +35,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Locale settings'
+      region: hidden
 _core:
   default_config_hash: nZZPpvLP8s_Dh4dP5GZ6gi0-aPLc0vzbmVDbbx2SeiE
 id: user.user.default
@@ -50,5 +55,6 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  field_why_do_you_want_to_join_: true
   groups: true
   language: true

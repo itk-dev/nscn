@@ -1,0 +1,19 @@
+uuid: e82530cf-8a23-489a-9a00-7e5842fd2493
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_why_do_you_want_to_join_
+field_name: field_why_do_you_want_to_join_
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
