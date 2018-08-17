@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: eRDnrgAFbPm0A-OlCOnP1jDf0GEkTK9undIsnA8cSMo
 id: search_block_hero
 theme: socialbase
 region: hero

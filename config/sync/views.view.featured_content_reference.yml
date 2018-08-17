@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.landing_page
+    - node.type.page
   module:
     - node
     - user
@@ -204,6 +205,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            page: page
             landing_page: landing_page
           group: 1
           exposed: false

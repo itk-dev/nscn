@@ -2,6 +2,8 @@ uuid: ea771b47-9af6-4e0b-8622-579f36f1b3a5
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_why_do_you_want_to_join_
   module:
     - user
 _core:
@@ -12,6 +14,7 @@ bundle: user
 mode: default
 content: {  }
 hidden:
+  field_why_do_you_want_to_join_: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

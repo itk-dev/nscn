@@ -6,11 +6,13 @@ _core:
   default_config_hash: 6-UbVkbj-KqMtzRTQW7ubMUlNAks72UnQ0SRIoLRlgw
 id: profile
 label: Profile
-registration: false
+registration: true
 multiple: false
 roles:
   authenticated: '0'
   administrator: '0'
+  contentmanager: '0'
+  sitemanager: '0'
 weight: 0
 use_revisions: false
 description: 'The default Open Social profile type'
