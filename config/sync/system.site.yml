@@ -1,6 +1,6 @@
 uuid: 9096b05c-d6e2-49b9-be77-84725cd76a1e
 name: 'Nordic Smartcity Network'
-mail: info@itkdev.dk
+mail: info@nscn.eu
 slogan: ''
 page:
   403: ''
@@ -12,4 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-mail_notification: sebr@aarhus.dk
+mail_notification: info@nscn.eu
