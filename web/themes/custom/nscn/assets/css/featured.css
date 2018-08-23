@@ -3,3 +3,8 @@
   padding: 5rem 0;
   background: #EFEFEF;
 }
+
+.paragraph--featured .teaser.teaser--tile .teaser__title {
+  min-height: auto;
+  margin-bottom: 0;
+}

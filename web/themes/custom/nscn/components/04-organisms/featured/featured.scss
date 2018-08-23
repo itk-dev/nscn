@@ -6,5 +6,9 @@
     position: relative;
     padding: $spacer*5 0;
     background: $gray-lighter;
+    .teaser.teaser--tile .teaser__title {
+      min-height: auto;
+      margin-bottom: 0;
+    }
   }
 }
