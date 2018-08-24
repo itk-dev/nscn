@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a node.
+ * Theme override to display a node.
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -58,84 +58,73 @@
  *
  * @see template_preprocess_node()
  *
- * @ingroup themeable
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
  */
 #}
-{{ attach_library('socialbase/teaser')}}
-{{ attach_library('social_landing_page/featured')}}
 
-{%
-  set classes = [
-  'card teaser teaser--tile'
-]
-%}
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css" type="text/css">
+<style>
+  .map {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -16vh;
+  }
+</style>
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js"></script>
 
-<div{{ attributes.addClass(classes) }}>
+{% if page.header %}
+  {{ page.header }}
+{% endif %}
 
-  {% block card_image %}
-    <div class="teaser__image" >
+<div id="map" class="map"></div>
+<script type="text/javascript">
+  import {OSM, Vector as VectorSource} from 'ol/source.js';
 
-    {% block card_hero_image %}
+  var geojsonObject = {
+    'type': 'FeatureCollection',
+    'crs': {
+      'type': 'name',
+      'properties': {
+        'name': 'EPSG:3857'
+      }
+    },
+    'features': [{
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [0, 0]
+      }
+    }]
+  };
 
-      <div class="img_wrapper">
-      {% if content.field_node_image|render %}
+  var vectorSource = new VectorSource({
+    features: (new GeoJSON()).readFeatures(geojsonObject)
+  });
 
-        <a href="{{ url }}" rel="bookmark">{{ content.field_node_image }}</a>
-      {% else %}
-        <hr class="no-feature-image">
-      {% endif %}
-      </div>
+  vectorSource.addFeature(new Feature(new Circle([5e6, 7e6], 1e6)));
 
-    {% endblock %}
+  var vectorLayer = new VectorLayer({
+    source: vectorSource,
+    style: styleFunction
+  });
+  var map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      }),
+      vectorLayer
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([0, 0]),
+      zoom: 3
+    })
+  });
+</script>
 
-    {% block card_teaser_type %}
-      <div class="teaser__teaser-type">
-        <svg class="teaser__teaser-type-icon">
-          <use xlink:href="#icon-{{- node.bundle|clean_class -}}"></use>
-        </svg>
-      </div>
-    {% endblock %}
-
-    </div>
-  {% endblock %}
-
-  <div class='teaser__body'>
-    <div class="teaser__content">
-
-      {% block card_title %}
-
-        {{ title_prefix }}
-        {% if not page %}
-          <h4{{ title_attributes }} class="teaser__title">
-            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-          </h4>
-        {% endif %}
-        {{ title_suffix }}
-
-      {% endblock %}
-
-      {% block card_body %}
-
-        <small class="text-muted">
-          {% embed "node--teaser__field.html.twig" %}
-            {%- block field_icon -%} account_circle {%- endblock -%}
-            {%- block field_value %}
-              <div class="teaser__published">
-                <div class="teaser__published-date"> {{ date }} &bullet; </div>
-                <div class="teaser__published-author"> {{ author_name }} </div>
-              </div>
-            {%- endblock -%}
-          {% endembed %}
-        </small>
-
-        <div class="card__link">
-          <a href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}
-            <span class="visually-hidden">{{ 'about'|t }}{{ label }}</span>
-          </a>
-        </div>
-
-      {% endblock %}
-
-    </div>
-  </div>
-</div>
+{% if page.footer %}
+  {{ page.footer }}
+{% endif %}
