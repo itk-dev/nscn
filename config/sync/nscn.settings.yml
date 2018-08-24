@@ -17,8 +17,12 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://nordiccitylab.vm/profiles/contrib/social/themes/socialbase/favicon.ico'
+  url: 'http://nordiccitylab.vm/themes/custom/nscn/favicon.ico'
   use_default: 1
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  nscn: 8000
 features:
   comment_user_picture: true
   comment_user_verification: 1
@@ -28,7 +32,21 @@ logo:
   path: ''
   url: ''
   use_default: 1
-schemas:
-  bootstrap: 8000
-  socialbase: 8000
-  nscn: 8000
+region_wells:
+  hidden: ''
+  header: ''
+  breadcrumb: ''
+  hero: ''
+  secondary_navigation: ''
+  content_top: ''
+  title: ''
+  content: ''
+  complementary_top: ''
+  complementary_bottom: ''
+  content_bottom: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+table_responsive: '-1'
+table: ''
+map_nid: '6'

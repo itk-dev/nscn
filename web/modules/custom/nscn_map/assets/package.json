@@ -1,0 +1,18 @@
+{
+  "name": "nscn_map",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "version": "1.0.0",
+  "description": "Nscn Map",
+  "main": "index.js",
+  "author": "ITK",
+  "license": "ISC",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.1",
+    "ol": "^5.1.3"
+  },
+  "dependencies": {
+    "npm": "~6.4.0"
+  }
+}
