@@ -1,5 +1,6 @@
 map-display:
   version: VERSION
+  header: true
   css:
     theme:
       assets/build/show-map.css: {}
