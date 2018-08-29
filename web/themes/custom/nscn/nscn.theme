@@ -43,7 +43,8 @@ function nscn_preprocess_node(&$variables) {
   $variables['map_nid'] = !empty(theme_get_setting('map_nid')) ? theme_get_setting('map_nid') : FALSE;
   if (isset($variables['map_nid'])) {
     $output = array();
-    $url = 'http://nordiccitylab.vm/city-locations-nested?_format=json';
+    $base_site = \Drupal::request()->getSchemeAndHttpHost();
+    $url = $base_site . '/city-locations-nested?_format=json';
     $file = file_get_contents($url);
     $features = json_decode($file, true);
     foreach ($features as $key => $feature) {
