@@ -5,6 +5,9 @@ dependencies:
   config:
     - field.field.node.landing_page.field_content_visibility
     - field.field.node.landing_page.field_landing_page_section
+    - field.field.node.landing_page.field_latitude
+    - field.field.node.landing_page.field_longitude
+    - field.field.node.landing_page.field_map_description
     - field.field.node.landing_page.field_page_image
     - image.style.thumbnail
     - node.type.landing_page
@@ -13,6 +16,7 @@ dependencies:
     - image
     - paragraphs
     - path
+    - text
 third_party_settings:
   field_group:
     group_content:
@@ -20,8 +24,9 @@ third_party_settings:
         - title
         - field_page_image
         - field_content_visibility
+        - group_coordinates
       parent_name: ''
-      weight: 8
+      weight: 10
       format_type: fieldset
       format_settings:
         label: Title
@@ -35,7 +40,7 @@ third_party_settings:
       children:
         - field_landing_page_section
       parent_name: ''
-      weight: 9
+      weight: 11
       format_type: fieldset
       format_settings:
         label: Sections
@@ -45,6 +50,21 @@ third_party_settings:
         classes: card
       label: Sections
       region: hidden
+    group_coordinates:
+      children:
+        - field_latitude
+        - field_longitude
+        - field_map_description
+      parent_name: group_content
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Coordinates
+      region: content
 _core:
   default_config_hash: ZmNvrc200HUdqH2M5CVzebvr-UKPAQWa7mq4XhhrYNU
 id: node.landing_page.default
@@ -66,7 +86,7 @@ content:
     third_party_settings: {  }
   field_landing_page_section:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 6
     settings:
       title: Section
       title_plural: Sections
@@ -75,6 +95,30 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
+    region: content
+  field_latitude:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_longitude:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_map_description:
+    weight: 7
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_page_image:
     type: image_image

@@ -20,7 +20,9 @@
         "doctrine/collections": "1.4.0",
         "doctrine/common": "2.7.2",
         "doctrine/inflector": "1.1.0",
-        "drupal/quick_node_clone": "^1.10"
+        "drupal/quick_node_clone": "^1.10",
+        "drupal/rest_export_nested": "^1.0@alpha",
+        "drupal/views_field_view": "^1.0@beta"
     },
     "repositories": [
         {

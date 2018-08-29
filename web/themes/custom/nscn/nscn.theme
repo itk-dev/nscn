@@ -33,3 +33,57 @@ function nscn_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateI
   $form['entity_profile']['field_profile_profile_tag']['#access'] = FALSE;
   $form['entity_profile']['field_profile_self_introduction']['#access'] = FALSE;
 }
+
+/**
+ * Implements hook_preprocess_node().
+ *
+ * Add map display.
+ */
+function nscn_preprocess_node(&$variables) {
+  $variables['map_nid'] = !empty(theme_get_setting('map_nid')) ? theme_get_setting('map_nid') : FALSE;
+  if (isset($variables['map_nid'])) {
+    $output = array();
+    $url = 'http://nordiccitylab.vm/city-locations-nested?_format=json';
+    $file = file_get_contents($url);
+    $features = json_decode($file, true);
+    foreach ($features as $key => $feature) {
+      $features[$key]['geometry'] = $feature['geometry'][0];
+      $features[$key]['geometry']['coordinates'] = explode(',', $feature['geometry'][0]['coordinates']);
+      foreach ($features[$key]['geometry']['coordinates'] as $co_key=>$coordinate) {
+        $features[$key]['geometry']['coordinates'][$co_key] = (float)$coordinate;
+      }
+      $features[$key]['properties'] = $feature['properties'][0];
+
+      if ($features[$key]['geometry']['coordinates'][0] == 0) {
+        unset($features[$key]);
+      }
+    }
+    $clean_features_array = array();
+    foreach ($features as $feature) {
+      $clean_features_array[] = $feature;
+    }
+    $output['type'] = 'FeatureCollection';
+    $output['features'] = $clean_features_array;
+    $variables['map_data'] = json_encode($output);
+    $a = 2;
+  }
+}
+
+/**
+ * Add map nid field to theme settings.
+ *
+ * Implements hook_form_FORM_ID_alter().
+ */
+function nscn_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['map_nid'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Map nid'),
+    '#default_value' => theme_get_setting('map_nid'),
+    '#description'   => t("Set the nid that should contain the map display."),
+  );
+}
