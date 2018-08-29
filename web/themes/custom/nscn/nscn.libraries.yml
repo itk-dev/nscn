@@ -241,3 +241,13 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+map-display:
+  version: VERSION
+  header: true
+  css:
+    base:
+      '//cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css': { type: external }
+  js:
+    //cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js : { type: external, attributes: { async: true } }
+    assets/js/show-map.js: {}

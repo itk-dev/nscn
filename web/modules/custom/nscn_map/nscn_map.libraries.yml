@@ -1,0 +1,7 @@
+map-display:
+  version: VERSION
+  css:
+    theme:
+      assets/build/show-map.css: {}
+  js:
+    assets/build/show-map.js: {}

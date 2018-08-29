@@ -5,6 +5,9 @@ dependencies:
   config:
     - field.field.node.landing_page.field_content_visibility
     - field.field.node.landing_page.field_landing_page_section
+    - field.field.node.landing_page.field_latitude
+    - field.field.node.landing_page.field_longitude
+    - field.field.node.landing_page.field_map_description
     - field.field.node.landing_page.field_page_image
     - node.type.landing_page
   module:
@@ -20,7 +23,7 @@ mode: default
 content:
   field_landing_page_section:
     type: entity_reference_revisions_entity_view
-    weight: 101
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -28,7 +31,7 @@ content:
     third_party_settings: {  }
     region: content
   field_page_image:
-    weight: 102
+    weight: 7
     label: above
     settings:
       image_style: ''
@@ -37,13 +40,13 @@ content:
     type: image
     region: content
   flag_follow_content:
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   groups:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
@@ -51,7 +54,7 @@ content:
     type: entity_reference_label
   groups_type_closed_group:
     label: above
-    weight: -5
+    weight: 1
     region: content
     settings:
       link: true
@@ -59,7 +62,7 @@ content:
     type: entity_reference_label
   groups_type_open_group:
     label: above
-    weight: -5
+    weight: 2
     region: content
     settings:
       link: true
@@ -67,16 +70,19 @@ content:
     type: entity_reference_label
   groups_type_public_group:
     label: above
-    weight: -5
+    weight: 3
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 100
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_content_visibility: true
+  field_latitude: true
+  field_longitude: true
+  field_map_description: true

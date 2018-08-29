@@ -48,6 +48,7 @@ module:
   message: 0
   node: 0
   nscn_frontend: 0
+  nscn_map: 0
   nscn_stats: 0
   options: 0
   override_node_options: 0
@@ -56,8 +57,11 @@ module:
   quick_node_clone: 0
   r4032login: 0
   responsive_image: 0
+  rest: 0
+  rest_export_nested: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   social_activity: 0
   social_comment: 0
   social_core: 0
@@ -89,6 +93,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views_field_view: 0
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
