@@ -123,7 +123,7 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
           element_default_classes: false
           empty: ''
@@ -131,10 +131,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: false
+          type: number_unformatted
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -410,6 +408,10 @@ display:
         type: serializer
         options:
           formats: {  }
+      pager:
+        type: none
+        options:
+          offset: '0'
     cache_metadata:
       max-age: -1
       contexts:
