@@ -3,6 +3,6 @@ map-display:
   header: true
   css:
     theme:
-      assets/build/show-map.css: {}
+      assets/build/show-map.css: {preprocess: false}
   js:
-    assets/build/show-map.js: {}
+    assets/build/show-map.js: {preprocess: false}
