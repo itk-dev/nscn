@@ -66,6 +66,7 @@
 
 {{ attach_library('socialbase/page-node')}}
 {{ attach_library('social_landing_page/landing_page')}}
+{{ content|without('flag_follow_content') }}
 {% if(map_nid and map_nid == node.id) %}
   {{ attach_library('nscn_map/map-display')}}
 {% endif %}
@@ -76,4 +77,3 @@
       <div id="popup-content"></div>
     </div>
   {% endif %}
-{{ content|without('flag_follow_content') }}
