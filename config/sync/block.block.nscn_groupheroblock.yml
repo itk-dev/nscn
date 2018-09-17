@@ -10,7 +10,7 @@ dependencies:
 id: nscn_groupheroblock
 theme: nscn
 region: hero
-weight: null
+weight: -25
 provider: null
 plugin: group_hero_block
 settings:

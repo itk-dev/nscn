@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__activity_stream_block_stream_homepage
 theme: nscn
 region: content
-weight: null
+weight: -25
 provider: null
 plugin: 'views_block:activity_stream-block_stream_homepage'
 settings:
