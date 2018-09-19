@@ -74,7 +74,7 @@ display:
             'entity:node':
               event: teaser
               landing_page: search_index
-              news: default
+              news: search_index
               page: teaser
               topic: teaser
             'entity:group':
