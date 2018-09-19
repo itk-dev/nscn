@@ -1,0 +1,60 @@
+uuid: 9a9efcfa-1f78-4b96-9ab0-29fa3f80d090
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.landing_page.field_content_visibility
+    - field.field.node.landing_page.field_landing_page_section
+    - field.field.node.landing_page.field_latitude
+    - field.field.node.landing_page.field_longitude
+    - field.field.node.landing_page.field_map_description
+    - field.field.node.landing_page.field_page_image
+    - image.style.social_x_large
+    - node.type.landing_page
+  module:
+    - image
+    - options
+    - user
+_core:
+  default_config_hash: vjb58u-Za1jLIUTwtNGHuEldjqMM1oHJeYdoncj0ZMo
+id: node.landing_page.search_index
+targetEntityType: node
+bundle: landing_page
+mode: search_index
+content:
+  field_content_visibility:
+    type: list_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_page_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: social_x_large
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  flag_follow_content:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_landing_page_section: true
+  field_latitude: true
+  field_longitude: true
+  field_map_description: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true

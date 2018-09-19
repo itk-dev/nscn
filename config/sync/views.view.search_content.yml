@@ -75,8 +75,9 @@ display:
         options:
           view_modes:
             'entity:node':
-              book: teaser
               event: teaser
+              landing_page: search_index
+              news: search_index
               page: teaser
               topic: teaser
       fields:

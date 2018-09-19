@@ -73,9 +73,10 @@ display:
           view_modes:
             'entity:node':
               event: teaser
+              landing_page: search_index
+              news: default
               page: teaser
               topic: teaser
-              book: teaser
             'entity:group':
               closed_group: teaser
               open_group: teaser

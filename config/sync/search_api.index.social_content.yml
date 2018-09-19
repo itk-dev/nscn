@@ -67,31 +67,24 @@ field_settings:
     type: date
 datasource_settings:
   'entity:node':
-    plugin_id: 'entity:node'
-    settings:
-      bundles:
-        default: true
-        selected: {  }
-      languages:
-        default: true
-        selected: {  }
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - event
+        - landing_page
+        - news
+        - page
+        - topic
     languages:
       default: true
       selected: {  }
 processor_settings:
-  ignorecase:
-    plugin_id: ignorecase
+  content_access:
+    plugin_id: content_access
     settings:
-      fields:
-        - title
-        - rendered_item
       weights:
         preprocess_index: -10
         preprocess_query: -10
-    all_fields: false
   html_filter:
     plugin_id: html_filter
     settings:
@@ -118,6 +111,32 @@ processor_settings:
       b: 2
       em: 1
       u: 1
+    all_fields: false
+  ignorecase:
+    plugin_id: ignorecase
+    settings:
+      fields:
+        - title
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
+  tokenizer:
+    plugin_id: tokenizer
+    settings:
+      fields:
+        - title
+        - rendered_item
+      spaces: ''
+      overlap_cjk: 1
+      minimum_word_size: '3'
+      weights:
+        preprocess_index: -6
+        preprocess_query: -6
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
     all_fields: false
   stopwords:
     plugin_id: stopwords
@@ -221,28 +240,6 @@ processor_settings:
     settings:
       weights:
         preprocess_index: -30
-  tokenizer:
-    plugin_id: tokenizer
-    settings:
-      fields:
-        - title
-        - rendered_item
-      spaces: ''
-      overlap_cjk: 1
-      minimum_word_size: '3'
-      weights:
-        preprocess_index: -6
-        preprocess_query: -6
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    all_fields: false
-  content_access:
-    plugin_id: content_access
-    settings:
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
   rendered_item:
     plugin_id: rendered_item
     settings:
@@ -251,8 +248,6 @@ processor_settings:
         pre_index_save: -10
 tracker_settings:
   default:
-    plugin_id: default
-    settings: {  }
     indexing_order: fifo
 options:
   index_directly: true
