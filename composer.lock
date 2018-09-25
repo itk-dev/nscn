@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7a03339f906a3cfb82d2a1bddc12c8b",
+    "content-hash": "74ce32c78ac18020677b2cff99ab593f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -306,12 +306,12 @@
             "version": "4.0.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ivaynberg/select2.git",
+                "url": "https://github.com/select2/select2.git",
                 "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivaynberg/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
+                "url": "https://api.github.com/repos/select2/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
                 "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
                 "shasum": null
             },
@@ -2601,6 +2601,31 @@
             }
         },
         {
+            "name": "drupal/itk_siteimprove",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/siteimprove-d8.git",
+                "reference": "819bbfce0f71fa4d9577227276d2942947d4ae74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/siteimprove-d8/zipball/819bbfce0f71fa4d9577227276d2942947d4ae74",
+                "reference": "819bbfce0f71fa4d9577227276d2942947d4ae74",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.itkdev.dk/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides siteimprove functionality",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2018-04-26T09:13:52+00:00"
+        },
+        {
             "name": "drupal/like_and_dislike",
             "version": "1.0.0-alpha2",
             "source": {
@@ -4245,12 +4270,12 @@
             "version": "v2.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/google/google-api-php-client.git",
+                "url": "https://github.com/googleapis/google-api-php-client.git",
                 "reference": "4e0fd83510e579043e10e565528b323b7c2b3c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/4e0fd83510e579043e10e565528b323b7c2b3c81",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/4e0fd83510e579043e10e565528b323b7c2b3c81",
                 "reference": "4e0fd83510e579043e10e565528b323b7c2b3c81",
                 "shasum": ""
             },
@@ -4304,12 +4329,12 @@
             "version": "v0.66",
             "source": {
                 "type": "git",
-                "url": "https://github.com/google/google-api-php-client-services.git",
+                "url": "https://github.com/googleapis/google-api-php-client-services.git",
                 "reference": "357a13e6f59e5590071b1d455c0ead482fac65db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/357a13e6f59e5590071b1d455c0ead482fac65db",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/357a13e6f59e5590071b1d455c0ead482fac65db",
                 "reference": "357a13e6f59e5590071b1d455c0ead482fac65db",
                 "shasum": ""
             },
@@ -4341,12 +4366,12 @@
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/google/google-auth-library-php.git",
+                "url": "https://github.com/googleapis/google-auth-library-php.git",
                 "reference": "436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
                 "reference": "436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
                 "shasum": ""
             },

@@ -22,7 +22,8 @@
         "doctrine/inflector": "1.1.0",
         "drupal/quick_node_clone": "^1.10",
         "drupal/rest_export_nested": "^1.0@alpha",
-        "drupal/views_field_view": "^1.0@beta"
+        "drupal/views_field_view": "^1.0@beta",
+        "drupal/itk_siteimprove": "^1.0"
     },
     "repositories": [
         {
@@ -32,6 +33,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.itkdev.dk"
         }
     ],
     "scripts": {
