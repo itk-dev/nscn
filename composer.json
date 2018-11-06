@@ -5,25 +5,23 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "config": {
-        "platform": {
-            "php": "5.6"
-        }
-    },
     "require": {
-        "php": "^5.6",
+        "php": "^5.6 || ^7.0",
         "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "drupal-composer/drupal-scaffold": "2.4.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "^1.0",
+        "goalgorilla/open_social": "^3.2",
         "doctrine/cache": "1.6.1",
         "doctrine/collections": "1.4.0",
         "doctrine/common": "2.7.2",
         "doctrine/inflector": "1.1.0",
         "drupal/quick_node_clone": "^1.10",
         "drupal/rest_export_nested": "^1.0@alpha",
-        "drupal/views_field_view": "^1.0@beta"
+        "drupal/views_field_view": "^1.0@beta",
+        "drupal/itk_siteimprove": "^1.0"
     },
+
+
     "repositories": [
         {
             "type": "composer",
@@ -32,6 +30,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.itkdev.dk"
         }
     ],
     "scripts": {
@@ -72,11 +74,6 @@
                 "type:drupal-drush"
             ]
         },
-        "enable-patching": true,
-        "patches": {
-            "drupal/quick_node_clone": {
-                "Fix typehinting for old php version": "https://www.drupal.org/files/issues/2018-05-10/quick_node_clone-clone_permission_parameter-2969141-2_0.patch"
-            }
-        }
+        "enable-patching": true
     }
 }
