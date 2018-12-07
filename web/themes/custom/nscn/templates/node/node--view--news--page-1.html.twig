@@ -68,23 +68,25 @@
 
 {{ attach_library('socialbase/teaser')}}
 
-<div class="block--news-teaser">
+<a href="{{ url }}" rel="bookmark" class="block--news-teaser">
+  <div class="col-md-12 block--news-teaser-image">
+      <img src="//placehold.it/768x400" alt="Placeholder">
+    </div>
   <div class="col-md-2">
     <span class="date">{{ date }}</span>
     <span class="date text-muted">in News</span>
   </div>
   <div class="col-md-10">
-    <div class="">
+    <div class="block--news-teaser-title">
       {{ title_prefix }}
         <h2>
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          {{ label }}
         </h2>
       {{ title_suffix }}
-
     </div>
-    <p>{{ content }}</p>
+    <p class="block--news-teaser-content">{{ content }}</p>
   </div>
   <div class="col-md-12">
     <hr>
   </div>
-</div>
+</a>
