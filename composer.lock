@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "864635ef529ea30e0c283e082e5e1ccc",
+    "content-hash": "0f0f56175848a760aec0d3dba0d11685",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -117,7 +117,7 @@
             "version": "4.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jackmoore/autosize.git",
+                "url": "https://github.com/jackmoore/autosize.git",
                 "reference": "113f1b345868901619d4b01cda02b09aa1690ebd"
             },
             "dist": {
@@ -2520,6 +2520,10 @@
                 {
                     "name": "kristiaanvandeneynde",
                     "homepage": "https://www.drupal.org/user/1345130"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
                 }
             ],
             "description": "This module allows you to group users, content and other entities",
@@ -4757,6 +4761,31 @@
             ],
             "description": "Converts HTML to formatted plain text",
             "time": "2016-03-16T23:24:34+00:00"
+        },
+        {
+            "name": "itk-dev/itk_azure_video",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:itk-dev/itk_azure_video.git",
+                "reference": "d6ebb7c31a1c53f6261743b32089c569c2c877ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/itk_azure_video/zipball/d6ebb7c31a1c53f6261743b32089c569c2c877ad",
+                "reference": "d6ebb7c31a1c53f6261743b32089c569c2c877ad",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.itkdev.dk/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Module that supplies an Azure Video Media Service field for Drupal 8",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2018-12-11T08:32:11+00:00"
         },
         {
             "name": "league/csv",
