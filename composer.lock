@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f0f56175848a760aec0d3dba0d11685",
+    "content-hash": "e0286cda9ba73d79e317138fa2cf419f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4764,28 +4764,28 @@
         },
         {
             "name": "itk-dev/itk_azure_video",
-            "version": "1.0.3",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
-                "url": "git@github.com:itk-dev/itk_azure_video.git",
-                "reference": "d6ebb7c31a1c53f6261743b32089c569c2c877ad"
+                "url": "https://github.com/itk-dev/itk_azure_video.git",
+                "reference": "ffce420fb8271c8bddaf6dae9f34c33b7a584a26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/itk_azure_video/zipball/d6ebb7c31a1c53f6261743b32089c569c2c877ad",
-                "reference": "d6ebb7c31a1c53f6261743b32089c569c2c877ad",
+                "url": "https://api.github.com/repos/itk-dev/itk_azure_video/zipball/ffce420fb8271c8bddaf6dae9f34c33b7a584a26",
+                "reference": "ffce420fb8271c8bddaf6dae9f34c33b7a584a26",
                 "shasum": ""
             },
             "type": "drupal-module",
-            "notification-url": "https://packagist.itkdev.dk/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Module that supplies an Azure Video Media Service field for Drupal 8",
             "keywords": [
-                "Drupal"
+                "drupal"
             ],
-            "time": "2018-12-11T08:32:11+00:00"
+            "time": "2018-12-13T08:27:20+00:00"
         },
         {
             "name": "league/csv",
