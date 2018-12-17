@@ -49,6 +49,7 @@ content:
     weight: 10
     third_party_settings: {  }
     region: content
+    settings: {  }
   groups_type_public_group:
     label: above
     weight: -5

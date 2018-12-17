@@ -67,7 +67,8 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
+    boost: !!float 8
   uid:
     label: 'Authored by'
     datasource_id: 'entity:node'
@@ -160,8 +161,13 @@ field_settings:
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - event
+        - landing_page
+        - news
+        - page
+        - topic
     languages:
       default: true
       selected: {  }
@@ -177,42 +183,20 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  ignorecase:
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+  tokenizer:
     all_fields: false
     fields:
       - rendered_item
-      - type
-      - title
-      - label
       - field_group_description
-      - field_group_location
-      - name
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
     weights:
-      preprocess_index: -20
-      preprocess_query: -20
-  html_filter:
-    all_fields: false
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    title: true
-    alt: true
-    tags:
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      b: 2
-      em: 1
-      u: 1
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
+      preprocess_index: -6
+      preprocess_query: -6
   stopwords:
     all_fields: false
     fields:
@@ -257,6 +241,19 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -2
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   transliteration:
     all_fields: false
     fields:
@@ -270,23 +267,32 @@ processor_settings:
     weights:
       preprocess_index: -20
       preprocess_query: -20
-  aggregated_field: {  }
-  add_url: {  }
-  tokenizer:
-    all_fields: false
-    fields:
-      - rendered_item
-      - field_group_description
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
   content_access:
     weights:
       preprocess_query: -30
-  rendered_item: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+      em: 1
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
   super_user:
     weights:
       preprocess_query: 30

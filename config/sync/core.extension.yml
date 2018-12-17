@@ -40,6 +40,7 @@ module:
   image: 0
   image_effects: 0
   image_widget_crop: 0
+  itk_siteimprove: 0
   like_and_dislike: 0
   link: 0
   mailsystem: 0
@@ -71,7 +72,6 @@ module:
   social_file_private: 0
   social_follow_content: 0
   social_font: 0
-  social_group: 0
   social_landing_page: 0
   social_like: 0
   social_mentions: 0
@@ -98,6 +98,7 @@ module:
   views_ui: 0
   votingapi: 0
   menu_link_content: 1
+  social_group: 2
   views: 10
   paragraphs: 11
   social: 1000

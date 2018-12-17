@@ -10,7 +10,7 @@ dependencies:
 id: nscn_search_block_hero
 theme: nscn
 region: hero
-weight: null
+weight: -25
 provider: null
 plugin: search_hero_block
 settings:

@@ -50,6 +50,8 @@ content:
   flag_follow_content:
     weight: 10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   groups_type_public_group:
     label: above
     weight: -5

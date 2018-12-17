@@ -1,0 +1,49 @@
+uuid: 639e6a91-a17c-41e9-b361-f7bfa0810435
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_etc_
+    - node.type.page
+    - paragraphs.paragraphs_type.featured
+  module:
+    - entity_reference_revisions
+id: node.page.field_feature_etc_
+field_name: field_feature_etc_
+entity_type: node
+bundle: page
+label: 'Feature etc.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      featured: featured
+    target_bundles_drag_drop:
+      block:
+        weight: 8
+        enabled: false
+      button:
+        weight: 9
+        enabled: false
+      featured:
+        enabled: true
+        weight: 10
+      hero:
+        weight: 11
+        enabled: false
+      image:
+        weight: 12
+        enabled: false
+      introduction:
+        weight: 13
+        enabled: false
+      section:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

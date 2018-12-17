@@ -7,12 +7,12 @@ dependencies:
     - field.field.node.news.field_files
     - field.field.node.news.field_page_image
     - field.field.node.news.field_teaser
-    - image.style.thumbnail
+    - image.style.social_x_large
     - node.type.news
   module:
     - field_group
     - file
-    - image
+    - image_widget_crop
     - path
     - text
 third_party_settings:
@@ -88,10 +88,17 @@ content:
   field_page_image:
     weight: 4
     settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero
+        - teaser
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_teaser:
     weight: 2

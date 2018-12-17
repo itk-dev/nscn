@@ -1,4 +1,4 @@
-uuid: 47ff2445-e446-4216-9208-c598d7d65456
+uuid: dc65b9ce-983a-4cff-a0ad-0c9298665a97
 langcode: en
 status: true
 dependencies:
@@ -8,17 +8,17 @@ dependencies:
     - system
   theme:
     - nscn
-id: nscn_footer
+id: footer_2
 theme: nscn
-region: hidden
-weight: -23
+region: footer
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
   label: Footer
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility: {  }

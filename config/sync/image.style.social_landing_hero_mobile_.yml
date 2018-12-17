@@ -29,3 +29,4 @@ effects:
     data:
       width: 560
       height: 140
+      anchor: center-center

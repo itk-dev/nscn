@@ -49,6 +49,11 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  like_and_dislike:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_id:
     label: hidden
     type: author
@@ -60,4 +65,3 @@ hidden:
   field_recipient_group: true
   field_recipient_user: true
   field_visibility: true
-  like_and_dislike: true

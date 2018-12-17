@@ -2,6 +2,7 @@ map-display:
   version: VERSION
   css:
     theme:
-      assets/build/show-map.css: {}
+      assets/build/show-map.css: {preprocess: false}
+      assets/css/ol.css: {preprocess: false}
   js:
-    assets/build/show-map.js: {}
+    assets/build/show-map.js: {preprocess: false}

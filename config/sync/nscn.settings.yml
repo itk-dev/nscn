@@ -17,21 +17,12 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://nordiccitylab.vm/themes/custom/nscn/favicon.ico'
+  url: 'https://nscn.eu/themes/custom/nscn/favicon.ico'
   use_default: 1
 schemas:
   bootstrap: 8000
   socialbase: 8000
   nscn: 8000
-features:
-  comment_user_picture: true
-  comment_user_verification: 1
-  favicon: 1
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: 1
 region_wells:
   hidden: ''
   header: ''
@@ -45,8 +36,17 @@ region_wells:
   complementary_bottom: ''
   content_bottom: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
 table_responsive: '-1'
 table: ''
-map_nid: '37'
+map_nid: '44'
+features:
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: 1
