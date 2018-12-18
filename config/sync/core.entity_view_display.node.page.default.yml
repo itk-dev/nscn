@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.page.field_files
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
+    - field.field.node.page.field_sidebar_content
     - node.type.page
   module:
     - comment
@@ -56,6 +57,13 @@ content:
       view_mode: default
     third_party_settings: {  }
     type: comment_default
+    region: content
+  field_sidebar_content:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   flag_follow_content:
     weight: 10

@@ -8,14 +8,25 @@ dependencies:
     - field.field.node.news.field_files
     - field.field.node.news.field_page_image
     - field.field.node.news.field_teaser
+    - image.style.social_xx_large
     - node.type.news
   module:
+    - image
     - user
 id: node.news.teaser
 targetEntityType: node
 bundle: news
 mode: teaser
 content:
+  field_page_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: social_xx_large
+      image_link: ''
+    third_party_settings: {  }
   field_teaser:
     type: basic_string
     weight: 0
@@ -26,7 +37,6 @@ content:
 hidden:
   body: true
   field_files: true
-  field_page_image: true
   flag_follow_content: true
   groups: true
   groups_type_closed_group: true
