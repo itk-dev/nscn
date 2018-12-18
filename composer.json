@@ -18,7 +18,8 @@
         "drupal/quick_node_clone": "^1.10",
         "drupal/rest_export_nested": "^1.0@alpha",
         "drupal/views_field_view": "^1.0@beta",
-        "drupal/itk_siteimprove": "^1.0"
+        "drupal/itk_siteimprove": "^1.0",
+        "drupal/twig_tweak": "^2.1"
     },
 
 

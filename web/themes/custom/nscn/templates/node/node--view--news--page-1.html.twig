@@ -70,8 +70,8 @@
 
 <a href="{{ url }}" rel="bookmark" class="block--news-teaser">
   <div class="col-md-12 block--news-teaser-image">
-      <img src="//placehold.it/768x400" alt="Placeholder">
-    </div>
+    {{ content.field_page_image }}
+  </div>
   <div class="col-md-2">
     <span class="date">{{ date }}</span>
     <span class="date text-muted">in News</span>
@@ -84,7 +84,7 @@
         </h2>
       {{ title_suffix }}
     </div>
-    <p class="block--news-teaser-content">{{ content }}</p>
+    <p class="block--news-teaser-content">{{ content|without('field_page_image') }}</p>
   </div>
   <div class="col-md-12">
     <hr>

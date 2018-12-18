@@ -41,7 +41,7 @@ function nscn_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateI
  */
 function nscn_preprocess_node(&$variables) {
   $variables['map_nid'] = !empty(theme_get_setting('map_nid')) ? theme_get_setting('map_nid') : FALSE;
-  if (isset($variables['map_nid'])) {
+  if (isset($variables['map_nid']) && $variables["elements"]["#view_mode"] = 'featured' && $variables['map_nid'] == $variables["node"]->id()) {
     $output = array();
     $base_site = \Drupal::request()->getSchemeAndHttpHost();
     $url = $base_site . '/city-locations-nested?_format=json';

@@ -73,6 +73,17 @@
           {% if page.complementary_bottom %}
             {{ page.complementary_bottom }}
           {% endif %}
+          {% if node %}
+            {% if node.type() == 'page' %}
+              {% if node.get('field_sidebar_content').value %}
+                <div class="card">
+                  <div class="card__block">
+                    {{ node.get('field_sidebar_content').value|raw }}
+                  </div>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endif %}
         </aside>
       {% endif %}
 
@@ -98,6 +109,16 @@
     </section>
   </div>
   {% endblock %}
+
+  {% if node %}
+    {% if node.type() == 'page' %}
+      {% if node.get('field_feature_etc_').value %}
+        {% for delta in node.get('field_feature_etc_') %}
+          {{ drupal_entity('paragraph', delta.target_id, 'default') }}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
 
   {% if page.content_bottom %}
     {{ page.content_bottom }}

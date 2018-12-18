@@ -197,7 +197,7 @@
     {% endif %}
 
     {% block nodefull_body %}
-      {{ content|without('flag_follow_content') }}
+      {{ content|without('flag_follow_content', 'field_sidebar_content', 'field_feature_etc_') }}
     {% endblock %}
   </div>
 
@@ -209,7 +209,6 @@
     </div>
   {% endif %}
 </article>
-
 {% block nodefull_below_content %}
   {{ below_content }}
 {% endblock %}
