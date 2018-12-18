@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.introduction
     - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 _core:
@@ -34,6 +35,7 @@ settings:
       hero: hero
       introduction: introduction
       image: image
+      video: video
     target_bundles_drag_drop:
       section:
         weight: 3
@@ -56,4 +58,7 @@ settings:
       image:
         enabled: true
         weight: 12
+      video:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

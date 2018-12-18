@@ -1,0 +1,21 @@
+uuid: 0c45f684-c8bc-48cf-98d2-c8e7bec12f4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar_content
+    - node.type.page
+  module:
+    - text
+id: node.page.field_sidebar_content
+field_name: field_sidebar_content
+entity_type: node
+bundle: page
+label: 'Sidebar content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

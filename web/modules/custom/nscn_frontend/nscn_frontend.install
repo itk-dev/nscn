@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Enable itk_azure_video.
+ */
+function nscn_frontend_update_8101(&$sandbox) {
+  $enable_modules = [
+    'itk_azure_video'
+  ];
+
+  \Drupal::service('module_installer')->install($enable_modules, TRUE);
+}

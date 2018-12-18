@@ -40,6 +40,7 @@ module:
   image: 0
   image_effects: 0
   image_widget_crop: 0
+  itk_azure_video: 0
   itk_siteimprove: 0
   like_and_dislike: 0
   link: 0
@@ -91,6 +92,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_field_view: 0

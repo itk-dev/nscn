@@ -1,0 +1,26 @@
+uuid: a27c5e5d-f859-4135-81a1-ed43a4b1aad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - itk_azure_video
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      muted: false
+      autoplay: false
+      controls: true
+    third_party_settings: {  }
+    type: itk_azure_video_formatter
+    region: content
+hidden: {  }
