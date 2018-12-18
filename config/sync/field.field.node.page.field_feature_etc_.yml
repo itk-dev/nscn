@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_feature_etc_
     - node.type.page
     - paragraphs.paragraphs_type.featured
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.page.field_feature_etc_
@@ -24,6 +25,7 @@ settings:
     negate: 0
     target_bundles:
       featured: featured
+      video: video
     target_bundles_drag_drop:
       block:
         weight: 8
@@ -46,4 +48,7 @@ settings:
       section:
         weight: 14
         enabled: false
+      video:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

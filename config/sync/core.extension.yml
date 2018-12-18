@@ -41,6 +41,7 @@ module:
   image_effects: 0
   image_widget_crop: 0
   itk_azure_video: 0
+  itk_siteimprove: 0
   like_and_dislike: 0
   link: 0
   mailsystem: 0
