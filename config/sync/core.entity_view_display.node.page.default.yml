@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.page.body
     - field.field.node.page.field_content_visibility
-    - field.field.node.page.field_feature_etc_
     - field.field.node.page.field_files
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
@@ -14,7 +13,6 @@ dependencies:
     - node.type.page
   module:
     - comment
-    - entity_reference_revisions
     - file
     - text
     - user
@@ -30,15 +28,6 @@ content:
     type: text_default
     weight: 0
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_feature_etc_:
-    type: entity_reference_revisions_entity_view
-    weight: 11
-    label: above
-    settings:
-      view_mode: default
-      link: ''
     third_party_settings: {  }
     region: content
   field_files:

@@ -1,0 +1,19 @@
+uuid: 22f06cdb-2b11-4afe-a7ab-8857a3aa14d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - itk_azure_video
+    - paragraphs
+id: paragraph.field_video
+field_name: field_video
+entity_type: paragraph
+type: itk_azure_video_field
+settings: {  }
+module: itk_azure_video
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
