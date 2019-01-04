@@ -68,7 +68,7 @@
 
 {{ attach_library('socialbase/teaser')}}
 
-<a href="{{ url }}" rel="bookmark" class="block--news-teaser">
+<div rel="bookmark" class="block--news-teaser">
   <div class="col-md-12 block--news-teaser-image">
     {{ content.field_page_image }}
   </div>
@@ -80,7 +80,9 @@
     <div class="block--news-teaser-title">
       {{ title_prefix }}
         <h2>
-          {{ label }}
+          <a href="{{ url }}">
+            {{ label }}
+          </a>
         </h2>
       {{ title_suffix }}
     </div>
@@ -89,4 +91,4 @@
   <div class="col-md-12">
     <hr>
   </div>
-</a>
+</div>
