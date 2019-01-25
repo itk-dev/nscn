@@ -1,4 +1,4 @@
-/* eslint-env node, es6 */
+  /* eslint-env node, es6 */
 /* global Promise */
 /* eslint-disable key-spacing, one-var, no-multi-spaces, max-nested-callbacks, quote-props */
 

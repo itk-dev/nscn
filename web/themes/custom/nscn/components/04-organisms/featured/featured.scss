@@ -11,4 +11,14 @@
       margin-bottom: 0;
     }
   }
+
+  &--type--video {
+    position: relative;
+    padding: $spacer*5 0;
+    background: $white;
+    .teaser.teaser--tile .teaser__title {
+      min-height: auto;
+      margin-bottom: 0;
+    }
+  }
 }
