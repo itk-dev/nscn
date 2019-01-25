@@ -87,3 +87,14 @@ function nscn_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormSta
     '#description'   => t("Set the nid that should contain the map display."),
   );
 }
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function nscn_preprocess_page(&$variables) {
+  $current_route_name = \Drupal::service('current_route_match')->getRouteName();
+  // If on news page
+  if ($current_route_name == 'view.news.page_1') {
+   $variables['full_width'] = TRUE;
+  }
+}

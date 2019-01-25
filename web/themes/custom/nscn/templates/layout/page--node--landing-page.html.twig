@@ -33,12 +33,6 @@
   {{ page.header }}
 {% endif %}
 
-{% if is_admin %} {# If the user is logged in, we asume they want to edit the landingpage, and therefor encapsule this in the grid like the rest of the admin. #}
-  <div class="container">
-    <div class="row">
-
-{% endif %}
-
 <main id="content" class="{% if is_admin %}col-md-12{% endif %} main-container" role="main">
 
   {# No breadcrumbs for landing pages #}
@@ -55,11 +49,6 @@
     {{ page.content }}
   {% endblock %}
 
-{% if is_admin %}
-
-    </div>
-  </div>
-{% endif %} {# End encapsulement of admin editor #}
 
 {% if page.footer %}
   {{ page.footer }}

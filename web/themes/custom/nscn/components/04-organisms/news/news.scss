@@ -52,3 +52,15 @@
     }
   }
 }
+
+.is-centered {
+  .section-title {
+    margin: 0 auto;
+    min-width: 0;
+    width: 600px;
+  }
+
+  .region--content {
+    margin: 0 auto;
+  }
+}
