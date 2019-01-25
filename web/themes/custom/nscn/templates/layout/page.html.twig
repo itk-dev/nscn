@@ -33,6 +33,12 @@
  */
 #}
 
+{%
+set page_classes = [
+full_width ? 'is-centered',
+]
+%}
+
 {% if page.header %}
   {{ page.header }}
 {% endif %}
@@ -58,33 +64,32 @@
   {# Content attributes, see Style guide Templates for documentation #}
   {% block section %}
   <div class="container">
-
-    <section{{ content_attributes }}>
-
+    <section{{ content_attributes.addClass(page_classes) }}>
       {% if page.title and display_page_title %}
         {{ page.title }}
       {% endif %}
-
       {% if page.complementary_top or page.complementary_bottom %}
-        <aside class="region--complementary" role="complementary">
-          {% if page.complementary_top %}
-            {{ page.complementary_top }}
-          {% endif %}
-          {% if page.complementary_bottom %}
-            {{ page.complementary_bottom }}
-          {% endif %}
-          {% if node %}
-            {% if node.type() == 'page' %}
-              {% if node.get('field_sidebar_content').value %}
-                <div class="card">
-                  <div class="card__block">
-                    {{ node.get('field_sidebar_content').value|raw }}
+        {% if not full_width %}
+          <aside class="region--complementary" role="complementary">
+            {% if page.complementary_top %}
+              {{ page.complementary_top }}
+            {% endif %}
+            {% if page.complementary_bottom %}
+              {{ page.complementary_bottom }}
+            {% endif %}
+            {% if node %}
+              {% if node.type() == 'page' %}
+                {% if node.get('field_sidebar_content').value %}
+                  <div class="card">
+                    <div class="card__block">
+                      {{ node.get('field_sidebar_content').value|raw }}
+                    </div>
                   </div>
-                </div>
+                {% endif %}
               {% endif %}
             {% endif %}
-          {% endif %}
-        </aside>
+          </aside>
+        {% endif %}
       {% endif %}
 
       {% block content %}

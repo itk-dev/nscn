@@ -53,3 +53,13 @@
 .block--news--list ul.news-list li a {
   display: block;
 }
+
+.is-centered .section-title {
+  margin: 0 auto;
+  min-width: 0;
+  width: 600px;
+}
+
+.is-centered .region--content {
+  margin: 0 auto;
+}

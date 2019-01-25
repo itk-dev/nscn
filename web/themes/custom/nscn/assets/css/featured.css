@@ -8,3 +8,14 @@
   min-height: auto;
   margin-bottom: 0;
 }
+
+.paragraph--type--video {
+  position: relative;
+  padding: 3.2em 0;
+  background: #ffffff;
+}
+
+.paragraph--type--video .teaser.teaser--tile .teaser__title {
+  min-height: auto;
+  margin-bottom: 0;
+}
