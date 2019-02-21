@@ -20,7 +20,8 @@
         "drupal/views_field_view": "^1.0@beta",
         "drupal/itk_siteimprove": "^1.0",
         "drupal/twig_tweak": "^2.1",
-        "itk-dev/itk_azure_video": "^1.0.5"
+        "itk-dev/itk_azure_video": "^1.0.5",
+        "drupal/system_status": "^2.8"
     },
 
 
