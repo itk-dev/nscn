@@ -9,11 +9,12 @@ third_party_settings:
     activity_context: profile_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_bundle_entities:
       post-post: post-post
+      post-photo: post-photo
     activity_action: create_entitiy_action
-    activity_aggregate: 0
+    activity_aggregate: false
 _core:
   default_config_hash: j3CZge8fjppHeIwTfyR-oTEoglvxDE3SH9jRDAUUvvU
 template: create_post_profile_stream

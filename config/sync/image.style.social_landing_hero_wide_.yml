@@ -6,16 +6,9 @@ dependencies:
     - crop.type.hero_landing
   module:
     - crop
-    - image_effects
 name: social_landing_hero_wide_
 label: 'social landing hero (wide)'
 effects:
-  73e6a74e-f59b-4961-9119-f2a9aed990b5:
-    uuid: 73e6a74e-f59b-4961-9119-f2a9aed990b5
-    id: image_effects_auto_orient
-    weight: -10
-    data:
-      scan_exif: true
   9c04490b-49e0-45e8-ae7e-a976d213f898:
     uuid: 9c04490b-49e0-45e8-ae7e-a976d213f898
     id: image_scale_and_crop
@@ -30,3 +23,4 @@ effects:
     weight: -9
     data:
       crop_type: hero_landing
+      automatic_crop_provider: null

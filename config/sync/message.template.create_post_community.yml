@@ -11,10 +11,11 @@ third_party_settings:
       stream_explore: stream_explore
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
+      post-photo: post-photo
 _core:
   default_config_hash: kKHsUYXAxkTVpHpcsY5TpAthL6g7h74_Xf7CaFXmHJY
 template: create_post_community

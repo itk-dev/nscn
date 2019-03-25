@@ -6,7 +6,6 @@ dependencies:
     - crop.type.profile_medium
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: OquM4ij33EbFl5euJqdD9UoclGjQcALPSP1WF035M9k
 name: social_medium
@@ -26,9 +25,4 @@ effects:
     weight: 1
     data:
       crop_type: profile_medium
-  28522c8f-258e-4c5c-a307-e4905d55aee9:
-    uuid: 28522c8f-258e-4c5c-a307-e4905d55aee9
-    id: image_effects_auto_orient
-    weight: 3
-    data:
-      scan_exif: true
+      automatic_crop_provider: null

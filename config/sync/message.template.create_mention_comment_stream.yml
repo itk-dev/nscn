@@ -12,8 +12,8 @@ third_party_settings:
     activity_context: mention_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: 1
-    activity_aggregate: 0
+    activity_create_direct: true
+    activity_aggregate: false
     activity_entity_condition: mention_comment
 _core:
   default_config_hash: AUjeqt88sCNRk0SSWkvPpGBasj1x4_DtP-210nbJEus

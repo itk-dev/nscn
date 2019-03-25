@@ -10,11 +10,12 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_bundle_entities:
       post-post: post-post
+      post-photo: post-photo
     activity_action: create_entitiy_action
-    activity_aggregate: 0
+    activity_aggregate: false
 _core:
   default_config_hash: aSvlkk6NBN2QpKCKfB-v3FWfRdmX5SS6fs8m0dbth8o
 template: create_post_profile
