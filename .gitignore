@@ -10,3 +10,7 @@
 vendor/
 private-files
 .idea
+
+# Ignore pull script and remote env
+.env-remote
+.pull-prod
