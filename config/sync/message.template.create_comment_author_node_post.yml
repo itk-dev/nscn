@@ -14,8 +14,8 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 1
-    activity_aggregate: 0
+    activity_create_direct: true
+    activity_aggregate: false
     activity_entity_condition: comment_not_reply
 _core:
   default_config_hash: aNCmu-Us94xs36Wtn6aF3Eknr8GlJWczkLqMCXvTyXs

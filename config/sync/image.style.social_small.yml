@@ -6,7 +6,6 @@ dependencies:
     - crop.type.profile_small
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: ghf2nGSN0gUgH9tZWbamq-g9bF5NCvZVIj4rLPr5SDU
 name: social_small
@@ -26,9 +25,4 @@ effects:
     weight: 1
     data:
       crop_type: profile_small
-  db56295b-59b4-4adb-873b-4fd967615ffc:
-    uuid: db56295b-59b4-4adb-873b-4fd967615ffc
-    id: image_effects_auto_orient
-    weight: 3
-    data:
-      scan_exif: true
+      automatic_crop_provider: null
