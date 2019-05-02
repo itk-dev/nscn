@@ -47,20 +47,32 @@
   ]
 %}
 
-
-
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
     <div class="row">
       <div class="{{ paragraph.field_text_position.value=='center' ? 'col-md-6 col-md-offset-3' : 'col-md-12'}}">
-        <h2>{{ content.field_introduction_title }}</h2>
-        {{ content.field_introduction_text }}
-        {% if logged_in %}
-          {{ content.field_introduction_link_lu }}
-        {% else %}
-          {{ content.field_introduction_link_an }}
-        {% endif %}
+        <div class="row">
+          <div class="col-md-12">
+            <h2>{{ content.field_introduction_title }}</h2>
+          </div>
+          <div class="{{ content.field_introduction_aside['#items'].getValue() is not empty ? 'col-md-8' : 'col-md-12'}}">
+            {{ content.field_introduction_text }}
+          </div>
+          {% if content.field_introduction_aside['#items'].getValue() is not empty %}
+            <div class="col-md-4">
+              {{ content.field_introduction_aside }}
+            </div>
+          {% endif %}
+          <div class="col-md-12">
+            {% if logged_in %}
+              {{ content.field_introduction_link_lu }}
+            {% else %}
+              {{ content.field_introduction_link_an }}
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+

@@ -5,3 +5,8 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+.introduction .field--name-field-introduction-aside {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
