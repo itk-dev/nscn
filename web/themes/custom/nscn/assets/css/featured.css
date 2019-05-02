@@ -9,6 +9,10 @@
   margin-bottom: 0;
 }
 
+.paragraph--featured .teaser .teaser__image {
+  overflow: hidden;
+}
+
 .paragraph--type--video {
   position: relative;
   padding: 3.2em 0;
