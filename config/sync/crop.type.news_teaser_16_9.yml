@@ -1,0 +1,12 @@
+uuid: e64426cc-9e95-4059-bacf-2c4edb36cb49
+langcode: en
+status: true
+dependencies: {  }
+label: 'News teaser 16:9'
+id: news_teaser_16_9
+description: 'Used for news teaser images '
+aspect_ratio: '16:9'
+soft_limit_width: 700
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

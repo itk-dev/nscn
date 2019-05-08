@@ -17,7 +17,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 18vh;
   -o-object-position: center;
      object-position: center;
 }
@@ -39,6 +38,11 @@
 
 .block--news-teaser:hover h2 {
   color: #1A6BD4;
+}
+
+.block--news-teaser:hover img {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.16);
 }
 
 .block--news--list ul.news-list {

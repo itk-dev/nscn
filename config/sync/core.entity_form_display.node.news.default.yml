@@ -94,9 +94,11 @@ content:
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - news_teaser_16_9
         - hero
         - teaser
       progress_indicator: throbber
+      crop_types_required: {  }
     third_party_settings: {  }
     type: image_widget_crop
     region: content

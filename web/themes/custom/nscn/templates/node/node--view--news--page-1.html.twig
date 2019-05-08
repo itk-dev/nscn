@@ -68,27 +68,33 @@
 
 {{ attach_library('socialbase/teaser')}}
 
-<div rel="bookmark" class="block--news-teaser">
-  <div class="col-md-12 block--news-teaser-image">
-    {{ content.field_page_image }}
-  </div>
-  <div class="col-md-2">
-    <span class="date">{{ date }}</span>
-    <span class="date text-muted">in News</span>
-  </div>
-  <div class="col-md-10">
-    <div class="block--news-teaser-title">
-      {{ title_prefix }}
-        <h2 class="h3">
-          <a href="{{ url }}">
-            {{ label }}
-          </a>
-        </h2>
-      {{ title_suffix }}
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div rel="bookmark" class="block--news-teaser">
+      <div class="col-md-12">
+        <div class="block--news-teaser-title">
+          {{ title_prefix }}
+            <h2 class="h3">
+              <a href="{{ url }}">
+                {{ label }}
+              </a>
+            </h2>
+          {{ title_suffix }}
+        </div>
+      </div>
+      <div class="col-md-12 block--news-teaser-image">
+        <a href="{{ url }}">{{ content.field_page_image }}</a>
+      </div>
+      <div class="col-md-2">
+        <span class="date">{{ date }}</span>
+        <span class="date text-muted">in News</span>
+      </div>
+      <div class="col-md-10">
+        <p class="block--news-teaser-content">{{ content|without('field_page_image') }}</p>
+      </div>
+      <div class="col-md-12">
+        <hr>
+      </div>
     </div>
-    <p class="block--news-teaser-content">{{ content|without('field_page_image') }}</p>
-  </div>
-  <div class="col-md-12">
-    <hr>
   </div>
 </div>
