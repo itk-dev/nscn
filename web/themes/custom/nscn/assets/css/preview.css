@@ -1355,9 +1355,6 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
           box-sizing: border-box;
   padding: 2em;
   text-align: left;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .paragraph--hero .cover-small .page-title {
@@ -1405,6 +1402,11 @@ html.js .input-group-addon .glyphicon.glyphicon-spin {
   padding: 5rem 0;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+.introduction .field--name-field-introduction-aside {
+  background-color: #f8f8f8;
+  padding: 1rem;
 }
 
 .stream-icon-new {
@@ -1755,6 +1757,9 @@ blockquote {
     border-width: 3px;
   }
   .paragraph--hero .cover-small {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: absolute;
     left: 0;
   }

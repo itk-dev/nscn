@@ -98,7 +98,6 @@ module:
   token: 0
   toolbar: 0
   twig_tweak: 0
-  update: 0
   user: 0
   views_field_view: 0
   views_infinite_scroll: 0

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.introduction.field_introduction_aside
     - field.field.paragraph.introduction.field_introduction_link_an
     - field.field.paragraph.introduction.field_introduction_link_lu
     - field.field.paragraph.introduction.field_introduction_text
@@ -20,8 +21,15 @@ targetEntityType: paragraph
 bundle: introduction
 mode: default
 content:
-  field_introduction_link_an:
+  field_introduction_aside:
     weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_introduction_link_an:
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
@@ -33,7 +41,7 @@ content:
     type: link
     region: content
   field_introduction_link_lu:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -60,7 +68,7 @@ content:
     type: string
     region: content
   field_text_position:
-    weight: 4
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
