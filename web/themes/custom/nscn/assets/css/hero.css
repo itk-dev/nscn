@@ -46,9 +46,6 @@
           box-sizing: border-box;
   padding: 2em;
   text-align: left;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .paragraph--hero .cover-small .page-title {
@@ -95,6 +92,9 @@
     border-width: 3px;
   }
   .paragraph--hero .cover-small {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: absolute;
     left: 0;
   }
