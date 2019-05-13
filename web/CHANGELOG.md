@@ -1,5 +1,11 @@
 # Changelog Nordic Smart City Network
 
+## 1.0.6
+* Update to drupal core 8.6.16
+
+## 10.0.5
+* Changed frontpage paragraph, added sidebar
+
 ## 1.0.4
 * SERV-234: Updated core to 8.6.13
 * SERV-234: Updated image styles
