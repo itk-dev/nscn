@@ -319,16 +319,16 @@
         },
         {
             "name": "bower-asset/timepicker",
-            "version": "1.11.14",
+            "version": "1.11.15",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jonthornton/jquery-timepicker.git",
-                "reference": "b53338cc92270da3750d5c0cc6abe60fb27a0d89"
+                "url": "https://github.com/jonthornton/jquery-timepicker.git",
+                "reference": "4262a0d34e47b0bf88a209aa31886006e494e530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonthornton/jquery-timepicker/zipball/b53338cc92270da3750d5c0cc6abe60fb27a0d89",
-                "reference": "b53338cc92270da3750d5c0cc6abe60fb27a0d89",
+                "url": "https://api.github.com/repos/jonthornton/jquery-timepicker/zipball/4262a0d34e47b0bf88a209aa31886006e494e530",
+                "reference": "4262a0d34e47b0bf88a209aa31886006e494e530",
                 "shasum": null
             },
             "require": {
@@ -336,7 +336,7 @@
             },
             "type": "bower-asset",
             "license": [
-                "http://opensource.org/licenses/MIT"
+                "MIT"
             ]
         },
         {
@@ -2454,16 +2454,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.15",
+            "version": "8.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86"
+                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/936456cdeac25c6bbd2f55b0d587239c6a81ba86",
-                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a9c4c97c7da9ec1a38782912bb06784d28590539",
+                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539",
                 "shasum": ""
             },
             "require": {
@@ -2507,7 +2507,7 @@
                 "symfony/validator": "~3.4.0",
                 "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.38.2",
-                "typo3/phar-stream-wrapper": "^2.0.1",
+                "typo3/phar-stream-wrapper": "^2.1.1",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
             },
@@ -2695,7 +2695,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-04-17T20:00:11+00:00"
+            "time": "2019-05-08T16:00:58+00:00"
         },
         {
             "name": "drupal/crop",
@@ -5654,16 +5654,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "4.11.0",
+            "version": "4.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "aad9654204ff623205f999ea5954f85806a40df5"
+                "reference": "d16460a310582c9b792f2c4ffadb5aa4c9151dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/aad9654204ff623205f999ea5954f85806a40df5",
-                "reference": "aad9654204ff623205f999ea5954f85806a40df5",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/d16460a310582c9b792f2c4ffadb5aa4c9151dcb",
+                "reference": "d16460a310582c9b792f2c4ffadb5aa4c9151dcb",
                 "shasum": ""
             },
             "require": {
@@ -5687,7 +5687,7 @@
                 "drupal/block_field": "1.0-alpha8",
                 "drupal/bootstrap": "3.17",
                 "drupal/config_update": "1.6",
-                "drupal/core": "~8.6.15",
+                "drupal/core": "~8.6.16",
                 "drupal/crop": "1.5",
                 "drupal/csv_serialization": "1.4.0",
                 "drupal/data_policy": "^1.0",
@@ -5791,7 +5791,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2019-05-07T08:41:07+00:00"
+            "time": "2019-05-08T18:15:50+00:00"
         },
         {
             "name": "google/apiclient",
@@ -5854,16 +5854,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.97",
+            "version": "v0.98",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "682f5ea10b63a4a008933afae5185c5239b653cb"
+                "reference": "541fc4a4031fc762be4e0902e5dec6e99933c353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/682f5ea10b63a4a008933afae5185c5239b653cb",
-                "reference": "682f5ea10b63a4a008933afae5185c5239b653cb",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/541fc4a4031fc762be4e0902e5dec6e99933c353",
+                "reference": "541fc4a4031fc762be4e0902e5dec6e99933c353",
                 "shasum": ""
             },
             "require": {
@@ -5887,7 +5887,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2019-05-04T00:23:16+00:00"
+            "time": "2019-05-11T00:23:08+00:00"
         },
         {
             "name": "google/auth",
