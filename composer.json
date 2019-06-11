@@ -22,7 +22,7 @@
         "drupal/twig_tweak": "^2.1",
         "itk-dev/itk_azure_video": "^1.0.5",
         "drupal/system_status": "^2.8",
-        "drush/drush": "^9.6"
+        "drush/drush": "~9.6.0"
     },
 
 
