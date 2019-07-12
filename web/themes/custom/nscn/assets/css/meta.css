@@ -7,3 +7,8 @@
   background-color: #1A6BD4;
   color: white;
 }
+
+.article__special-fields {
+  border-top: none;
+  padding-top: 0;
+}
