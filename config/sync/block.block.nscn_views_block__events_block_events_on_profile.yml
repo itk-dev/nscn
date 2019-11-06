@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__events_block_events_on_profile
 theme: nscn
 region: complementary_bottom
-weight: 1
+weight: -25
 provider: null
 plugin: 'views_block:events-block_events_on_profile'
 settings:

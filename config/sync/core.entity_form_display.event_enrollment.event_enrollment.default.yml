@@ -15,14 +15,8 @@ targetEntityType: event_enrollment
 bundle: event_enrollment
 mode: default
 content:
-  field_enrollment_status:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_event:
-    weight: 11
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -32,13 +26,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 10
-    settings: {  }
+    weight: 2
+    settings:
+      include_locked: true
     third_party_settings: {  }
     region: content
   name:
     type: string_textfield
-    weight: -4
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -46,7 +41,7 @@ content:
     region: content
   user_id:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -55,3 +50,4 @@ content:
     region: content
 hidden:
   field_account: true
+  field_enrollment_status: true

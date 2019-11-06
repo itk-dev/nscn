@@ -1,9 +1,9 @@
-uuid: 9adddf7b-9784-43cc-93f3-42aa96a7a021
+uuid: ffdf9ca6-135a-4e8d-ab23-0c3452b59b48
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.hero
+    - core.entity_view_mode.node.full
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
@@ -15,68 +15,56 @@ dependencies:
     - node.type.event
   module:
     - address
-    - datetime
+    - file
+    - text
     - user
 _core:
-  default_config_hash: YyO2wBCVEGkdF8Te6I8GNCvuoQ3x0lz061tLjB2ESnI
-id: node.event.hero
+  default_config_hash: dCGz6G01KpyFxVZYWAL0XFWzuSy-U8kjBTW2gS7i8zg
+id: node.event.full
 targetEntityType: node
 bundle: event
-mode: hero
+mode: full
 content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_event_address:
     type: address_plain
-    weight: 3
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_event_date:
-    type: datetime_default
-    weight: 0
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    region: content
-  field_event_date_end:
-    type: datetime_default
-    weight: 1
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    region: content
   field_event_location:
     type: string
-    weight: 2
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
-  flag_follow_content:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  groups_type_public_group:
-    type: entity_reference_label
-    weight: 5
-    region: content
+  field_files:
+    weight: 3
     label: above
     settings:
-      link: true
+      use_description_as_link_text: true
     third_party_settings: {  }
+    type: file_default
+    region: content
 hidden:
-  body: true
   field_content_visibility: true
+  field_event_date: true
+  field_event_date_end: true
   field_event_image: true
-  field_files: true
+  flag_follow_content: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   like_and_dislike: true
   links: true
+  private_message_link: true

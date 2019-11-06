@@ -12,7 +12,7 @@ dependencies:
 id: nscn_exposedformgroup_topicspage_group_topics
 theme: nscn
 region: complementary_top
-weight: -9
+weight: -17
 provider: null
 plugin: 'views_exposed_filter_block:group_topics-page_group_topics'
 settings:

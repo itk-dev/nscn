@@ -11,8 +11,8 @@ dependencies:
     - nscn
 id: nscn_account_menu
 theme: nscn
-region: header
-weight: 1
+region: hidden
+weight: -20
 provider: null
 plugin: 'system_menu_block:account'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__topics_block_user_topics
 theme: nscn
 region: complementary_bottom
-weight: 3
+weight: -19
 provider: null
 plugin: 'views_block:topics-block_user_topics'
 settings:

@@ -17,7 +17,9 @@ label: Visibility
 description: ''
 required: true
 translatable: true
-default_value: null
+default_value:
+  -
+    value: public
 default_value_callback: ''
 settings: {  }
 field_type: entity_access_field

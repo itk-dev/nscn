@@ -12,7 +12,7 @@ dependencies:
 id: nscn_exposed_form_search_content_page_sidebar
 theme: nscn
 region: complementary_top
-weight: 3
+weight: -14
 provider: null
 plugin: 'views_exposed_filter_block:search_content-page'
 settings:

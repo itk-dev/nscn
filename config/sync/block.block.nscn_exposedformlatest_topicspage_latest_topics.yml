@@ -12,7 +12,7 @@ dependencies:
 id: nscn_exposedformlatest_topicspage_latest_topics
 theme: nscn
 region: complementary_top
-weight: 1
+weight: -15
 provider: null
 plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
 settings:

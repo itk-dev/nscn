@@ -10,7 +10,7 @@ dependencies:
 id: nscn_group_add_block
 theme: nscn
 region: complementary_top
-weight: -97
+weight: -23
 provider: null
 plugin: group_add_block
 settings:

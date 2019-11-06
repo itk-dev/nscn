@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.search_index
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
-    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
     - field.field.node.event.field_event_image
@@ -16,7 +14,6 @@ dependencies:
     - field.field.node.event.field_files
     - node.type.event
   module:
-    - comment
     - text
     - user
 _core:
@@ -32,14 +29,6 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_event_comments:
-    weight: 1
-    label: above
-    settings:
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   flag_follow_content:
     weight: 10
