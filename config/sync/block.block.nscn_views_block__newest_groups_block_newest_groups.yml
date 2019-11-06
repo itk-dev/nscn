@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__newest_groups_block_newest_groups
 theme: nscn
 region: complementary_bottom
-weight: 4
+weight: -18
 provider: null
 plugin: 'views_block:newest_groups-block_newest_groups'
 settings:

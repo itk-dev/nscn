@@ -7,7 +7,6 @@ dependencies:
     - field.field.event_enrollment.event_enrollment.field_enrollment_status
     - field.field.event_enrollment.event_enrollment.field_event
   module:
-    - options
     - social_event
     - user
 _core:
@@ -17,15 +16,8 @@ targetEntityType: event_enrollment
 bundle: event_enrollment
 mode: default
 content:
-  field_enrollment_status:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_event:
-    weight: 1
+    weight: 2
     label: above
     settings:
       link: true
@@ -35,7 +27,7 @@ content:
   name:
     label: above
     type: string
-    weight: -4
+    weight: 0
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -43,9 +35,10 @@ content:
   user_id:
     label: hidden
     type: author
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
   field_account: true
+  field_enrollment_status: true

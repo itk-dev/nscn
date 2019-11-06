@@ -7,7 +7,7 @@ dependencies:
 id: nscn_local_actions
 theme: nscn
 region: complementary_top
-weight: -18
+weight: -19
 provider: null
 plugin: local_actions_block
 settings:

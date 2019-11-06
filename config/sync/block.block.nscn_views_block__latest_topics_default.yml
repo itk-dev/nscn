@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__latest_topics_default
 theme: nscn
 region: complementary_bottom
-weight: 3
+weight: -20
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
 settings:
