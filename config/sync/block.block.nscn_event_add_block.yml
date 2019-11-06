@@ -10,7 +10,7 @@ dependencies:
 id: nscn_event_add_block
 theme: nscn
 region: complementary_top
-weight: -99
+weight: -25
 provider: null
 plugin: event_add_block
 settings:

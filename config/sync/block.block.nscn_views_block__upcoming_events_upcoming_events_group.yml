@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__upcoming_events_upcoming_events_group
 theme: nscn
 region: complementary_bottom
-weight: 2
+weight: -22
 provider: null
 plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:

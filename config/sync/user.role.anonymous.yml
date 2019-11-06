@@ -11,5 +11,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access content search'
+  - 'view node.event.field_content_visibility:public content'
   - 'view node.landing_page.field_content_visibility:public content'
   - 'view node.page.field_content_visibility:public content'

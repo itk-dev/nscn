@@ -12,7 +12,7 @@ dependencies:
 id: nscn_views_block__newest_users_block_newest_users
 theme: nscn
 region: complementary_bottom
-weight: 5
+weight: -15
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'
 settings:

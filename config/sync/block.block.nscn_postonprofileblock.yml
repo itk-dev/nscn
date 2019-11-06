@@ -12,7 +12,7 @@ _core:
 id: nscn_postonprofileblock
 theme: nscn
 region: hidden
-weight: -9
+weight: -22
 provider: null
 plugin: post_photo_profile_block
 settings:

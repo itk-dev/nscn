@@ -12,7 +12,7 @@ dependencies:
 id: nscn_exposedformupcoming_eventspage_community_events
 theme: nscn
 region: complementary_top
-weight: 3
+weight: -12
 provider: null
 plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
 settings:

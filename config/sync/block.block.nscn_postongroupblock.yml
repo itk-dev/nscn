@@ -12,7 +12,7 @@ _core:
 id: nscn_postongroupblock
 theme: nscn
 region: hidden
-weight: -9
+weight: -23
 provider: null
 plugin: post_photo_group_block
 settings:
