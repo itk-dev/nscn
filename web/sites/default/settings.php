@@ -13,17 +13,12 @@
 $databases = [];
 $config_directories = [];
 $settings['update_free_access'] = FALSE;
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['container_yamls'][] = __DIR__ . '/services.yml';
 $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
 ];
 //
-// As the settings.php file is not writable during install on Platform.sh (for
-// good reasons), Drupal will refuse to install a profile that is not defined
-// here.
-$settings['install_profile'] = 'social';
-
 // The hash_salt should be a unique random value for each application.
 // If left unset, the settings.platformsh.php file will attempt to provide one.
 // You can also provide a specific value here if you prefer and it will be used
@@ -37,6 +32,7 @@ $settings['install_profile'] = 'social';
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 
 // Local settings. These come last so that they can override anything.
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
 }
+
