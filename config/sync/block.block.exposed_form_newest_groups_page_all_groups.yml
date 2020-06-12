@@ -1,0 +1,31 @@
+uuid: 30f825e0-1ec3-4658-84e1-9d27124fa962
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_groups
+  module:
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: 2pIi1KbMaKhE051d8bsREZj0FQG1Hw0HYRY7T7w7uUw
+id: exposed_form_newest_groups_page_all_groups
+theme: socialblue
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:newest_groups-page_all_groups'
+settings:
+  id: 'views_exposed_filter_block:newest_groups-page_all_groups'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-groups
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: e4f24e23-ab98-4155-a169-35c4be2275bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured_items_description
+    - paragraphs.paragraphs_type.featured_items
+  module:
+    - text
+_core:
+  default_config_hash: fqv7ax0NJdM3KDJeLpRckg0idCgiIs_iziuUc15agYI
+id: paragraph.featured_items.field_featured_items_description
+field_name: field_featured_items_description
+entity_type: paragraph
+bundle: featured_items
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,35 @@
+uuid: f060c9e5-7c68-4164-9097-14d40e7c6ce9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_small_landing
+  module:
+    - crop
+    - image_effects
+_core:
+  default_config_hash: CnB-4w80oJlPSX6FbyUvD_iMIa_M3eA_VPS46b3iXpg
+name: social_landing_hero_small
+label: 'social landing hero_small (1500×185)'
+effects:
+  3a056b0c-351f-11e9-b210-d663bd873d93:
+    uuid: 3a056b0c-351f-11e9-b210-d663bd873d93
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: hero_small_landing
+      automatic_crop_provider: null
+  3a056dbe-351f-11e9-b210-d663bd873d93:
+    uuid: 3a056dbe-351f-11e9-b210-d663bd873d93
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true
+  3a056f58-351f-11e9-b210-d663bd873d93:
+    uuid: 3a056f58-351f-11e9-b210-d663bd873d93
+    id: image_scale_and_crop
+    weight: -8
+    data:
+      width: 1500
+      height: 185
+      anchor: center-center

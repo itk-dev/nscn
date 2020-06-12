@@ -1,0 +1,12 @@
+uuid: 20c35b97-9af5-4ab2-8ee0-9d9dab350a45
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jZ75TD9ylQZVFtpBeMWRAC9xW3Ib3kknMv2qSb7tW4U
+id: hero_small
+label: 'Hero small'
+icon_uuid: null
+icon_default: null
+description: 'A section similiar to the Hero, but a bit smaller, so it takes up less room in the view port'
+behavior_plugins: {  }
