@@ -10,7 +10,7 @@
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "^6.0",
+        "goalgorilla/open_social": "^8.0",
         "doctrine/cache": "1.6.1",
         "doctrine/collections": "1.4.0",
         "doctrine/common": "2.7.2",
@@ -22,7 +22,8 @@
         "drupal/twig_tweak": "^2.1",
         "itk-dev/itk_azure_video": "^1.0.5",
         "drupal/system_status": "^2.8",
-        "drush/drush": "~9.6.0"
+        "drush/drush": "~9.6.0",
+        "drupal/upgrade_status": "^2.7"
     },
 
 
