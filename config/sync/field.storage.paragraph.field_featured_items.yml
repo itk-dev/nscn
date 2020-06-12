@@ -9,7 +9,7 @@ dependencies:
     - paragraphs
     - profile
 _core:
-  default_config_hash: KKbANXhZ_2XODhSqcgsKdfPBN1s0h8ysG2xrNL1SiTs
+  default_config_hash: lZKm4rGCXyLiNqO5qZ2ce1j-vnuV2UNdWMwACXxkE88
 id: paragraph.field_featured_items
 field_name: field_featured_items
 entity_type: paragraph

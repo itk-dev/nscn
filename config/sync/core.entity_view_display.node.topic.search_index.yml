@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: RCMgjjZezJmM-cH0XFTh9oSP3doP96oG5Lmh_LvsP6E
+  default_config_hash: GR7aQlAz3r3T9r-5_2h69coD5211GRpStT9Sa6DYrCM
 id: node.topic.search_index
 targetEntityType: node
 bundle: topic
@@ -41,16 +41,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
 hidden:
   field_content_visibility: true
   field_files: true
@@ -59,5 +49,7 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   like_and_dislike: true
   links: true
+  search_api_excerpt: true

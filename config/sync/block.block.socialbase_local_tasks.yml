@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialbase
+_core:
+  default_config_hash: T4-KeiVCp-5V6t594xDGW5IVO6Q7WyFWeEUcjhapnUA
 id: socialbase_local_tasks
 theme: socialbase
 region: secondary_navigation
@@ -31,6 +33,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete"
+    pages: "/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/user/*/profile\r\n/group/*/edit"
     negate: true
     context_mapping: {  }

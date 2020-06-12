@@ -6,7 +6,7 @@ dependencies:
     - profile
     - text
 _core:
-  default_config_hash: Pytz4MnaPg-k4HXKcKJqJ6b-5YcGYiEVexJflP6PQXQ
+  default_config_hash: FkJq4kx1NxcuV1SQI6xl34VVDeQhK5-7JpajOAhFyrk
 id: profile.field_profile_self_introduction
 field_name: field_profile_self_introduction
 entity_type: profile

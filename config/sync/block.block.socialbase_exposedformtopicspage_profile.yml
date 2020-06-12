@@ -10,6 +10,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: ZPwVLWBhxw-Bxk-zSesuK63a8uXbqD_GUoEquIn-Rv4
 id: socialbase_exposedformtopicspage_profile
 theme: socialbase
 region: complementary_top

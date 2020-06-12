@@ -23,7 +23,11 @@
         "itk-dev/itk_azure_video": "^1.0.5",
         "drupal/system_status": "^2.8",
         "drush/drush": "~9.6.0",
-        "drupal/upgrade_status": "^2.7"
+        "drupal/upgrade_status": "^2.7",
+        "symfony/debug": "3.4.9",
+        "symfony/filesystem": "3.4.9",
+        "symfony/finder": "3.4.9",
+        "drupal/console": "^1.9"
     },
 
 

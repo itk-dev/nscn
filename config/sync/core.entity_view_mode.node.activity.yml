@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: LpD_MAUoA0okeonj6aHMAbxxudoAFn-YAxAz_reE5yE
+  default_config_hash: RjjbxCyoqg16WIMiFve6eY34_V27jmHQFKagSCl-zFA
 id: node.activity
 label: Activity
 targetEntityType: node

@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: LLVhB9jESKhnbZyEXi-3eOcTrEmgjeiM6Vh5kGuVRfg
+  default_config_hash: YvMwqCuM0QsEzQEGaa64MAB9Me3w6oUCfBuOAni-xmk
 format: full_html
 editor: ckeditor
 settings:
@@ -52,16 +52,18 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - ShowBlocks
             - Source
+            - Maximize
   plugins:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: "a.btn.btn-default|Default link\r\na.btn.btn-primary|Primary link\r\na.btn.btn-accent|Accent link\r\nspan.badge.badge-primary|Primary badge\r\nspan.badge.badge-secondary|Secondary badge\r\nspan.badge.badge--pill.badge-default|Pill badge"
 image_upload:
   status: true
   scheme: public

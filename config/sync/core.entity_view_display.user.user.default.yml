@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: bD2RG8U02z8GSE4RHHEerQVWEim3RMBwurQSAg3fVX8
+  default_config_hash: c23cLvgm2S6S2e0bZFAhEzEx9xDdsEycGOiAUCZhJ9E
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -22,3 +22,5 @@ hidden:
   member_for: true
   profile_main: true
   profile_profile: true
+  profile_profiles: true
+  search_api_excerpt: true

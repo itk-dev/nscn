@@ -1,9 +1,11 @@
 uuid: df7710a8-d192-446a-bc14-c21fdc72d58f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
-  default_config_hash: n7cBM5_Qghqlv3PWB0dGnv3kLwBF9sOMBwbxvuaFscc
+  default_config_hash: 7FcTkxvtdAIUb5zmj_WN12WJfmZoVhMjsEMd7prLsFs
 name: social_tiny
 label: 'social tiny (16 x 16)'
 effects:
@@ -12,6 +14,12 @@ effects:
     id: image_scale_and_crop
     weight: 2
     data:
+      anchor: center-center
       width: 16
       height: 16
-      anchor: center-center
+  2b600be6-28ba-4206-85c7-ea5a6e71e934:
+    uuid: 2b600be6-28ba-4206-85c7-ea5a6e71e934
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true

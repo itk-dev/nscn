@@ -9,11 +9,11 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: xAKaUWzbpluOMIPdY2QIzKEqVZffz4vaL3nWFtL884I
+  default_config_hash: En2G0Gbr7c-x12dYJplDwM31A8vy4CdOboZeiVhN2jw
 name: Event
 type: event
 description: ''
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

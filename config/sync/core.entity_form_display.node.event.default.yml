@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -15,6 +17,7 @@ dependencies:
     - node.type.event
   module:
     - address
+    - comment
     - datetime
     - field_group
     - file
@@ -37,13 +40,13 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-      region: hidden
+      region: content
     group_date_time:
       children:
         - field_event_date
         - field_event_date_end
       parent_name: ''
-      weight: 3
+      weight: 4
       label: 'Date & time'
       format_type: fieldset
       format_settings:
@@ -51,7 +54,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-      region: hidden
+      region: content
     group_location:
       children:
         - field_event_location
@@ -65,7 +68,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-      region: hidden
+      region: content
     group_description:
       children:
         - body
@@ -78,7 +81,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-      region: hidden
+      region: content
     group_event_visibility:
       children:
         - groups
@@ -92,24 +95,35 @@ third_party_settings:
         required_fields: true
         id: visibility
         classes: 'card '
-      region: hidden
+      region: content
     group_attachments:
       children:
         - field_files
       parent_name: ''
       weight: 8
       label: Attachments
-      format_type: tab
+      format_type: fieldset
       format_settings:
         label: Attachments
         required_fields: true
         id: attachments
         classes: card
-        formatter: closed
-        description: ''
-      region: hidden
+      region: content
+    group_enrollment:
+      children:
+        - field_event_enroll
+      parent_name: ''
+      weight: 3
+      label: 'Enrollment options'
+      format_type: fieldset
+      format_settings:
+        label: 'Enrollment options'
+        required_fields: true
+        id: enrollment
+        classes: card
+      region: content
 _core:
-  default_config_hash: 3xO1b_imnyjtyWL6X99E1p9hCFynOpFfSNTDEzp3_1o
+  default_config_hash: Q96etTO0MCux6qGbqUd3feJnCmtYC1HDhCqeXL58ouA
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -122,6 +136,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -138,9 +153,16 @@ content:
     region: content
   field_event_address:
     weight: 14
-    settings: {  }
+    settings:
+      default_country: site_default
     third_party_settings: {  }
     type: address_default
+    region: content
+  field_event_comments:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_event_date:
     weight: 10
@@ -154,6 +176,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_enroll:
+    region: content
+    settings:
+      display_label: true
+    type: boolean_checkbox
+    weight: 12
+    third_party_settings: {  }
   field_event_image:
     weight: 3
     settings:
@@ -166,7 +195,6 @@ content:
         - teaser
       progress_indicator: throbber
       warn_multiple_usages: true
-      crop_types_required: {  }
     third_party_settings: {  }
     type: image_widget_crop
     region: content
@@ -233,6 +261,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden: {  }

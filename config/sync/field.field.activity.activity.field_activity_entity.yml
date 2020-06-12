@@ -15,7 +15,7 @@ dependencies:
     - activity_creator
     - dynamic_entity_reference
 _core:
-  default_config_hash: ppRhEM1LrV_b49cOQDQYvFnKzJaey1Y8WO-JL1uyEzs
+  default_config_hash: 6qd0BAp_6j8O7rlCaJmCJYUPLL-Ap4oO56bVG1oO2Y4
 id: activity.activity.field_activity_entity
 field_name: field_activity_entity
 entity_type: activity
@@ -104,9 +104,6 @@ settings:
   user:
     handler: 'default:user'
     handler_settings: {  }
-  search_api_task:
-    handler: 'default:search_api_task'
-    handler_settings: {  }
   crop:
     handler: 'default:crop'
     handler_settings: {  }
@@ -119,13 +116,16 @@ settings:
   mentions:
     handler: 'default:mentions'
     handler_settings: {  }
+  paragraph:
+    handler: 'default:paragraph'
+    handler_settings: {  }
+  search_api_task:
+    handler: 'default:search_api_task'
+    handler_settings: {  }
   vote:
     handler: 'default:vote'
     handler_settings: {  }
   vote_result:
     handler: 'default:vote_result'
-    handler_settings: {  }
-  paragraph:
-    handler: 'default:paragraph'
     handler_settings: {  }
 field_type: dynamic_entity_reference

@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: kMqxltcLhmoj5txHbRyHXOdcggiYPmbTVkGt9E1CZKE
 id: exposedformlatest_topicspage_latest_topics
 theme: socialbase
 region: complementary_top

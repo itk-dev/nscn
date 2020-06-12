@@ -6,7 +6,7 @@ dependencies:
     - file
     - node
 _core:
-  default_config_hash: 0xdqy7Uw_dER7wQBvjVbAdwYyhN6TRjztM4HJNlDN30
+  default_config_hash: 12UNd-mLzWvpZ37ZBG9PLajT3iMOfu2hURxgA4FjDW0
 id: node.field_files
 field_name: field_files
 entity_type: node

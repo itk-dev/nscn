@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: 8ZB7MAZJFG_7GJae4w5BqiMNTy_cA3Y3_sHAPI89eQg
 id: socialbase_pagetitleblock
 theme: socialbase
 region: hero

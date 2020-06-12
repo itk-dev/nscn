@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: 76RP0CqR2XEpfhzMHuMc30MBGbfL8kvCYzxJ-RbyJ5c
 id: views_block__group_members_block_newest_members
 theme: socialbase
 region: complementary_bottom

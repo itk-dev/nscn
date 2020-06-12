@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: cJBzSe8tsKTEkQ3KWM0q1o2ONKVqoKQ6m2TSCYQpIsw
 id: socialbase_content
 theme: socialbase
 region: content

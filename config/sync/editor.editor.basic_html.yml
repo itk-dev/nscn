@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+  default_config_hash: aDq5he_U0ZM3K5uqY7LqlRQtPIgqwgVh9vmQeNSu7Ck
 format: basic_html
 editor: ckeditor
 settings:
@@ -42,16 +42,15 @@ settings:
           name: Tools
           items:
             - Source
+            - Maximize
   plugins:
     stylescombo:
       styles: ''
-    language:
-      language_list: un
 image_upload:
   status: true
-  scheme: private
+  scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

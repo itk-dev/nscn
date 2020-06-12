@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: M8sjUIqGE_duwOkpGycjuQ0ZH5JAZJccpWKQ9VVgjCU
 id: views_block__activity_stream_block_stream_homepage
 theme: socialbase
 region: content

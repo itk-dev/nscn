@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: AjANSHQfqvJnuUQlzyM7emySWvnB1Sh8QYVpDitVjGk
+  default_config_hash: mvURqPA6k0iTYYOwuapdypjk-1AvQEe3kP30NAdBzMk
 id: message.create_comment_group_post.field_message_destination
 field_name: field_message_destination
 entity_type: message

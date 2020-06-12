@@ -6,19 +6,19 @@ dependencies:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
 _core:
-  default_config_hash: x956z7YSUuUg0Zb0LMqxWu-22u-EfZJXUEn2HUKeNhQ
+  default_config_hash: 3tOK5PxzfojSpjhsO75OfLbAPAo87idRigAPn_ZW_wc
 id: comment.comment.default
 targetEntityType: comment
 bundle: comment
 mode: default
 content:
   author:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_comment_body:
-    weight: 3
+    weight: 0
     settings:
       rows: 5
       placeholder: 'Add a comment'

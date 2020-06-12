@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: jIwN3hiZCpsEzSqpLawpZg3-tmhMqBxSHERpAKJ_CrU
+  default_config_hash: AxrCDmEwvo4CzV99Bwcejg5zuEM43gmYOZZiS3JUpw0
 id: message.create_like_node_or_post.field_message_destination
 field_name: field_message_destination
 entity_type: message

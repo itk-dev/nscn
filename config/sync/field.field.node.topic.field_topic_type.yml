@@ -7,7 +7,7 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.topic_types
 _core:
-  default_config_hash: xhXWNs6CiVtAAoUOXFMH_UeNRXXy470sFEs0oNLeqP4
+  default_config_hash: FPYseMdYCf5PgcWFLuRwKBBc2cqFl1Y7zQfavLZg37Q
 id: node.topic.field_topic_type
 field_name: field_topic_type
 entity_type: node

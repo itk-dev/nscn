@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: RvapKcnK-vngQpDq_RFK7ih2VxfsaaiXfawMAi_3QQY
+  default_config_hash: 6tQ01x9xDYMt74gOa557lKl5k0OmJGg1muAb3xS84_U
 id: group.open_group.hero
 targetEntityType: group
 bundle: open_group
@@ -56,4 +56,5 @@ hidden:
   changed: true
   created: true
   field_group_description: true
+  search_api_excerpt: true
   uid: true

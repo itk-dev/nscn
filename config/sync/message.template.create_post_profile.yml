@@ -10,27 +10,26 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: true
+    activity_create_direct: 1
     activity_bundle_entities:
       post-post: post-post
-      post-photo: post-photo
     activity_action: create_entitiy_action
-    activity_aggregate: false
+    activity_aggregate: 0
 _core:
-  default_config_hash: aSvlkk6NBN2QpKCKfB-v3FWfRdmX5SS6fs8m0dbth8o
+  default_config_hash: '-uWpQzoNQX4h_MuVNLJoB8qr6v1QVmRSZPk9d_d5AQk'
 template: create_post_profile
 label: 'Create post on profile'
 description: 'A person created a post on my profile'
 text:
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\n"
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\n"
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p><p>[message:additional_information]</p>'
 settings:
   'token options':
     clear: false

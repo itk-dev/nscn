@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.button.field_button_link_an
     - field.field.paragraph.button.field_button_link_lu
+    - field.field.paragraph.button.field_button_style
     - paragraphs.paragraphs_type.button
   module:
     - link
@@ -30,6 +31,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_button_style:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

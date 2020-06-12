@@ -9,7 +9,7 @@ dependencies:
     - group
     - user
 _core:
-  default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
+  default_config_hash: OL21L2xjoXlc_17Fycs9SNyTwcbxw4axjRciaZOzl9Q
 id: newest_groups
 label: 'Newest groups'
 module: views
@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -254,6 +253,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

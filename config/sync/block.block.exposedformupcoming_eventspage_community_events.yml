@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: bMyPHJ2HkkWS0GtR2Z29zdWwvV426iXh_Pv9o-RixfQ
 id: exposedformupcoming_eventspage_community_events
 theme: socialbase
 region: complementary_top

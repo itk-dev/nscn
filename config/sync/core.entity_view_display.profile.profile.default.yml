@@ -21,7 +21,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: H1dm70pY-ypST1UXmTwckhmwsobB2w7-Z5Kik2_8Nl8
+  default_config_hash: dnjwto7vi1Xhb0sx5KL_Oexy3UD6Q3LbxkPfS5uvZNw
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
@@ -81,3 +81,4 @@ hidden:
   field_profile_last_name: true
   field_profile_organization: true
   field_profile_show_email: true
+  search_api_excerpt: true

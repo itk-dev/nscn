@@ -7,5 +7,6 @@ _core:
 id: block
 label: Block
 icon_uuid: null
+icon_default: null
 description: 'Reference some block'
 behavior_plugins: {  }

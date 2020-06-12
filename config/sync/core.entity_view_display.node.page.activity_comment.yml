@@ -6,33 +6,47 @@ dependencies:
     - core.entity_view_mode.node.activity_comment
     - field.field.node.page.body
     - field.field.node.page.field_content_visibility
+    - field.field.node.page.field_feature_etc_
     - field.field.node.page.field_files
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
+    - field.field.node.page.field_sidebar_content
+    - image.style.social_x_large
     - node.type.page
   module:
+    - image
     - user
 _core:
-  default_config_hash: 0Xn_dFl5cAC1x3sRQADO0LFp34GfwJ3o8zEVp5vFISE
+  default_config_hash: OlJDBqvBFFZ5eOB7fQfMDslmf1g0hXsEjVOmbmrA7Os
 id: node.page.activity_comment
 targetEntityType: node
 bundle: page
 mode: activity_comment
 content:
-  links:
+  field_page_image:
+    type: image
     weight: 0
+    label: above
+    settings:
+      image_style: social_x_large
+      image_link: content
+    third_party_settings: {  }
     region: content
+  links:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
-  addtoany: true
   body: true
   field_content_visibility: true
+  field_feature_etc_: true
   field_files: true
   field_page_comments: true
-  field_page_image: true
+  field_sidebar_content: true
   flag_follow_content: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  search_api_excerpt: true

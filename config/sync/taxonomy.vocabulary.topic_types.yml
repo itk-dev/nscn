@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ZwJIm70Fl0bN1aljKUKAP1HG3jCHJgSjvRA5oG_y6Hw
+  default_config_hash: G6npA3Wl7zD7HUB-Sh_bqlPGQraWf2a0g1iGenzgAQU
 name: 'Topic types'
 vid: topic_types
 description: 'Topic types'
-hierarchy: 0
 weight: 0

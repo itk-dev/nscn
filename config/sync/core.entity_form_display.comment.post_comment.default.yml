@@ -6,12 +6,17 @@ dependencies:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
 _core:
-  default_config_hash: Nk6KY_C9YtkQheMGmYREz7eMDsgvlKu5HEqQr4biuBs
+  default_config_hash: 2UxokzR_phIGQRgAuNPHZtmipVpKcs20gTIjWmNx0QQ
 id: comment.post_comment.default
 targetEntityType: comment
 bundle: post_comment
 mode: default
 content:
+  author:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_comment_body:
     weight: 3
     settings:
@@ -21,5 +26,4 @@ content:
     type: string_textarea
     region: content
 hidden:
-  author: true
   subject: true

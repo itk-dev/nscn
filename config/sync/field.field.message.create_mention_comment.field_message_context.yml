@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: KJIXfWZ491j8g5dICEQsgVUrSEj_jZXgRfiy-HXyUho
+  default_config_hash: brRrrluSh2hoGKHVKP1HTZP0gWzZE5BXkmAuLGNNV64
 id: message.create_mention_comment.field_message_context
 field_name: field_message_context
 entity_type: message

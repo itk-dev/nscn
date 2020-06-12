@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -57,8 +59,10 @@ content:
     region: content
 hidden:
   field_content_visibility: true
+  field_event_comments: true
   field_event_date: true
   field_event_date_end: true
+  field_event_enroll: true
   field_event_image: true
   flag_follow_content: true
   groups: true
@@ -68,3 +72,4 @@ hidden:
   like_and_dislike: true
   links: true
   private_message_link: true
+  search_api_excerpt: true

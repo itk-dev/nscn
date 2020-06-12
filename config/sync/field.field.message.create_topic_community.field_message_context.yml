@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: gFK0i7C2SswYzoRuil84e1Do_zA0PWUvY0mGUrLSXzc
+  default_config_hash: 1UVEC228EpXCamjxC8d_vJ2zmR3ofvv5KQySor2cjqQ
 id: message.create_topic_community.field_message_context
 field_name: field_message_context
 entity_type: message

@@ -7,17 +7,25 @@ dependencies:
     - field.field.event_enrollment.event_enrollment.field_enrollment_status
     - field.field.event_enrollment.event_enrollment.field_event
   module:
+    - options
     - social_event
     - user
 _core:
-  default_config_hash: 0mDgF3IhERBKLYvTLFI45QV09gC7cc2ebSU7ZzfaV0g
+  default_config_hash: JSQZYiPPCG2AT5eg8XgQ7gQLlL16nIQxRrIjptKLEPM
 id: event_enrollment.event_enrollment.default
 targetEntityType: event_enrollment
 bundle: event_enrollment
 mode: default
 content:
-  field_event:
+  field_enrollment_status:
     weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_event:
+    weight: 1
     label: above
     settings:
       link: true
@@ -27,7 +35,7 @@ content:
   name:
     label: above
     type: string
-    weight: 0
+    weight: -4
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -35,10 +43,10 @@ content:
   user_id:
     label: hidden
     type: author
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
   field_account: true
-  field_enrollment_status: true
+  search_api_excerpt: true

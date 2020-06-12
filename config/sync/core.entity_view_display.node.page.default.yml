@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.page.body
     - field.field.node.page.field_content_visibility
+    - field.field.node.page.field_feature_etc_
     - field.field.node.page.field_files
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
@@ -17,7 +18,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: bxHknQvsa_esZnLYlew8T028H5oUvqVzJpyf_dpyGGc
+  default_config_hash: mXxs8zpsOG505b8ChDw89wSloy1o7O7mnvzRirKI8rA
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -33,8 +34,7 @@ content:
   field_files:
     weight: 1
     label: above
-    settings:
-      use_description_as_link_text: true
+    settings: {  }
     third_party_settings: {  }
     type: file_default
     region: content
@@ -43,19 +43,14 @@ content:
     label: above
     settings:
       pager_id: 0
-      view_mode: default
     third_party_settings: {  }
     type: comment_default
     region: content
-  field_sidebar_content:
-    weight: 12
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   flag_follow_content:
     weight: 10
+    region: content
+  links:
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -63,8 +58,9 @@ hidden:
   field_content_visibility: true
   field_feature_etc_: true
   field_page_image: true
+  field_sidebar_content: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
-  links: true
+  search_api_excerpt: true

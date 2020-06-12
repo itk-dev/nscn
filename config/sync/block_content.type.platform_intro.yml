@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 3WJ5HkGqCxmh7dLzdWXBN-PHDQb1TsYDjkTqmMdIptE
+  default_config_hash: 07duPGP9oxxUlwAMpidiBE_twGxiTCkwiRlf1zRp7Pk
 id: platform_intro
 label: 'Platform introduction'
 revision: 0

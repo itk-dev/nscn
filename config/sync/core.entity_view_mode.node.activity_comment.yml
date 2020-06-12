@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: epUnKT076SuTjQqSLpgt9KR9cPGPg7_p6koQnrY11lU
+  default_config_hash: mv76nAecreDlxGL-o57YtSZs1wM6-BaUhkK-4XFi7g0
 id: node.activity_comment
 label: 'Activity comment'
 targetEntityType: node

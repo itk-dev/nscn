@@ -11,6 +11,8 @@ third_party_settings:
       group_content-closed_group-group_node-topic: group_content-closed_group-group_node-topic
       group_content-open_group-group_node-event: group_content-open_group-group_node-event
       group_content-open_group-group_node-topic: group_content-open_group-group_node-topic
+      group_content-public_group-group_node-event: group_content-public_group-group_node-event
+      group_content-public_group-group_node-topic: group_content-public_group-group_node-topic
       post-photo: post-photo
       post-post: post-post
     activity_action: create_entitiy_action
@@ -18,23 +20,23 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: true
-    activity_aggregate: false
+    activity_create_direct: 0
+    activity_aggregate: 0
     activity_entity_condition: ''
 _core:
-  default_config_hash: ZFN7gytX3iozYwSR_QLum85MV8HelzqidHBc8EryGt0
+  default_config_hash: zRkw-huT2WCpKopvlBjpzpDJRjCQyAyRzMTohKAJbA0
 template: create_content_in_joined_group
 label: 'Create a post, topic or event in a joined group'
 description: 'A person created a post, event or topic in a group I joined'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p><p>[message:additional_information]</p>'
     format: full_html
 settings:
   'token options':

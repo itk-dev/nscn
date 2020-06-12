@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 1voReQy0M0g_Q37FfXnf_P79HHYR3refXZGStPgnE6s
+  default_config_hash: Me4_laexdcrUwu1sfbQN5iE67zU0R5YjXtbbt_M_WUU
 id: node.event.field_event_image
 field_name: field_event_image
 entity_type: node
@@ -20,13 +20,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/content
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: QA1G2YoHEi-8XYN9y40lgNhfLPsWAeDbAn_rkyRbaqg
+  default_config_hash: JWCNNwh2V8Sw4KBxFXUrJuEPzKHXshlyB_m1a076Bmo
 id: featured
-label: 'Featured (Gray)'
-icon_uuid: null
+label: 'Featured Content'
+icon_uuid: 1bb5de6e-f2f3-4ef3-a547-62bb971fdf37
+icon_default: null
 description: 'Create featured items block, editor will be able to provide title, items to show and a link like see all.'
 behavior_plugins: {  }

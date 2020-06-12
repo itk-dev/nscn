@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.featured.field_featured_items
     - field.field.paragraph.featured.field_featured_link
     - field.field.paragraph.featured.field_featured_title
+    - field.field.paragraph.featured.field_text_position
     - paragraphs.paragraphs_type.featured
   module:
     - dynamic_entity_reference
@@ -117,4 +118,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_text_position: true
+  search_api_excerpt: true
