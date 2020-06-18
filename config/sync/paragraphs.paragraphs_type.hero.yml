@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ikCLE81NpM2YqusPmZ7IILq1AWWbiNqyHr1EfdDDLo4
+  default_config_hash: KxeQOC-0jkvY_clYX7WeOdVPKQCTN6mDdr7iSQ7IV7w
 id: hero
 label: Hero
 icon_uuid: null
-description: ''
+icon_default: null
+description: 'A section with a background image and buttons (optional). Looks good on top of each page. Also nice as a seperator.'
 behavior_plugins: {  }

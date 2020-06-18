@@ -6,10 +6,12 @@ dependencies:
     - core.entity_view_mode.node.featured
     - field.field.node.landing_page.field_content_visibility
     - field.field.node.landing_page.field_landing_page_section
+    - field.field.node.landing_page.field_latitude
+    - field.field.node.landing_page.field_longitude
+    - field.field.node.landing_page.field_map_description
     - field.field.node.landing_page.field_page_image
     - node.type.landing_page
   module:
-    - image
     - user
 _core:
   default_config_hash: nvrQu61YlL3ZU9opxUd5p1uEB7TQiKkdu5S2x_mg8Fk
@@ -18,15 +20,6 @@ targetEntityType: node
 bundle: landing_page
 mode: featured
 content:
-  field_page_image:
-    type: image
-    weight: 4
-    region: content
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   groups:
     label: above
     weight: 0
@@ -62,6 +55,11 @@ content:
 hidden:
   field_content_visibility: true
   field_landing_page_section: true
+  field_latitude: true
+  field_longitude: true
+  field_map_description: true
+  field_page_image: true
   flag_follow_content: true
   links: true
   private_message_link: true
+  search_api_excerpt: true

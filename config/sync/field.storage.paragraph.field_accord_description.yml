@@ -1,0 +1,21 @@
+uuid: 296c07cd-f99b-4a57-8ba1-3412ebf4939e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: 0EW1yn9Vg2NUGN_TqACAa1Ma4L30eKYauuu1fIeLDFU
+id: paragraph.field_accord_description
+field_name: field_accord_description
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

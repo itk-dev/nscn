@@ -10,21 +10,51 @@ dependencies:
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_image
     - field.field.node.topic.field_topic_type
+    - image.style.social_medium
     - node.type.topic
   module:
+    - image
     - user
 _core:
-  default_config_hash: skShdvdjAuwtM7EWsow0qYhs8LBUh4yqIKyy-I-jFUo
+  default_config_hash: fGZqV1ItKRkrty8-0zuOs7FOBUYHchXxZPJloPEZR0c
 id: node.topic.small_teaser
 targetEntityType: node
 bundle: topic
 mode: small_teaser
 content:
-  flag_follow_content:
-    weight: 10
+  field_topic_image:
+    type: image
+    weight: 0
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      image_style: social_medium
+      image_link: content
     third_party_settings: {  }
+  groups:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_closed_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_open_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   groups_type_public_group:
     label: above
     weight: -5
@@ -33,15 +63,17 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  like_and_dislike:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   field_content_visibility: true
   field_files: true
   field_topic_comments: true
-  field_topic_image: true
   field_topic_type: true
-  groups: true
-  groups_type_closed_group: true
-  groups_type_open_group: true
-  like_and_dislike: true
   links: true
+  search_api_excerpt: true
+  flag_follow_content: true

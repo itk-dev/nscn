@@ -12,7 +12,7 @@ dependencies:
   module:
     - dropdown
 _core:
-  default_config_hash: D_lAbKlWVtC-EoJYOYz3fzjV8Wt-NlN-DIiJ2ULNYEY
+  default_config_hash: w-cBY1XooNNFOa3XgJA63rl8DUId2ydpkjg-aJMSA0k
 id: post.post.default
 targetEntityType: post
 bundle: post
@@ -33,6 +33,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  status:
+    region: content
+    settings:
+      display_label: true
+    type: boolean_checkbox
+    weight: 20
+    third_party_settings: {  }
 hidden:
   field_post_comments: true
   field_recipient_group: true

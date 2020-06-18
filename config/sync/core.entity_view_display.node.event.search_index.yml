@@ -3,21 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.search_index
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
     - node.type.event
   module:
+    - comment
     - text
     - user
 _core:
-  default_config_hash: DE1MjFY8LFtCgV5ZJnwxTmp8-t59v3gvXZzmNK1SYzo
+  default_config_hash: VwofvcGJ5GstIT4cx994N4JaaC9JQLo9E1XhOYQkecg
 id: node.event.search_index
 targetEntityType: node
 bundle: event
@@ -30,11 +34,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_event_comments:
+    weight: 1
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   flag_follow_content:
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
   groups_type_public_group:
     label: above
     weight: -5
@@ -48,6 +58,7 @@ hidden:
   field_event_address: true
   field_event_date: true
   field_event_date_end: true
+  field_event_enroll: true
   field_event_image: true
   field_event_location: true
   field_files: true
@@ -56,3 +67,4 @@ hidden:
   groups_type_open_group: true
   like_and_dislike: true
   links: true
+  search_api_excerpt: true

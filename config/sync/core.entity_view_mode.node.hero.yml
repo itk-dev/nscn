@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: '-fLBsNoKIGtlN0e9v2AcfCs57oib5teICxBu9UgElHY'
+  default_config_hash: lH5r9GEe_slU9Km3e4CFjK_1CCZKKhN6CnMNMJI-390
 id: node.hero
 label: Hero
 targetEntityType: node

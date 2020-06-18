@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: YWduKtAu2eaIj4NLryatzOUH3lp0uP919a27fHhKSNc
+  default_config_hash: b4--iHQPtV5mQYxhUyLbItn5hIOs_4aUS86pnY-J3Lk
 id: message.create_comment_following_node.field_message_destination
 field_name: field_message_destination
 entity_type: message

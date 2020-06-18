@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: qO6zd-8gzfFAr7bX18YpyEImW0AxHtt7fkbp5FZtg6o
+  default_config_hash: fYqTgOn5N__1Uzeq76TinRf29oxTe63yP_zq70EQcDU
 name: Expertise
 vid: expertise
 description: 'A users expertises'
-hierarchy: 0
 weight: 0

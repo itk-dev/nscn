@@ -7,18 +7,22 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
+    - image.style.social_xx_large
     - node.type.event
   module:
     - address
     - datetime
+    - image
     - user
 _core:
-  default_config_hash: YyO2wBCVEGkdF8Te6I8GNCvuoQ3x0lz061tLjB2ESnI
+  default_config_hash: GrxBdGQqONL883C-2VMKy3cm7ewBpA2VHe1UHcF_TLA
 id: node.event.hero
 targetEntityType: node
 bundle: event
@@ -26,14 +30,14 @@ mode: hero
 content:
   field_event_address:
     type: address_plain
-    weight: 3
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
   field_event_date:
     type: datetime_default
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       timezone_override: ''
@@ -42,41 +46,59 @@ content:
     region: content
   field_event_date_end:
     type: datetime_default
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
     region: content
+  field_event_image:
+    type: image
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      image_style: social_xx_large
+      image_link: ''
+    third_party_settings: {  }
   field_event_location:
     type: string
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
   flag_follow_content:
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-  groups_type_public_group:
-    type: entity_reference_label
-    weight: 5
+  like_and_dislike:
+    weight: 9
     region: content
-    label: above
-    settings:
-      link: true
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  shariff_field:
+    weight: 8
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   body: true
   field_content_visibility: true
-  field_event_image: true
+  field_event_comments: true
+  field_event_enroll: true
   field_files: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
-  like_and_dislike: true
+  groups_type_public_group: true
   links: true
+  search_api_excerpt: true

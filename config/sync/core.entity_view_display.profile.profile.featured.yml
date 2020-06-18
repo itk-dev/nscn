@@ -17,12 +17,12 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
-    - image.style.social_featured
+    - image.style.social_large
     - profile.type.profile
   module:
     - image
 _core:
-  default_config_hash: VrpwKy6_wk3mLP1JnY89lwTIqf2-S-qLAy-Eo0-4IEM
+  default_config_hash: 0hnv12FIwA4EfiqOZxkibSYt330yaJYhuKOAlHwF5C0
 id: profile.profile.featured
 targetEntityType: profile
 bundle: profile
@@ -40,8 +40,8 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: social_featured
-      image_link: content
+      image_style: social_x_large
+      image_link: ''
     third_party_settings: {  }
     type: image
     region: content
@@ -53,14 +53,43 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_profile_function:
+    label: hidden
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    weight: 3
+  field_profile_organization:
+    label: hidden
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    weight: 4
 hidden:
   field_profile_address: true
   field_profile_banner_image: true
   field_profile_expertise: true
-  field_profile_function: true
   field_profile_interests: true
-  field_profile_organization: true
   field_profile_phone_number: true
   field_profile_profile_tag: true
   field_profile_self_introduction: true
   field_profile_show_email: true
+  search_api_excerpt: true
+  field_profile_bio: true
+  field_profile_birth_year: true
+  field_profile_education: true
+  field_profile_present_location: true
+  field_profile_projects: true
+  field_profile_sdg_expertise: true
+  field_profile_skype: true
+  field_profile_social_networks: true
+  field_profile_undp_expertise: true
+  field_profile_gender: true
+  field_profile_languages: true
+  field_profile_name: true
+  field_profile_organisation: true
+  field_profile_other_expertise: true

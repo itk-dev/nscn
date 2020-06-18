@@ -5,7 +5,7 @@ dependencies:
   module:
     - profile
 _core:
-  default_config_hash: YcYEl_VJgKpEnxk1iIM85ybbcVWyZHCzgsxjh_DAtuk
+  default_config_hash: QnVPm4ArLvBo4W12GVjC3TKNAoRwwR2BGU9A_gRw7YM
 id: profile.table
 label: Table
 targetEntityType: profile

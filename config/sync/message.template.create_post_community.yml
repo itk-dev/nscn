@@ -11,13 +11,12 @@ third_party_settings:
       stream_explore: stream_explore
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: true
+    activity_create_direct: 1
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
-      post-photo: post-photo
 _core:
-  default_config_hash: kKHsUYXAxkTVpHpcsY5TpAthL6g7h74_Xf7CaFXmHJY
+  default_config_hash: u1HJ3UrjWglhkdKMGqTUnZIFM_AkMu2L8Bq0tpUVI34
 template: create_post_community
 label: 'Create post in the community'
 description: 'A user created a post in the community'

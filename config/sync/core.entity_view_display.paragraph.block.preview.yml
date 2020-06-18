@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.block.field_block_link
     - field.field.paragraph.block.field_block_reference
+    - field.field.paragraph.block.field_block_reference_secondary
+    - field.field.paragraph.block.field_block_title
     - paragraphs.paragraphs_type.block
   module:
+    - link
     - social_landing_page
 _core:
   default_config_hash: 43y_LiuWfiXze3i3lwXLJaXLvecy63cSsrUkpPG-XEM
@@ -15,6 +19,18 @@ targetEntityType: paragraph
 bundle: block
 mode: preview
 content:
+  field_block_link:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_block_reference:
     type: block_label
     weight: 1
@@ -22,4 +38,20 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  field_block_reference_secondary:
+    type: block_label
+    weight: 2
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_block_title:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

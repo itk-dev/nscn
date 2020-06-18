@@ -6,7 +6,7 @@ dependencies:
     - field.storage.profile.field_profile_function
     - profile.type.profile
 _core:
-  default_config_hash: ay3MOEZlPmYKTqkwlwE4jRjEnzNzVED3G28CA2KHNa0
+  default_config_hash: 0J7J4oQdW6oooPFPgxFi2NpOvBPZv75mQxy4bjM9MSc
 id: profile.profile.field_profile_function
 field_name: field_profile_function
 entity_type: profile

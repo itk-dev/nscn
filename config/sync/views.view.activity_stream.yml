@@ -9,9 +9,8 @@ dependencies:
     - activity_viewer
     - options
     - social_post
-    - user
 _core:
-  default_config_hash: tywsY74AVSqclKC7NPscD0QeyqWdY-3nLWGO-dowYBo
+  default_config_hash: _JmlmKiydMMSHiHwKxrIgz1TclzTRi13Gz2Px8Upqv0
 id: activity_stream
 label: 'Activity Stream'
 module: views
@@ -19,7 +18,6 @@ description: ''
 tag: ''
 base_table: activity_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -28,9 +26,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access nscn social backend'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -55,7 +52,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 30
+          items_per_page: 20
           offset: 0
           id: 0
           total_pages: null
@@ -153,6 +150,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -190,6 +189,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -249,7 +250,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
@@ -288,6 +288,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -325,6 +327,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -346,13 +350,122 @@ display:
         operator: AND
         groups:
           1: AND
+      block_description: 'Activity stream'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.notification'
+        - 'config:core.entity_view_display.activity.activity.notification_archive'
+  block_stream_homepage_without_post:
+    display_plugin: block
+    id: block_stream_homepage_without_post
+    display_title: 'Homepage stream block'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      filters:
+        field_activity_destinations_value:
+          id: field_activity_destinations_value
+          table: activity__field_activity_destinations
+          field: field_activity_destinations_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            stream_home: stream_home
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        activity_filter_personalised_homepage_filter:
+          id: activity_filter_personalised_homepage_filter
+          table: activity
+          field: activity_filter_personalised_homepage_filter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: activity
+          plugin_id: activity_filter_personalised_homepage
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      header: {  }
+      block_description: 'Activity stream - Without Post block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - user
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
@@ -366,9 +479,8 @@ display:
       display_extenders: {  }
       path: stream
       access:
-        type: perm
-        options:
-          perm: 'access nscn social backend'
+        type: none
+        options: {  }
       defaults:
         access: false
       enabled: false
@@ -377,7 +489,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
@@ -437,6 +548,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -474,6 +587,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -497,7 +612,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'

@@ -22,7 +22,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: MzVMB3kYLr4btfNy6qFN5NCF_v_dGJAuOJHH9lD1tjg
+  default_config_hash: u57gJAW3unq6DQx_kBGCNhKeh6NBB576gtbjMeNBIeE
 id: profile.profile.search_index
 targetEntityType: profile
 bundle: profile
@@ -43,14 +43,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_profile_first_name:
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_profile_function:
     weight: 2
     label: above
@@ -66,14 +58,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_profile_last_name:
-    weight: 1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_profile_organization:
     weight: 3
@@ -100,6 +84,9 @@ content:
     region: content
 hidden:
   field_profile_banner_image: true
+  field_profile_first_name: true
   field_profile_image: true
+  field_profile_last_name: true
   field_profile_profile_tag: true
   field_profile_show_email: true
+  search_api_excerpt: true

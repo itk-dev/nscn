@@ -16,7 +16,7 @@ dependencies:
     - node
     - taxonomy
 _core:
-  default_config_hash: 6NRy_DKgzDoZryD2dnKvawbKqToCJ3w0NI4geovqxkE
+  default_config_hash: QfYYx-ckbKscwFS5Uy5F8QSkZx1T0fqPvxC_T-sUwtE
 id: group_topics
 label: 'Group Topics'
 module: views
@@ -24,7 +24,6 @@ description: ''
 tag: ''
 base_table: group_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -54,9 +53,9 @@ display:
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          expose_sort_order: true
+          sort_asc_label: ascending
+          sort_desc_label: descending
       pager:
         type: mini
         options:
@@ -175,6 +174,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -218,6 +219,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -264,6 +267,8 @@ display:
               administrator: '0'
               contentmanager: '0'
               sitemanager: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -302,6 +307,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -315,7 +322,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: node_access
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: gc__node
+          group_type: group
+          admin_label: sort_created
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Sort by publish date'
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       title: 'Group Topics'
       header: {  }
       footer: {  }
@@ -399,12 +421,15 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }
   page_group_topics:
@@ -419,11 +444,14 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }

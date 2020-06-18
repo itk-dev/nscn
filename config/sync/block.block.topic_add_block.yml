@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: jqoyaPsPUNAwGs_HjofeXbLr4BO8s5c_9VRCmAqacZs
 id: topic_add_block
 theme: socialbase
 region: complementary_top

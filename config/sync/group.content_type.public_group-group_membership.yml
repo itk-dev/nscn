@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: cPjfyyWZ8lpmzCCdjw5Z3RCENdTbYf-9ITbuweAV7gc
+  default_config_hash: M0WxuOysdfQlQwfxGyWjqBlm81dLKsiqhcfD5SDzirM
 id: public_group-group_membership
 label: 'Public group: Group membership'
 description: 'Adds users to groups as members.'

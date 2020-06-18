@@ -1,0 +1,21 @@
+uuid: 37767e16-1674-418f-931c-8f022d9b35c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured_items_title
+    - paragraphs.paragraphs_type.featured_items
+_core:
+  default_config_hash: YA3jgLLrFUkursRA1D5llDd6GT5Fgsip1eHm5qX02e4
+id: paragraph.featured_items.field_featured_items_title
+field_name: field_featured_items_title
+entity_type: paragraph
+bundle: featured_items
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

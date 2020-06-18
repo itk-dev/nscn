@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 8nYM-KRF7ztUhF8jlTySNZtcnN4sABUWGVfH_UlA0kc
+  default_config_hash: AUPKuzDpFChXT26KwSTjCkfbayqb_oZa5vdMs6dSzKQ
 id: group.public_group.field_group_image
 field_name: field_group_image
 entity_type: group
@@ -20,13 +20,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images/groups
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

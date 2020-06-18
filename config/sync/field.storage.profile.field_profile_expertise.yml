@@ -6,7 +6,7 @@ dependencies:
     - profile
     - taxonomy
 _core:
-  default_config_hash: sWcQsnM2xvASI-H6QeowIEMTDMrz3lYcs5_eg6OCp9Q
+  default_config_hash: latY-yedZMrXmsG7D52JCehaXM5bb0KFTiVUwuDZ7I8
 id: profile.field_profile_expertise
 field_name: field_profile_expertise
 entity_type: profile

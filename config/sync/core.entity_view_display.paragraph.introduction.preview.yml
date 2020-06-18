@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.introduction.field_introduction_aside
     - field.field.paragraph.introduction.field_introduction_link_an
     - field.field.paragraph.introduction.field_introduction_link_lu
     - field.field.paragraph.introduction.field_introduction_text
     - field.field.paragraph.introduction.field_introduction_title
+    - field.field.paragraph.introduction.field_text_position
     - paragraphs.paragraphs_type.introduction
   module:
     - link
@@ -58,4 +60,7 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_introduction_aside: true
+  field_text_position: true
+  search_api_excerpt: true

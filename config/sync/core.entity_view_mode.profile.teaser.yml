@@ -5,7 +5,7 @@ dependencies:
   module:
     - profile
 _core:
-  default_config_hash: QwHKCTpE1suKE_XELJtpxPdCy6856mg2nrGY2GQI6tw
+  default_config_hash: Ycccdw-nAl0gw226CryW3vzPHYz7npRds2lE7fOoDhs
 id: profile.teaser
 label: Teaser
 targetEntityType: profile

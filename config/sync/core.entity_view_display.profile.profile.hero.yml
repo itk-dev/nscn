@@ -22,7 +22,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 36YBcEJOfzRmcrxHHk5Hr64CxaYaaknucEukhTeIBQU
+  default_config_hash: m_qG_MqcFD-QUKL0-UrU11N0fPu892HwJuWABZbSziY
 id: profile.profile.hero
 targetEntityType: profile
 bundle: profile
@@ -78,3 +78,4 @@ hidden:
   field_profile_profile_tag: true
   field_profile_self_introduction: true
   field_profile_show_email: true
+  search_api_excerpt: true

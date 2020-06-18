@@ -22,7 +22,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: Rh7yNsNz3BsTNNUj-ipD5T-5P5k5UDy7cvrwJzAj6bo
+  default_config_hash: ohgN24wq72QXa8EqePDfSaXIchpDYKfDyvKCTcRUfCQ
 id: profile.profile.small_teaser
 targetEntityType: profile
 bundle: profile
@@ -50,3 +50,4 @@ hidden:
   field_profile_profile_tag: true
   field_profile_self_introduction: true
   field_profile_show_email: true
+  search_api_excerpt: true

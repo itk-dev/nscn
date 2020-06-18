@@ -6,7 +6,7 @@ dependencies:
     - field.field.group_content.open_group-group_membership.group_roles
     - group.content_type.open_group-group_membership
 _core:
-  default_config_hash: jGyQJ5yQsfIk_ZYccKOl7qrRKklzXoKTMbnGrRvH0mc
+  default_config_hash: dsEjlwpLkuKoOASnIOgk_XvU7F0q0zz0HTpV9ZIy3Lg
 id: group_content.open_group-group_membership.default
 targetEntityType: group_content
 bundle: open_group-group_membership
@@ -21,4 +21,5 @@ content:
     region: content
 hidden:
   group_roles: true
+  search_api_excerpt: true
   uid: true

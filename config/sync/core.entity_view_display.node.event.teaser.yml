@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -21,7 +23,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 80pTIWGki1iJfTggrKetbVcdBrz0rIdIuvn1UruIOx0
+  default_config_hash: kulbHRUwdlV5kajZSFurflTfxu3Is72g6ptxNVkj3TE
 id: node.event.teaser
 targetEntityType: node
 bundle: event
@@ -79,8 +81,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
   groups_type_public_group:
     label: above
     weight: -5
@@ -96,8 +96,11 @@ content:
     region: content
 hidden:
   body: true
+  field_event_comments: true
+  field_event_enroll: true
   field_files: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   like_and_dislike: true
+  search_api_excerpt: true

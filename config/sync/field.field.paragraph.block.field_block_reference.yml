@@ -8,7 +8,7 @@ dependencies:
   module:
     - block_field
 _core:
-  default_config_hash: b2qWpB093ypFqKic1q3vg_pXZIQ5020uFF-WPB_0rA4
+  default_config_hash: nWP8JRStC4BLbH6_-l9oIM46rYIw-RAJDO1m7Ar5-34
 id: paragraph.block.field_block_reference
 field_name: field_block_reference
 entity_type: paragraph
@@ -21,6 +21,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   plugin_ids:
-    'views_block:news-block_1': 'views_block:news-block_1'
-    nscn_stats: nscn_stats
+    'views_block:activity_stream-block_stream_homepage': 'views_block:activity_stream-block_stream_homepage'
+    'views_block:activity_stream-block_stream_homepage_without_post': 'views_block:activity_stream-block_stream_homepage_without_post'
+    'views_block:community_activities-block_stream_landing_with_post': 'views_block:community_activities-block_stream_landing_with_post'
+    'views_block:community_activities-block_stream_landing': 'views_block:community_activities-block_stream_landing'
 field_type: block_field

@@ -4,6 +4,8 @@ status: true
 dependencies:
   theme:
     - socialbase
+_core:
+  default_config_hash: p5ptEPdCn5SGKsmn9szaZ5cG17TYIZ5U6-YdUuI9c-o
 id: socialbase_local_actions
 theme: socialbase
 region: complementary_top

@@ -9,6 +9,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   alternative_frontpage: 0
+  better_exposed_filters: 0
   block: 0
   block_content: 0
   block_field: 0
@@ -40,6 +41,7 @@ module:
   gnode: 0
   group: 0
   group_core_comments: 0
+  gvbo: 0
   help: 0
   image: 0
   image_effects: 0
@@ -59,12 +61,14 @@ module:
   options: 0
   override_node_options: 0
   path: 0
+  path_alias: 0
   profile: 0
   quick_node_clone: 0
   r4032login: 0
   responsive_image: 0
   rest: 0
   rest_export_nested: 0
+  role_delegation: 0
   search_api: 0
   search_api_db: 0
   serialization: 0
@@ -74,16 +78,23 @@ module:
   social_demo: 0
   social_editor: 0
   social_event: 0
+  social_featured_content: 0
+  social_featured_items: 0
   social_file_private: 0
   social_follow_content: 0
   social_font: 0
+  social_group_gvbo: 0
   social_landing_page: 0
+  social_lets_connect: 0
+  social_lets_connect_usage: 0
   social_like: 0
   social_mentions: 0
+  social_node: 0
   social_page: 0
   social_post: 0
   social_post_photo: 0
   social_profile: 0
+  social_queue_storage: 0
   social_search: 0
   social_swiftmail: 0
   social_topic: 0
@@ -98,7 +109,9 @@ module:
   token: 0
   toolbar: 0
   twig_tweak: 0
+  update_helper: 0
   user: 0
+  views_bulk_operations: 0
   views_field_view: 0
   views_infinite_scroll: 0
   views_ui: 0

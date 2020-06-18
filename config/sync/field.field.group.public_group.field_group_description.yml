@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: iW7FYiG9qjPg8mBWEmrduz2IKONozPCF1rsnGUw52ZE
+  default_config_hash: y1IJeRmV5eL0E_5olWWJTXwT_vOjFJqw4dYlcfnWnxE
 id: group.public_group.field_group_description
 field_name: field_group_description
 entity_type: group

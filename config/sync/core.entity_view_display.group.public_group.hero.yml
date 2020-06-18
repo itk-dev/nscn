@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: 2TmBPQ3Px_qqTFc7aKYtOlmh9FMfevGYtGsK0n17lo8
+  default_config_hash: 6sd_XEOElgHmRcKLmFLQrR_IHCtCegxzXUKqd7fa3c4
 id: group.public_group.hero
 targetEntityType: group
 bundle: public_group
@@ -56,4 +56,5 @@ hidden:
   changed: true
   created: true
   field_group_description: true
+  search_api_excerpt: true
   uid: true

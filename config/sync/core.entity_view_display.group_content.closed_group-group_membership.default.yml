@@ -6,7 +6,7 @@ dependencies:
     - field.field.group_content.closed_group-group_membership.group_roles
     - group.content_type.closed_group-group_membership
 _core:
-  default_config_hash: k78dUpGNIpHuVFNuHURT5iskDp3F-VG6jPPnTMAMT-8
+  default_config_hash: TPNTm53CtHf9dVSuHM1ewvdvF4p9YqixqB2xCYKXoFc
 id: group_content.closed_group-group_membership.default
 targetEntityType: group_content
 bundle: closed_group-group_membership
@@ -21,4 +21,5 @@ content:
     region: content
 hidden:
   group_roles: true
+  search_api_excerpt: true
   uid: true
