@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
     - field.field.node.page.field_sidebar_content
-    - image.style.social_featured
+    - image.style.social_x_large
     - node.type.page
   module:
     - image
@@ -29,7 +29,7 @@ content:
     region: content
     label: above
     settings:
-      image_style: social_featured
+      image_style: social_x_large
       image_link: content
     third_party_settings: {  }
   groups:
