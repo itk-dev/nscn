@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2d8bc656ccf5da9e5f3573bf9bf53ab",
+    "content-hash": "3313c596fa4e0e08665b7a0098ee3884",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -286,7 +286,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -304,7 +304,7 @@
             "version": "1.17.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:mochajs/mocha.git",
+                "url": "https://github.com/mochajs/mocha.git",
                 "reference": "7fc565ee3e225cb7a66bf39ae9c2c05b346675c1"
             },
             "dist": {
@@ -360,12 +360,12 @@
             "version": "4.0.13",
             "source": {
                 "type": "git",
-                "url": "https://github.com/select2/select2.git",
+                "url": "git@github.com:ivaynberg/select2.git",
                 "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
+                "url": "https://api.github.com/repos/ivaynberg/select2/zipball/45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
                 "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
             },
             "type": "bower-asset",
@@ -4432,31 +4432,6 @@
             }
         },
         {
-            "name": "drupal/itk_siteimprove",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:itk-dev/siteimprove-d8.git",
-                "reference": "819bbfce0f71fa4d9577227276d2942947d4ae74"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/siteimprove-d8/zipball/819bbfce0f71fa4d9577227276d2942947d4ae74",
-                "reference": "819bbfce0f71fa4d9577227276d2942947d4ae74",
-                "shasum": ""
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.itkdev.dk/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides siteimprove functionality",
-            "keywords": [
-                "Drupal"
-            ],
-            "time": "2018-04-26T09:13:52+00:00"
-        },
-        {
             "name": "drupal/lazy",
             "version": "2.0.0",
             "source": {
@@ -7560,6 +7535,31 @@
                 "drupal"
             ],
             "time": "2019-02-01T10:25:36+00:00"
+        },
+        {
+            "name": "itk-dev/itk_siteimprove",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/siteimprove-d8.git",
+                "reference": "9b748b3acae1a00950f99afd26e439e93e2097ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/siteimprove-d8/zipball/9b748b3acae1a00950f99afd26e439e93e2097ea",
+                "reference": "9b748b3acae1a00950f99afd26e439e93e2097ea",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides siteimprove functionality",
+            "keywords": [
+                "drupal"
+            ],
+            "time": "2020-08-05T09:12:08+00:00"
         },
         {
             "name": "league/container",
