@@ -20,8 +20,15 @@ targetEntityType: paragraph
 bundle: introduction
 mode: default
 content:
-  field_introduction_link_an:
+  field_introduction_aside:
+    type: text_default
     weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_introduction_link_an:
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
@@ -33,7 +40,7 @@ content:
     type: link
     region: content
   field_introduction_link_lu:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -60,6 +67,5 @@ content:
     type: string
     region: content
 hidden:
-  field_introduction_aside: true
   field_text_position: true
   search_api_excerpt: true
