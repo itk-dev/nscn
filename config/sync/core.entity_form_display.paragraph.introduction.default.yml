@@ -20,8 +20,16 @@ targetEntityType: paragraph
 bundle: introduction
 mode: default
 content:
-  field_introduction_link_an:
+  field_introduction_aside:
+    type: text_textarea
     weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_introduction_link_an:
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -29,7 +37,7 @@ content:
     type: link_default
     region: content
   field_introduction_link_lu:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -54,7 +62,6 @@ content:
     region: content
 hidden:
   created: true
-  field_introduction_aside: true
   field_text_position: true
   status: true
   uid: true
