@@ -18,7 +18,6 @@
         "drupal/quick_node_clone": "^1.10",
         "drupal/rest_export_nested": "^1.0@alpha",
         "drupal/views_field_view": "^1.0@beta",
-        "drupal/itk_siteimprove": "^1.0",
         "drupal/twig_tweak": "^2.1",
         "itk-dev/itk_azure_video": "^1.0.5",
         "drupal/system_status": "^2.8",
@@ -27,7 +26,8 @@
         "symfony/debug": "3.4.9",
         "symfony/filesystem": "3.4.9",
         "symfony/finder": "3.4.9",
-        "drupal/console": "^1.9"
+        "drupal/console": "^1.9",
+        "itk-dev/itk_siteimprove": "^1.1"
     },
 
 
