@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.landing_page.field_longitude
     - field.field.node.landing_page.field_map_description
     - field.field.node.landing_page.field_page_image
+    - image.style.social_x_large
     - node.type.landing_page
   module:
     - field_group
+    - image
     - paragraphs
     - path
 third_party_settings:
@@ -19,12 +21,12 @@ third_party_settings:
     group_content:
       children:
         - title
+        - field_page_image
         - field_content_visibility
       parent_name: ''
       weight: 0
       format_type: fieldset
       format_settings:
-        label: Title
         description: ''
         required_fields: true
         id: title
@@ -38,7 +40,6 @@ third_party_settings:
       weight: 1
       format_type: fieldset
       format_settings:
-        label: Sections
         description: ''
         required_fields: true
         id: sections
@@ -60,7 +61,7 @@ content:
     third_party_settings: {  }
   field_content_visibility:
     type: options_buttons
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -76,9 +77,17 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
+  field_page_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      preview_image_style: social_x_large
+      progress_indicator: throbber
+    third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -86,7 +95,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -99,7 +108,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -111,7 +120,6 @@ hidden:
   field_latitude: true
   field_longitude: true
   field_map_description: true
-  field_page_image: true
   groups: true
   promote: true
   sticky: true
