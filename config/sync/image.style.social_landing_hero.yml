@@ -6,7 +6,6 @@ dependencies:
     - crop.type.hero_landing
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: xARMG3Z3F45sI6YWtnlt7rs1OFQFhDp7nGDXYl4m8VU
 name: social_landing_hero
@@ -27,9 +26,3 @@ effects:
       width: 1500
       height: 370
       anchor: center-center
-  24fa75ed-0989-425f-ba23-26693a7d2ea5:
-    uuid: 24fa75ed-0989-425f-ba23-26693a7d2ea5
-    id: image_effects_auto_orient
-    weight: -10
-    data:
-      scan_exif: true

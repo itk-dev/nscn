@@ -6,7 +6,6 @@ dependencies:
     - crop.type.hero
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: Fr6oD14b91hka_Mrlns7XAusYxgPKsbe1kab_OxomxU
 name: social_xx_large
@@ -27,9 +26,3 @@ effects:
       anchor: center-center
       width: 1200
       height: 423
-  fa621cfb-8201-4ac7-8dd1-a9a1f6031115:
-    uuid: fa621cfb-8201-4ac7-8dd1-a9a1f6031115
-    id: image_effects_auto_orient
-    weight: 3
-    data:
-      scan_exif: true
