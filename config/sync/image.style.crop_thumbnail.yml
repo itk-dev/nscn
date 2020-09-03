@@ -1,7 +1,9 @@
 uuid: e5f24cc1-f85f-4210-9799-6545d9fee399
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
   default_config_hash: OMOIkQqY8F2p9I6chZU18LsIWNdBt8wtFtY0RuYyFmY
 name: crop_thumbnail
@@ -15,3 +17,9 @@ effects:
       width: 400
       height: null
       upscale: false
+  cc6640a9-3c13-4371-a9f6-447a90efcce3:
+    uuid: cc6640a9-3c13-4371-a9f6-447a90efcce3
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true

@@ -1,4 +1,4 @@
-@import './settings';
+@import 'settings';
 
 [type="radio"]:checked + label:before {
   border-color: $brand-primary;
@@ -207,7 +207,7 @@
 
 .body-text a:not(.btn),
 .body-text a:not(.btn):hover {
-  color: $brand-primary;
+  color: #33b5e5;
 }
 
 blockquote {
@@ -221,7 +221,7 @@ blockquote {
 
 .navbar-secondary {
   color: #f9f9f9;
-  background-color: $brand-primary;
+  background-color: #1f7ea7;
 
   .navbar-nav {
 
@@ -237,11 +237,11 @@ blockquote {
 }
 
 .navbar-scrollable:before {
-  background: linear-gradient(90deg, $brand-primary, transparent);
+  background: linear-gradient(90deg, #1f7ea7, transparent);
 }
 
 .navbar-scrollable:after {
-  background: linear-gradient(-90deg, $brand-primary, transparent);
+  background: linear-gradient(-90deg, #1f7ea7, transparent);
 }
 
 .navbar-default {
@@ -327,16 +327,6 @@ blockquote {
 
 .navbar__open-search-block {
   background-color: $navbar-default-bg;
-}
-
-.search-content-form { 
-  visibility: hidden;
-}
-
-.mode-search {
-  .search-content-form { 
-    visibility: visible;
-  }
 }
 
 @include for-tablet-landscape-up {

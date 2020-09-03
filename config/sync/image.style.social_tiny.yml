@@ -1,7 +1,9 @@
 uuid: df7710a8-d192-446a-bc14-c21fdc72d58f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
   default_config_hash: 7FcTkxvtdAIUb5zmj_WN12WJfmZoVhMjsEMd7prLsFs
 name: social_tiny
@@ -15,3 +17,9 @@ effects:
       anchor: center-center
       width: 16
       height: 16
+  2b600be6-28ba-4206-85c7-ea5a6e71e934:
+    uuid: 2b600be6-28ba-4206-85c7-ea5a6e71e934
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true

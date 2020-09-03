@@ -1,10 +1,235 @@
 # The SMACSS category "base" is loaded first.
-app:
+base:
   css:
     base:
-      assets/build/app.css: { weight:2000 }
+      assets/css/base.css: {}
+
+brand:
+  css:
+    theme:
+      assets/css/brand.css: { weight: 500}
+
+## 2. The SMACSS category Component — discrete, reusable UI elements
+
+### 2.1 Atoms
+alert:
+  css:
+    theme:
+      assets/css/alert.css: {}
+
+badge:
+  css:
+    theme:
+      assets/css/badge.css: {}
+
+button:
+  css:
+    theme:
+      assets/css/button.css: {}
+      assets/css/waves.css: {}
+  dependencies:
+    - nscn/waves
+
+cut-off:
+  css:
+    theme:
+      assets/css/cut-off.css: {}
+
+grid:
+  css:
+    theme:
+      assets/css/grid.css: {}
+
+cards:
+  css:
+    theme:
+      assets/css/cards.css: {}
+
+form-controls:
+  css:
+    theme:
+      assets/css/form-controls.css: {}
+
+list:
+  css:
+    theme:
+      assets/css/list.css: {}
+
+spinner:
+  css:
+    theme:
+      assets/css/spinner.css: {}
+
+waves:
+  css:
+    theme:
+      /libraries/waves/dist/waves.css: {}
   js:
-    assets/build/app.js: {}
+    /libraries/waves/dist/waves.min.js: { minified: true }
+    assets/js/waves.min.js: { minified: true }
+
+### 2.2 Molecules
+
+breadcrumb:
+  css:
+    theme:
+      assets/css/breadcrumb.css: {}
+
+dropdown:
+  css:
+    theme:
+      assets/css/dropdown.css: {}
+
+file:
+  css:
+    theme:
+      assets/css/file.css: {}
+
+form-elements:
+  css:
+    theme:
+      assets/css/form-elements.css: {}
+
+form--datepicker:
+  css:
+    theme:
+      assets/css/datepicker.css: {}
+
+form--input-groups:
+  css:
+    theme:
+      assets/css/input-groups.css: {}
+
+form--password:
+  css:
+    theme:
+      assets/css/password.css: {}
+
+form--timepicker:
+  css:
+    theme:
+      assets/css/timepicker.css: {}
+
+like:
+  css:
+    theme:
+      assets/css/like.css: {}
+
+nav-book:
+  css:
+    theme:
+      assets/css/nav-book.css: {}
+
+nav-tabs:
+  css:
+    theme:
+      assets/css/nav-tabs.css: {}
+
+navbar:
+  css:
+    theme:
+      assets/css/navbar.css: {}
+
+pagination:
+  css:
+    theme:
+      assets/css/pagination.css: {}
+
+popover:
+  css:
+    theme:
+      assets/css/popover.css: {}
+
+select2:
+  css:
+    theme:
+      assets/css/select2.css: {}
+
+teaser:
+  css:
+    theme:
+      assets/css/teaser.css: {}
+
+tour:
+  css:
+    theme:
+      assets/css/tour.css: {}
+
+### 2.3 Organisms
+comment:
+  css:
+    theme:
+      assets/css/comment.css: {}
+
+dashboard:
+  css:
+    theme:
+      assets/css/dashboard.css: {}
+
+featured:
+  css:
+    theme:
+      assets/css/featured.css: {}
+
+hero:
+  css:
+    theme:
+      assets/css/hero.css: {}
+
+image:
+  css:
+    theme:
+      assets/css/image.css: {}
+
+introduction:
+  css:
+    theme:
+      assets/css/introduction.css: {}
+
+message:
+  css:
+    theme:
+      assets/css/message.css: {}
+
+meta:
+  css:
+    theme:
+      assets/css/meta.css: {}
+
+modal:
+  css:
+    theme:
+      assets/css/modal.css: {}
+
+offcanvas:
+  css:
+    theme:
+      assets/css/offcanvas.css: {}
+
+stream:
+  css:
+    theme:
+      assets/css/stream.css: {}
+site-footer:
+  css:
+    theme:
+      assets/css/site-footer.css: {}
+
+news:
+  css:
+    theme:
+      assets/css/news.css: {}
+
+aside:
+  css:
+    theme:
+      assets/css/aside.css: {}
+
+### 2.4 Templates
+page-node:
+  css:
+    component:
+      assets/css/page-node.css: {}
 
 color.preview:
   css:

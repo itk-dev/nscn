@@ -1,14 +1,13 @@
-@import "../../settings";
+@import "settings";
 
 .body-text {
 
   a:not(.btn) {
-    text-decoration: none;
+    text-decoration: underline;
     color: $link-color;
 
     &:hover {
       color: $link-hover-color;
-      text-decoration: underline;
     }
   }
 

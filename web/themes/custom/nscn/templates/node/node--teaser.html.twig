@@ -88,7 +88,7 @@
     {% if view_mode == 'teaser' %}
       {% block card_teaser_type %}
 
-        <div class="teaser__teaser-type" aria-label="{% trans %}Teaser type: {% endtrans %}{{- node.bundle|clean_class -}}">
+        <div class="teaser__teaser-type">
           <svg class="teaser__teaser-type-icon">
             <use xlink:href="#icon-{{- node.bundle|clean_class -}}"></use>
           </svg>
@@ -130,8 +130,8 @@
           {%- block field_icon -%} account_circle {%- endblock -%}
           {%- block field_value %}
             <div class="teaser__published">
-              <div class="teaser__published-date" title="{% trans %}Publish date{% endtrans %}"> {{ date }} &bullet; </div>
-              <div class="teaser__published-author" title="{% trans %}Author{% endtrans %}"> {{ author_name }} </div>
+              <div class="teaser__published-date"> {{ date }} &bullet; </div>
+              <div class="teaser__published-author"> {{ author_name }} </div>
             </div>
           {%- endblock -%}
         {% endembed %}
@@ -153,7 +153,7 @@
     <div class="card__actionbar">
 
         {% if comment_count > 0 %}
-          <a href="{{ url }}#section-comments" class="badge badge--pill badge-default teaser__badge" title="{% trans %}Comment count{% endtrans %}">
+          <a href="{{ url }}#section-comments" class="badge badge--pill badge-default teaser__badge">
             <span class="badge__container">
               <svg class="badge__icon">
                 <use xlink:href="#icon-comment"></use>
