@@ -1,4 +1,4 @@
-@import 'settings';
+@import '../../settings';
 
 .joyride-close-tip {
   color: $tour-text-color;
@@ -15,7 +15,7 @@
 }
 
 .joyride-tip-guide {
-  
+
   .joyride-nub.top {
     border-bottom: 28px solid $tour-background-color;
   }
