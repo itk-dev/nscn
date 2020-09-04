@@ -2,7 +2,9 @@
 app:
   css:
     base:
-      assets/build/app.css: {}
+      assets/build/app.css: { weight:2000 }
+  js:
+    assets/build/app.js: {}
 
 color.preview:
   css:
