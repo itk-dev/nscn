@@ -25,7 +25,7 @@ Encore
      */
     .addEntry('app', './assets/app.js')
     //.addEntry('ckeditor', './components/03-molecules/wysiwyg/wysiwyg.js')
-    //.addEntry('page2', './assets/js/page2.js')
+    .addEntry('brand', './assets/brand.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -45,7 +45,7 @@ Encore
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())
     // enables hashed filenames (e.g. app.abc123.css)
-    .enableVersioning(Encore.isProduction())
+    //.enableVersioning(Encore.isProduction())
 
     // enables @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
