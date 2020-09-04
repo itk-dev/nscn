@@ -1,6 +1,8 @@
 {
-  "build/0.cf60d32b.js": "/build/0.cf60d32b.js",
-  "build/app.css": "/build/app.109c246b.css",
-  "build/app.js": "/build/app.8de4f066.js",
-  "build/runtime.js": "/build/runtime.d94b3b43.js"
+  "build/0.js": "/build/0.js",
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/brand.css": "/build/brand.css",
+  "build/brand.js": "/build/brand.js",
+  "build/runtime.js": "/build/runtime.js"
 }
