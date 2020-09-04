@@ -3,11 +3,12 @@
 .body-text {
 
   a:not(.btn) {
-    text-decoration: underline;
+    text-decoration: none;
     color: $link-color;
 
     &:hover {
       color: $link-hover-color;
+      text-decoration: underline;
     }
   }
 
