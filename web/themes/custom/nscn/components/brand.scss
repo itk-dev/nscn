@@ -1,4 +1,4 @@
-@import '../../settings';
+@import './settings';
 
 [type="radio"]:checked + label:before {
   border-color: $brand-primary;
@@ -207,7 +207,7 @@
 
 .body-text a:not(.btn),
 .body-text a:not(.btn):hover {
-  color: #33b5e5;
+  color: $brand-primary;
 }
 
 blockquote {
@@ -221,7 +221,7 @@ blockquote {
 
 .navbar-secondary {
   color: #f9f9f9;
-  background-color: #1f7ea7;
+  background-color: $brand-primary;
 
   .navbar-nav {
 
@@ -237,11 +237,11 @@ blockquote {
 }
 
 .navbar-scrollable:before {
-  background: linear-gradient(90deg, #1f7ea7, transparent);
+  background: linear-gradient(90deg, $brand-primary, transparent);
 }
 
 .navbar-scrollable:after {
-  background: linear-gradient(-90deg, #1f7ea7, transparent);
+  background: linear-gradient(-90deg, $brand-primary, transparent);
 }
 
 .navbar-default {
