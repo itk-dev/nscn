@@ -27,7 +27,8 @@
         "symfony/filesystem": "3.4.9",
         "symfony/finder": "3.4.9",
         "drupal/console": "^1.9",
-        "itk-dev/itk_siteimprove": "^1.1"
+        "itk-dev/itk_siteimprove": "^1.1",
+        "itk-dev/web_accessibility_statement": "dev-master"
     },
 
 

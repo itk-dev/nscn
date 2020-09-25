@@ -116,6 +116,7 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
+  web_accessibility_statement: 0
   menu_link_content: 1
   social_group: 2
   views: 10
