@@ -329,6 +329,16 @@ blockquote {
   background-color: $navbar-default-bg;
 }
 
+.search-content-form { 
+  visibility: hidden;
+}
+
+.mode-search {
+  .search-content-form { 
+    visibility: visible;
+  }
+}
+
 @include for-tablet-landscape-up {
 
   .search-take-over .form-text {
