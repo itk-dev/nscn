@@ -89,7 +89,7 @@
     {% endblock %}
 
     {% block card_teaser_type %}
-      <div class="teaser__teaser-type">
+      <div class="teaser__teaser-type" aria-label="{{- node.bundle|clean_class -}}">
         <svg class="teaser__teaser-type-icon">
           <use xlink:href="#icon-{{- node.bundle|clean_class -}}"></use>
         </svg>
