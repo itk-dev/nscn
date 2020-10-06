@@ -6,7 +6,6 @@ dependencies:
     - crop.type.hero_small_landing
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: CnB-4w80oJlPSX6FbyUvD_iMIa_M3eA_VPS46b3iXpg
 name: social_landing_hero_small
@@ -19,12 +18,6 @@ effects:
     data:
       crop_type: hero_small_landing
       automatic_crop_provider: null
-  3a056dbe-351f-11e9-b210-d663bd873d93:
-    uuid: 3a056dbe-351f-11e9-b210-d663bd873d93
-    id: image_effects_auto_orient
-    weight: -10
-    data:
-      scan_exif: true
   3a056f58-351f-11e9-b210-d663bd873d93:
     uuid: 3a056f58-351f-11e9-b210-d663bd873d93
     id: image_scale_and_crop
