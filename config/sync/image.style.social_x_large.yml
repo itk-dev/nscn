@@ -6,7 +6,6 @@ dependencies:
     - crop.type.teaser
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: fhEbYMGcB5A-SmZ8GyO3wN_3brT2wLxp-W1aailv93c
 name: social_x_large
@@ -27,9 +26,3 @@ effects:
       anchor: center-center
       width: 220
       height: 220
-  06429c13-485a-4b8e-80a8-91ca034b566f:
-    uuid: 06429c13-485a-4b8e-80a8-91ca034b566f
-    id: image_effects_auto_orient
-    weight: 3
-    data:
-      scan_exif: true
