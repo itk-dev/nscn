@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["brand"],{"f+j1":function(n,i,o){"use strict";o.r(i);o("vMAv")},vMAv:function(n,i,o){}},[["f+j1","runtime"]]]);
