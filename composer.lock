@@ -214,7 +214,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
+                "url": "https://github.com/twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -235,7 +235,7 @@
             "version": "v3.5.17",
             "source": {
                 "type": "git",
-                "url": "git@github.com:mbostock-bower/d3-bower.git",
+                "url": "https://github.com/mbostock-bower/d3-bower.git",
                 "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e"
             },
             "dist": {
@@ -253,7 +253,7 @@
             "version": "v0.5.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:tomasAlabes/eve.git",
+                "url": "https://github.com/tomasAlabes/eve.git",
                 "reference": "93132d5d47a0ce31dbd1b75208b1d4c0e2ad81e8"
             },
             "dist": {
@@ -271,7 +271,7 @@
             "version": "9.15.10",
             "source": {
                 "type": "git",
-                "url": "git@github.com:isagalaev/highlight.js.git",
+                "url": "https://github.com/highlightjs/highlight.js.git",
                 "reference": "3026925b1c57c9a9feb0713e663f8d1ef8ff08e9"
             },
             "dist": {
@@ -319,7 +319,7 @@
             "version": "0.5.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:oesmith/morris.js.git",
+                "url": "https://github.com/oesmith/morris.js.git",
                 "reference": "d5cf1410eda7055eaf2c7d218d4cb24ec5ed55c8"
             },
             "dist": {
@@ -339,7 +339,7 @@
             "version": "v2.2.8",
             "source": {
                 "type": "git",
-                "url": "git@github.com:DmitryBaranovskiy/raphael.git",
+                "url": "https://github.com/DmitryBaranovskiy/raphael.git",
                 "reference": "6f9a07d8fb8f54c891450d3e28120ce57fe8d30b"
             },
             "dist": {
@@ -360,7 +360,7 @@
             "version": "4.0.13",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ivaynberg/select2.git",
+                "url": "https://github.com/ivaynberg/select2.git",
                 "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
             },
             "dist": {
@@ -378,7 +378,7 @@
             "version": "v3.1.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:filamentgroup/tablesaw.git",
+                "url": "https://github.com/filamentgroup/tablesaw.git",
                 "reference": "6c3387b71d659773e1c7dcb5d7aa5bcb83f53932"
             },
             "dist": {
@@ -393,7 +393,7 @@
             "version": "1.11.15",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jonthornton/jquery-timepicker.git",
+                "url": "https://github.com/jonthornton/jquery-timepicker.git",
                 "reference": "f3c122dbbf0b77642e43a2ea3f6181c9bac2d334"
             },
             "dist": {
@@ -414,7 +414,7 @@
             "version": "v0.7.6",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fians/Waves.git",
+                "url": "https://github.com/fians/Waves.git",
                 "reference": "1985b7e18327f86f1bb640efe3a2ab4b4fea4078"
             },
             "dist": {

@@ -17,3 +17,32 @@ Composer will create a new directory called DIRECTORY. Inside you will find the 
 ## Learn more about Composer for Drupal
 
 Checkout this [presentation](https://docs.google.com/presentation/d/1gxcxT6o47xVrfsZ7ZSQKjBRT-gfE54A1Z9kjvvGHwCo/edit#slide=id.p) from @ModsUnraveled.
+
+
+## Add settings.local.php
+Add settings.local.php to web/sites/default
+
+```
+<?php
+$databases['default']['default'] = array(
+ 'database' => 'db',
+ 'username' => 'db',
+ 'password' => 'db',
+ 'host' => 'mariadb',
+ 'port' => '',
+ 'driver' => 'mysql',
+ 'prefix' => '',
+);
+$settings['hash_salt'] = '';
+// And memcached:
+$conf['memcache_servers'] = array(
+  (getenv('MEMCACHED_HOST') ?: 'memcached').':'.(getenv('MEMCACHED_PORT') ?: 11211) => 'default',
+);
+$settings['file_private_path'] = 'sites/default/files/private';
+$settings['container_yamls'][] = DRUPAL_ROOT . 'sites/development.services.yml';
+```
+
+## Add env.local
+
+Add domain to .env.local
+
