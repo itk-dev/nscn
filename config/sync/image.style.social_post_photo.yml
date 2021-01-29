@@ -1,7 +1,9 @@
 uuid: f72fba26-628f-40ac-a693-b4ed343c1ae0
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
   default_config_hash: 3BVhoc75UBfKSXbOinTB2BG1ZUxVqbmPOQZ45HD8I4E
 name: social_post_photo
@@ -15,3 +17,9 @@ effects:
       width: 714
       height: 1071
       upscale: false
+  1c9fe5fc-70fa-4b42-a1e2-41d7bb5323e6:
+    uuid: 1c9fe5fc-70fa-4b42-a1e2-41d7bb5323e6
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true
