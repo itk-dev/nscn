@@ -175,7 +175,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'This are the ongoing events inside the Nordic Smart City Network:'
+            value: 'The past and current events inside the Nordic Smart City Network'
             format: basic_html
           plugin_id: text
       footer: {  }
