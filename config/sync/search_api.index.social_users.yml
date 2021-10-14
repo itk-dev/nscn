@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - profile
+    - taxonomy
     - user
     - search_api
     - social_search
@@ -38,6 +39,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.profile.field_profile_expertise
+  field_profile_expertise_name:
+    label: 'Expertise » Taxonomy term » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'field_profile_expertise:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_expertise
+      module:
+        - taxonomy
+        - taxonomy
   field_profile_first_name:
     label: 'First name'
     datasource_id: 'entity:profile'
@@ -55,6 +67,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.profile.field_profile_interests
+  field_profile_interests_name:
+    label: 'Interests » Taxonomy term » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'field_profile_interests:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_interests
+      module:
+        - taxonomy
+        - taxonomy
   field_profile_last_name:
     label: 'Last name'
     datasource_id: 'entity:profile'
@@ -147,13 +170,15 @@ processor_settings:
       strong: 2
       u: 1
     weights:
-      preprocess_index: -10
+      preprocess_index: -15
       preprocess_query: -10
   ignorecase:
     plugin_id: ignorecase
     all_fields: true
     fields:
+      - field_profile_expertise_name
       - field_profile_first_name
+      - field_profile_interests_name
       - field_profile_last_name
       - name
       - rendered_item
@@ -218,7 +243,9 @@ processor_settings:
     plugin_id: tokenizer
     all_fields: true
     fields:
+      - field_profile_expertise_name
       - field_profile_first_name
+      - field_profile_interests_name
       - field_profile_last_name
       - name
       - rendered_item
@@ -232,7 +259,9 @@ processor_settings:
     plugin_id: transliteration
     all_fields: true
     fields:
+      - field_profile_expertise_name
       - field_profile_first_name
+      - field_profile_interests_name
       - field_profile_last_name
       - name
       - rendered_item
