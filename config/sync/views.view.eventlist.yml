@@ -249,6 +249,7 @@ display:
         type: normal
         title: Events
         menu_name: main
+        weight: -44
       exposed_block: false
     cache_metadata:
       max-age: -1

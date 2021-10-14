@@ -14,3 +14,4 @@ private-files
 # Ignore pull script and remote env
 .env-remote
 .pull-prod
+docker.settings.local.php
