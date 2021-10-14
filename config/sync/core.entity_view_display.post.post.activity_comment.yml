@@ -28,7 +28,7 @@ content:
     third_party_settings: {  }
     region: content
   like_and_dislike:
-    weight: 0
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
