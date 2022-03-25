@@ -7,25 +7,15 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0",
-        "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0",
-        "cweagans/composer-patches": "^1.0",
+        "drush/drush": "^9",
         "goalgorilla/open_social": "^8.0",
-        "doctrine/cache": "1.6.1",
-        "doctrine/collections": "1.4.0",
-        "doctrine/common": "2.7.2",
-        "doctrine/inflector": "1.1.0",
         "drupal/quick_node_clone": "^1.10",
         "drupal/rest_export_nested": "^1.0@alpha",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/twig_tweak": "^2.1",
         "itk-dev/itk_azure_video": "^1.0.5",
         "drupal/system_status": "^2.8",
-        "drush/drush": "~9.6.0",
         "drupal/upgrade_status": "^2.7",
-        "symfony/debug": "3.4.9",
-        "symfony/filesystem": "3.4.9",
-        "symfony/finder": "3.4.9",
         "drupal/console": "^1.9",
         "itk-dev/itk_siteimprove": "^1.1",
         "itk-dev/web_accessibility_statement": "dev-master",
@@ -41,14 +31,6 @@
             "url": "https://asset-packagist.org"
         }
     ],
-    "scripts": {
-      "post-install-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ],
-      "post-update-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ]
-    },
     "extra": {
         "installer-types": [
             "bower-asset",
