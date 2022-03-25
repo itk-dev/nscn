@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": "^7.4 || ^8.0",
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0",
         "cweagans/composer-patches": "^1.0",
@@ -31,8 +31,6 @@
         "itk-dev/web_accessibility_statement": "dev-master",
         "drupal/ajax_comments": "1.0.0-beta2"
     },
-
-
     "repositories": [
         {
             "type": "composer",
