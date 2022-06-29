@@ -18,7 +18,7 @@
         "drupal/upgrade_status": "^2.7",
         "drupal/console": "^1.9",
         "itk-dev/itk_siteimprove": "^1.1",
-        "itk-dev/web_accessibility_statement": "dev-master",
+        "itk-dev/web_accessibility_statement": "^1.0",
         "drupal/ajax_comments": "1.0.0-beta2"
     },
     "repositories": [
