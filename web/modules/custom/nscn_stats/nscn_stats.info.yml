@@ -2,4 +2,4 @@ name: Nordic Social City Network stats
 description: Provides statistics block for frontend
 package: NSCN Custom
 type: module
-core: 8.x
+core_version_requirement: ^8 || ^9
